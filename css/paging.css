@@ -1,0 +1,31 @@
+#dataPerPage_style{
+  margin: 10px 30px 10px;
+  float: right;
+}
+#pagingul {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-right: 0;
+}
+
+#pagingul li {
+  text-align: center;
+  float: left;
+}
+
+#pagingul li a {
+  display: block;
+  font-size: 14px;
+  padding: 9px 12px;
+  border-right: solid 1px #ccc;
+  box-sizing: border-box;
+}
+
+#pagingul li.on {
+  background: #eda712;
+}
+
+#pagingul li.on a {
+  color: #fff;
+}

@@ -1,0 +1,250 @@
+@import "header.css";
+
+.main {
+  padding-top: 54px;
+}
+.main .container {
+  padding-top: 30px;
+  width: 935px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.main .container .story-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main .container .story-list .story-list__item {
+  margin-bottom: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+.main .container .story-list .story-list__item .sl__item__header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.main .container .story-list .story-list__item .sl__item__header div {
+  margin-left: 10px;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__header
+  div:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  border-radius: 50%;
+  position: relative;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__header
+  div:nth-child(1)
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__header
+  div:nth-child(3) {
+  margin-left: auto;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__header
+  div:nth-child(3)
+  button {
+  background-color: transparent;
+  border: 0;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.main .container .story-list .story-list__item .sl__item__img {
+  height: 600px;
+}
+.main .container .story-list .story-list__item .sl__item__img img {
+  width: 100%;
+  height: 100%;
+}
+.main .container .story-list .story-list__item .sl__item__contents {
+  display: flex;
+  flex-direction: column;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__icon {
+  display: flex;
+  height: 40px;
+  margin-top: 4px;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__icon
+  button {
+  background-color: transparent;
+  width: 40px;
+  font-size: 25px;
+  margin-right: 10px;
+  border: 0;
+  cursor: pointer;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__icon
+  button:first-child {
+  margin-left: 10px;
+}
+
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__content {
+  padding: 5px 15px;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__content
+  p {
+  margin-bottom: 5px;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__content
+  button {
+  background-color: transparent;
+  border: 0;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__content
+  ul
+  li {
+  font-size: 14px;
+  display: flex;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__content
+  ul
+  li
+  span {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__content
+  ul
+  li
+  button {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__content
+  .sl__item__contents__timeline {
+  font-size: 13px;
+  color: #aaa;
+  margin: 10px 0 5px;
+}
+.main .container .story-list .story-list__item .sl__item__input {
+  display: flex;
+  border-top: 1px solid #dbdbdb;
+}
+.main .container .story-list .story-list__item .sl__item__input input {
+  flex: 9;
+  height: 56px;
+  border: 0;
+  padding-left: 15px;
+}
+.main .container .story-list .story-list__item .sl__item__input button {
+  flex: 1;
+  height: 56px;
+  border: 0;
+  background-color: transparent;
+  font-weight: 500;
+  color: #0095f6;
+  font-size: 14px;
+}
+
+/* Event */
+.main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__contents
+  .sl__item__contents__icon
+  button:first-child
+  .active {
+  color: red;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #8a3ab8;
+  stroke-width: 4px;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 10;
+  stroke-linecap: round;
+  animation: loading 4500ms ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 935px) {
+  .main .container {
+    width: 100%;
+  }
+  .main .container .story-list .story-list__item .sl__item__img {
+    height: 100%;
+  }
+}
