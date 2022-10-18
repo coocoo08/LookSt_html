@@ -6,8 +6,8 @@
   <!--header css-->
   <link rel="stylesheet" href="../css/headerstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!--board css-->
-  <link rel="stylesheet" href="../css/board.css">
+  <!--body css-->
+  <link rel="stylesheet" href="../css/profileEdit.css"
   <!--fofter css-->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
@@ -20,7 +20,7 @@
         <div>
           <a href="#" class="top-bar__logo block">
             <span>
-              <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+              <img src="../images/look.png" alt="look" style ="width: 40px; height: 30px;">
               <i class="fa-solid fa-file-magnifying-glass"></i>
             </span>
             <span>
@@ -46,8 +46,8 @@
               </li>
               <li>
                 <a href="#">
-                  <span><i class="fas fa-shopping-bag"></i></span>
-                  <span>SHOP</span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
+                  <span>SHOPPING</span>
                 </a>
                 <ul>
                   <li>
@@ -58,13 +58,13 @@
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fa-solid fa-person-dress"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                       <span>하의</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fas fa-glasses"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                       <span>악세사리</span>
                     </a>
                   </li>
@@ -75,26 +75,6 @@
                   <span><i class="fa-solid fa-folder-open"></i></span>
                   <span>게시판</span>
                 </a>
-                <ul>
-                  <li>
-                    <a href="../html/board_list.html">
-                      <span><i class="fas fa-chalkboard-teacher"></i></span>
-                      <span>종합게시판</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-comments"></i></span>
-                      <span>리뷰게시판</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-question"></i></span>
-                      <span>FAQ</span>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </nav>
@@ -107,7 +87,7 @@
         <div>
           <a href="#" class="top-bar__logo block">
             <span>
-              <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+              <img src="../images/look.png" alt="look" style ="width: 40px; height: 30px;">
               <i class="fa-solid fa-file-magnifying-glass"></i>
             </span>
             <span>
@@ -131,7 +111,7 @@
               </li>
               <li>
                 <a href="#">
-                  <span><i class="fas fa-shopping-bag"></i></span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
                 </a>
                 <ul>
                   <li>
@@ -141,12 +121,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fa-solid fa-person-dress"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-glasses"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                     </a>
                   </li>
                 </ul>
@@ -155,23 +130,6 @@
                 <a href="#">
                   <span><i class="fa-solid fa-folder-open"></i></span>
                 </a>
-                <ul>
-                  <li>
-                    <a href="../html/board_list.html">
-                      <span><i class="fas fa-chalkboard-teacher"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-comments"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-question"></i></span>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </nav>
@@ -184,56 +142,58 @@
 
 
 <body>
-  <div class="board_wrap">
-    <div class="board_title">
-        <strong>공지사항</strong>
-        <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
-    </div>
-    <div class="board_view_wrap">
-        <div class="board_view">
-            <div class="title">
-                글 제목이 들어갑니다.
-            </div>
-            <div class="info">
-                <dl>
-                    <dt>번호</dt>
-                    <dd>1</dd>
-                </dl>
-                <dl>
-                    <dt>글쓴이</dt>
-                    <dd>김이름</dd>
-                </dl>
-                <dl>
-                    <dt>작성일</dt>
-                    <dd>2021.1.16</dd>
-                </dl>
-                <dl>
-                    <dt>조회</dt>
-                    <dd>33</dd>
-                </dl>
-            </div>
-            <div class="cont">
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다
-            </div>
-        </div>
-        <div class="bt_wrap">
-            <a href="/html/board_list.html" class="on">목록</a>
-            <a href="/html/board_edit.html">수정</a>
-            <a href="./board_list.html" style="background-color: #FF5A5A;">삭제</a>
-        </div>
-    </div>
-</div>
+  <!-- 여기에 각자 페이지 채울 것 -->
+    <main class="main">
+        <section class="setting-container">
+            <article class="setting__content">
+                <div class="content-item__01">
+                    <div class="item__img"><img src="../images/프사.jpeg" alt=""></div>
+                    <div class="item__btn"><button>사진 불러오기</button>
+                    </div>
+                </div>
+                <div class="content-item__02">
+                    <div class="item__title">닉네임</div>
+                    <div class="item__input">
+                        <input type="text" name="nikname" placeholder="닉네임을 입력하세요." />
+                    </div>
+                </div>
+                <div class="content-item__05">
+                    <div class="item__title">자기소개 글</div>
+                    <div class="item__input">
+                        <textarea name="intro" id="" rows="3" placeholder="자신을 소개해주세요(최대 20자)."></textarea>
+                    </div>
+                </div>
+                <div class="content-item__06">
+                    <div class="item__title"></div>
+                    <div class="item__input">
+                        <span><b>개인정보</b></span>
+                        <span>비즈니스나 반려동물 등에 사용된 계정인 경우에도 회원님의 개인 정보를 입력하세요. 공개 프로필에는 포함되지 않습니다.</span>
+                     </div>
+                </div>
+                <div class="content-item__07">
+                    <div class="item__title"> 이메일</div>
+                    <div class="item__input">
+                        <input type="text" name="email" placeholder="* E-mail" />
+                    </div>
+                </div>
+                <div class="content-item__08">
+                    <div class="item__title">전화번호</div>
+                    <div class="item__input">
+                        <input type="text" name="tel" placeholder="* 전화번호" />
+                    </div>
+                </div>
+                <div class="content-item__11">
+                    <div class="item__title"></div>
+                    <div class="item__input">
+                        <button>저장</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 
 <!-- footer -->
-<footer>
 <div class="footer">
   <div class="bubbles">
     <div class="bubble" style="--size:4.2908066578443504rem; --distance:8.075961203512044rem; --position:48.32661339041409%; --time:2.703807505610421s; --delay:-2.5934022497160973s;"></div>
@@ -373,6 +333,5 @@
     </filter>
   </defs>
 </svg>
-</footer>
 <!-- footer -->
 </html>

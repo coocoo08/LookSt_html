@@ -6,12 +6,15 @@
   <!--header css-->
   <link rel="stylesheet" href="../css/headerstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!--board css-->
-  <link rel="stylesheet" href="../css/board.css">
+  <link rel="fonts" href="../font/Ghanachocolate.ttf">
+  <!--body css-->
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/modal.css">
   <!--fofter css-->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
   <link rel="stylesheet" href="../css/footerstyle.css">
+  <link rel="fonts" href="../font/Ghanachocolate.ttf">
 </head>
 
     <!-- header -->
@@ -20,7 +23,7 @@
         <div>
           <a href="#" class="top-bar__logo block">
             <span>
-              <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+              <img src="../images/look.png" alt="look" style ="width: 40px; height: 30px;">
               <i class="fa-solid fa-file-magnifying-glass"></i>
             </span>
             <span>
@@ -46,8 +49,8 @@
               </li>
               <li>
                 <a href="#">
-                  <span><i class="fas fa-shopping-bag"></i></span>
-                  <span>SHOP</span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
+                  <span>SHOPPING</span>
                 </a>
                 <ul>
                   <li>
@@ -58,13 +61,13 @@
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fa-solid fa-person-dress"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                       <span>하의</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fas fa-glasses"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                       <span>악세사리</span>
                     </a>
                   </li>
@@ -75,26 +78,6 @@
                   <span><i class="fa-solid fa-folder-open"></i></span>
                   <span>게시판</span>
                 </a>
-                <ul>
-                  <li>
-                    <a href="../html/board_list.html">
-                      <span><i class="fas fa-chalkboard-teacher"></i></span>
-                      <span>종합게시판</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-comments"></i></span>
-                      <span>리뷰게시판</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-question"></i></span>
-                      <span>FAQ</span>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </nav>
@@ -107,7 +90,7 @@
         <div>
           <a href="#" class="top-bar__logo block">
             <span>
-              <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+              <img src="../images/look.png" alt="look" style ="width: 40px; height: 30px;">
               <i class="fa-solid fa-file-magnifying-glass"></i>
             </span>
             <span>
@@ -131,7 +114,7 @@
               </li>
               <li>
                 <a href="#">
-                  <span><i class="fas fa-shopping-bag"></i></span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
                 </a>
                 <ul>
                   <li>
@@ -141,12 +124,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fa-solid fa-person-dress"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-glasses"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                     </a>
                   </li>
                 </ul>
@@ -155,23 +133,6 @@
                 <a href="#">
                   <span><i class="fa-solid fa-folder-open"></i></span>
                 </a>
-                <ul>
-                  <li>
-                    <a href="../html/board_list.html">
-                      <span><i class="fas fa-chalkboard-teacher"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-comments"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-question"></i></span>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </nav>
@@ -183,57 +144,144 @@
 
 
 
-<body>
-  <div class="board_wrap">
-    <div class="board_title">
-        <strong>공지사항</strong>
-        <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
-    </div>
-    <div class="board_view_wrap">
-        <div class="board_view">
-            <div class="title">
-                글 제목이 들어갑니다.
+<body class="myprofile">
+  <!-- 여기에 각자 페이지 채울 것 -->
+	<div id="sns_container">
+		<div class="profile">
+			<div class="profile-image">
+				<img src="../images/프사.jpeg" alt="" >
+			</div>
+			<div class="profile-user-settings">
+				<h1 class="profile-user-name">Zzindda</h1>
+				<button class="profile-edit-btn">프로필 수정</button>
+				</div>
+			<div class="profile-stats">
+				<ul>
+					<li><span class="profile-stat-count">6</span> 게시물</li>
+					<!-- <li><span class="profile-stat-count">1</span> 팔로워</li> -->
+          <li> 
+            <div id="container">
+            <span class="profile-stat-count">1</span>
+            <button id="btn-modal">팔로잉</button>
+            <div id="lorem-ipsum"></div>
             </div>
-            <div class="info">
-                <dl>
-                    <dt>번호</dt>
-                    <dd>1</dd>
-                </dl>
-                <dl>
-                    <dt>글쓴이</dt>
-                    <dd>김이름</dd>
-                </dl>
-                <dl>
-                    <dt>작성일</dt>
-                    <dd>2021.1.16</dd>
-                </dl>
-                <dl>
-                    <dt>조회</dt>
-                    <dd>33</dd>
-                </dl>
+    
+            <div id="modal" class="modal-overlay">
+                <div class="modal-window">
+                    <div class="title">
+                        <h2>팔로잉 리스트</h2>
+                    </div>
+                    <div class="close-area">X</div>
+                    <div class="content">
+                        <p>Ezen_123</p>
+                        <!-- <p>가나다라마바사 아자차카타파하</p>
+                        <p>가나다라마바사 아자차카타파하</p>
+                        <p>가나다라마바사 아자차카타파하</p> -->
+                        
+                    </div>
+                </div>
             </div>
-            <div class="cont">
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다<br>
-                글 내용이 들어갑니다
+          </li>
+					<!-- <li><span class="profile-stat-count">1</span> 팔로워</li> -->
+          <li> 
+            <div id="container">
+            <span class="profile-stat-count">1</span>
+            <button id="btn-modal">팔로워</button>
+            <div id="lorem-ipsum"></div>
             </div>
-        </div>
-        <div class="bt_wrap">
-            <a href="/html/board_list.html" class="on">목록</a>
-            <a href="/html/board_edit.html">수정</a>
-            <a href="./board_list.html" style="background-color: #FF5A5A;">삭제</a>
-        </div>
-    </div>
-</div>
+    
+            <div id="modal" class="modal-overlay">
+                <div class="modal-window">
+                    <div class="title">
+                        <h2>팔로워 리스트</h2>
+                    </div>
+                    <div class="close-area">X</div>
+                    <div class="content">
+                        <p>Ezen_123</p>
+                        <!-- <p>가나다라마바사 아자차카타파하</p>
+                        <p>가나다라마바사 아자차카타파하</p>
+                        <p>가나다라마바사 아자차카타파하</p> -->
+                        
+                    </div>
+                </div>
+            </div>
+          </li>
+				</ul>
+			</div>
+			<div class="profile-bio">
+				<p><span class="profile-real-name">@ganhannom</span> 나도 인싸가 되고말거야~ 📷✈️🏕️</p>
+			</div>
+		</div>
+		<!-- End of profile section -->
+	</div>
+	<!-- End of container -->
+<main>
+	<div id="sns_container">
+		<div class="gallery">
+			<div class="gallery-item" tabindex="0">
+				<img src="../images/후드티네이비.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 999</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 999</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gallery-item" tabindex="0">
+				<img src="../images/아메카지.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 27</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gallery-item" tabindex="0">
+				<img src="../images/아메카지2.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 23</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+					</ul>
+				</div>
+			</div>
+      <div class="gallery-item" tabindex="0">
+				<img src="../images/데일리룩.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 21</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 6</li>
+					</ul>
+				</div>
+			</div>
+      <div class="gallery-item" tabindex="0">
+				<img src="../images/데일리룩2.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 12</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+					</ul>
+				</div>
+			</div>
+      <div class="gallery-item" tabindex="0">
+				<img src="../images/데일리룩3.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 1</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End of gallery -->
+<!-- 
+		<div class="loader"></div> -->
+	</div>
+	<!-- End of container -->
+</main>
 </body>
 
 <!-- footer -->
-<footer>
 <div class="footer">
   <div class="bubbles">
     <div class="bubble" style="--size:4.2908066578443504rem; --distance:8.075961203512044rem; --position:48.32661339041409%; --time:2.703807505610421s; --delay:-2.5934022497160973s;"></div>
@@ -270,6 +318,7 @@
     <div class="bubble" style="--size:3.7475419802201957rem; --distance:9.64784625838658rem; --position:77.81320811793586%; --time:2.7300118103079365s; --delay:-3.5454097613844358s;"></div>
     <div class="bubble" style="--size:5.915997211130302rem; --distance:9.260449856486169rem; --position:70.98729450146898%; --time:2.226530906286513s; --delay:-2.5357954285483406s;"></div>
     <div class="bubble" style="--size:3.204045335567546rem; --distance:9.713805623738974rem; --position:49.88906215046968%; --time:2.4243380169060367s; --delay:-3.300548061339865s;"></div>
+    <div class="bubble" style="--size:5.154544043912497rem; --distance:6.346771943716771rem; --position:97.19797748187557%; --time:2.559863742731297s; --delay:-2.3553841212749136s;"></div>
     <div class="bubble" style="--size:5.580960391149969rem; --distance:6.318115644267316rem; --position:-2.299885006998026%; --time:2.9731575087818314s; --delay:-2.2002573939788093s;"></div>
     <div class="bubble" style="--size:2.03172314758819rem; --distance:6.282006926931849rem; --position:27.762339069789185%; --time:3.16272754492543s; --delay:-3.6317186432104536s;"></div>
     <div class="bubble" style="--size:3.6357837556344608rem; --distance:8.068070047008181rem; --position:71.41148448786002%; --time:2.6528247352690766s; --delay:-3.231759428924927s;"></div>
@@ -282,6 +331,7 @@
     <div class="bubble" style="--size:2.6290860068969755rem; --distance:6.542025201523603rem; --position:41.447417047323405%; --time:3.560543878953631s; --delay:-3.9454976558140187s;"></div>
     <div class="bubble" style="--size:4.1215437529515375rem; --distance:6.93441403852198rem; --position:3.19567385157052%; --time:3.6860773554610695s; --delay:-2.635534664248181s;"></div>
     <div class="bubble" style="--size:2.364006790826881rem; --distance:9.155706673670753rem; --position:73.43094286761772%; --time:2.945075042111573s; --delay:-3.1094005708553634s;"></div>
+    <div class="bubble" style="--size:5.622111352453258rem; --distance:8.937198076711974rem; --position:97.10991695930298%; --time:3.0684349225862833s; --delay:-2.162917719903087s;"></div>
     <div class="bubble" style="--size:3.7947067893415616rem; --distance:9.308139662714702rem; --position:66.55922930309234%; --time:3.1653721035542626s; --delay:-3.5613071811227686s;"></div>
     <div class="bubble" style="--size:4.42263259364884rem; --distance:8.965425433803203rem; --position:90.70179662366769%; --time:3.3636133204934726s; --delay:-2.11175095894715s;"></div>
     <div class="bubble" style="--size:2.6393292102561094rem; --distance:9.363065692796093rem; --position:1.5256552151499108%; --time:3.648058424588528s; --delay:-3.382732016156239s;"></div>
@@ -364,6 +414,8 @@
     </div>
   </div>
 </div>
+<script src="../js/profile.js"></script>
+<script src="../js/modal.js"></script>
 <svg style="position:fixed; top:100vh">
   <defs>
     <filter id="blob">
@@ -373,6 +425,6 @@
     </filter>
   </defs>
 </svg>
-</footer>
 <!-- footer -->
 </html>
+
