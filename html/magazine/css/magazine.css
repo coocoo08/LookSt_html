@@ -1,0 +1,149 @@
+img {
+  width: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 2.2rem;
+  color: #222;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #000;
+  text-align: center;
+  word-break: keep-all;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* 리스트 안의 h3  */
+.list section h3 {
+  /* font-family: 'Noto Serif KR', serif; */
+  margin-bottom: 12px;
+  text-align: left;
+  word-break: keep-all;
+}
+
+.bd-list>h3 {
+  margin-bottom: 80px;
+}
+
+article {
+  width: 90%;
+  max-width: 1000px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 60px 30px 70px 30px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  margin-bottom: 24px;
+  padding-left: 12px;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
+
+textarea {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: 1px solid black;
+}
+
+/* 리스트 섹션 분류 */
+.list section {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.list section div:nth-child(1) {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.list section:hover div:nth-child(1) img {
+  transform: scale(1.2);
+}
+
+.list section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: .3s;
+}
+
+.list section h3 {
+  margin-bottom: 12px;
+  text-align: left;
+  word-break: keep-all;
+}
+
+.list section p {
+  font-weight: 200;
+  line-height: 1.2rem;
+  margin-bottom: 20px;
+}
+
+
+/* 이미지 */
+.list section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: .3s;
+}
+
+/* 밑단 상속 */
+
+.bd-list>div:last-child a {
+  display: inline-block;
+  width: 100px;
+  padding: 10px 0;
+  /* border: 1px solid #ddd; */
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.bd-list>div:last-child {
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+

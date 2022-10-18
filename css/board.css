@@ -113,42 +113,11 @@ a {
   width: 10%;
 }
 
-.board_page {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 0;
-}
 
-.board_page a {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  box-sizing: border-box;
-  vertical-align: middle;
-  border: 1px solid #ddd;
-  border-left: 0;
-  line-height: 100%;
-}
-
-.board_page a.bt {
-  padding-top: 10px;
-  font-size: 1.0rem;
-  letter-spacing: -1px;
-}
-
-.board_page a.num {
-  padding-top: 9px;
-  font-size: 1.0rem;
-}
-
-.board_page a.num.on {
-  border-color: #000;
-  background: #000;
-  color: #fff;
-}
-
-.board_page a:first-child {
-  border-left: 1px solid #ddd;
+.board_page{
+ display: flex;
+ justify-content: center;
+ letter-spacing:  25px;
 }
 
 .board_view {
@@ -319,19 +288,6 @@ a {
       text-indent: 0;
   }
 
-  .board_page a {
-      width: 26px;
-      height: 26px;
-  }
-
-  .board_page a.bt {
-      padding-top: 7px;
-  }
-  
-  .board_page a.num {
-      padding-top: 6px;
-  }
-
   .board_view .info dl {
       width: 50%;
       padding: 0;
@@ -373,4 +329,25 @@ a {
   .board_write .info input[type="password"] {
       width: 100%;
   }
+}
+
+.checkpage {
+  font-size: 25px;
+  font-weight: 800;
+  color: #222;
+}
+
+section {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.notice1 {
+  text-align: end;
+}
+
+.list_tab[data-v-ff5858e8] {
+  position: relative;
+  margin-top: -10px;
+  z-index: 1;
 }
