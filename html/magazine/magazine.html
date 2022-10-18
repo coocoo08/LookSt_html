@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lookst</title>
-  <!--header css-->
-  <link rel="stylesheet" href="../css/headerstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!--board css-->
-  <link rel="stylesheet" href="../css/board.css">
-  <!--fofter css-->
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-  <link rel="stylesheet" href="../css/footerstyle.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!--header css-->
+		<link rel="stylesheet" href="/css/headerstyle.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<!--fofter css-->
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+		<link rel="stylesheet" href="/css/footerstyle.css">
+		<!--magazine css-->
+		<link rel="stylesheet" href="css/magazine.css">
+  <title>Document</title>
 </head>
-
     <!-- header -->
     <header class="top-bar pc">
       <div class="con inline-grid">
         <div>
-          <a href="#" class="top-bar__logo block">
+          <a href="/html/index.html" class="top-bar__logo block">
             <span>
-              <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+              <img src="/img/look.png" alt="look" style ="width: 40px; height: 30px;">
               <i class="fa-solid fa-file-magnifying-glass"></i>
             </span>
             <span>
@@ -46,8 +47,8 @@
               </li>
               <li>
                 <a href="#">
-                  <span><i class="fas fa-shopping-bag"></i></span>
-                  <span>SHOP</span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
+                  <span>SHOPPING</span>
                 </a>
                 <ul>
                   <li>
@@ -58,13 +59,13 @@
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fa-solid fa-person-dress"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                       <span>하의</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fas fa-glasses"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                       <span>악세사리</span>
                     </a>
                   </li>
@@ -77,25 +78,23 @@
                 </a>
                 <ul>
                   <li>
-                    <a href="notice/board_list.html">
+                    <a href="/html/notice/board_list.html">
                       <span><i></i></span>
                       <span>고객 게시판</span>
                     </a>
                   </li>
                   <li>
-                    <a href="magazine/magazine.html">
+                    <a href="magazine.html">
                       <span><i></i></span>
                       <span>메거진 게시판</span>
                     </a>
                   </li>
                   <li>
-                    <a href="review/review.html">
+                    <a href="/html/review/review.html">
                       <span><i></i></span>
                       <span>리뷰 게시판</span>
                     </a>
                   </li>
-                </ul>
-              </li>
                 </ul>
               </li>
             </ul>
@@ -103,7 +102,6 @@
         </div>
       </div>
     </header>
-    
     <header class="top-bar mobile">
       <div class="con inline-grid">
         <div>
@@ -133,7 +131,7 @@
               </li>
               <li>
                 <a href="#">
-                  <span><i class="fas fa-shopping-bag"></i></span>
+                  <span><i class="fa-solid fa-shirt"></i></span>
                 </a>
                 <ul>
                   <li>
@@ -143,12 +141,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <span><i class="fa-solid fa-person-dress"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-glasses"></i></span>
+                      <span><i class="fa-solid fa-object-group"></i></span>
                     </a>
                   </li>
                 </ul>
@@ -157,23 +150,6 @@
                 <a href="#">
                   <span><i class="fa-solid fa-folder-open"></i></span>
                 </a>
-                <ul>
-                  <li>
-                    <a href="../html/board_list.html">
-                      <span><i class="fas fa-chalkboard-teacher"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-comments"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span><i class="fas fa-question"></i></span>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </nav>
@@ -181,80 +157,77 @@
       </div>
     </header>
     <!-- header -->
-
-
-
-
 <body>
-  <div id="body_margin">
-  <!-- board -->
-  <div class="table-wrap"> 
-    <table class="board all-open">             
-      <caption></caption> 
-      <colgroup> 
-        <col> 
-        <col style="width:50%;"> 
-        <col span="3"> 
-      </colgroup> 
-      <thead> 
-        <tr> 
-          <th scope="col">번호</th> 
-          <th scope="col">제목</th> 
-          <th scope="col">작성자</th> 
-          <th scope="col">등록일</th> 
-          <th scope="col">조회수</th> 
-        </tr> 
-      </thead> 
-      <tbody> 
-        <tr> 
-          <td class="num"> 592 </td> 
-          <td class="subject"> <a href="#" class="ellipsis"> </a><a href="#" title="온라인교육 상담·안내 전화번호 변경안내"> 온라인교육 상담·안내 전화번호 변경안내</a>  </td> 
-          <td class="name">홍길동</td> 
-          <td class="date">2019-06-03</td> 
-          <td class="hit">965</td> 
-        </tr> 
-        <tr> 
-          <td class="num"> 591 </td> 
-          <td class="subject"> <a href="#" class="ellipsis"> </a><a href="#"> 패스워드 찾기 관련 안내</a>  </td> 
-          <td class="name">김미영</td> 
-          <td class="date">2019-05-09</td> 
-          <td class="hit">1,043</td> 
-        </tr> 
-        <tr> 
-          <td class="num"> 590 </td> 
-          <td class="subject"> <a href="#" class="ellipsis"> </a><a href="#" title="로그인이 잘 안될때 해결 방법"> 로그인이 잘 안될때 해결 방법</a>  </td> 
-          <td class="name">홍길동</td> 
-          <td class="date">2019-04-02</td> 
-          <td class="hit">1,378</td> 
-        </tr>
-        <tr> 
-          <td class="num"> 590 </td> 
-          <td class="subject"> <a href="#" class="ellipsis"> </a><a href="#" title="로그인이 잘 안될때 해결 방법"> 로그인이 잘 안될때 해결 방법</a>  </td> 
-          <td class="name">홍길동</td> 
-          <td class="date">2019-04-02</td> 
-          <td class="hit">1,378</td> 
-        </tr> 
-        <tr> 
-          <td class="num"> 590 </td> 
-          <td class="subject"> <a href="#" class="ellipsis"> </a><a href="#" title="로그인이 잘 안될때 해결 방법"> 로그인이 잘 안될때 해결 방법</a>  </td> 
-          <td class="name">홍길동</td> 
-          <td class="date">2019-04-02</td> 
-          <td class="hit">1,378</td> 
-        </tr> 
-        <tr> 
-          <td class="num"> 590 </td> 
-          <td class="subject"> <a href="#" class="ellipsis"> </a><a href="#" title="로그인이 잘 안될때 해결 방법"> 로그인이 잘 안될때 해결 방법</a>  </td> 
-          <td class="name">홍길동</td> 
-          <td class="date">2019-04-02</td> 
-          <td class="hit">1,378</td> 
-        </tr>   
-      </tbody> 
-    </table> 
-  </div>
-  <!-- board -->
-</div>
-</body>
+  <article class="bd-list list">
+		<h3>메거진 게시판 목록</h3>
+		<section>
+			<div>
+				<a href="magazine1/magazine-list.1.html">
+				<img src="img/findkapoor.jpg">
+			</div>
+			<div>
+				<h3 class>파인드 카푸어 - 숲을 연상시키는 찡한 컬러감의 마주치면 바론 그린 입덕 모드 계절에 잘 어울리는 마크백 18 크링클드 딥그린</h3>
+				<p class>
+					플립 쉐입과 금속 포인트로 미니멀 하면서도 유니크한 매력이 돋보이는 마크백 18 입니다.
+				</p>
+				<small>
+					글쓴이 · 6시간 전 ( 글 올리고 나서 이후의 시간 )
+				</small>
+			</a>
+			</div>
+		</section>
+		<section>
+			<div>
+				<a href="magazine1/magazine-list.2.html">
+				<img src="img/piece worker.jpg">
+			</div>
+			<div>
+				<h3>[피스워커] - 바텍과 레더라벨에 컬러포인트를 준 모두에게 잘 어울리는 역대급 “ 그 데님” POSEIDON SEMIWIDE </h3>
+				<p>
+					«Real Leather Waist Label»<br>바지를 받고 진짜 제일 마음에 들었던 디테일로 그린 컬러의 라벨입니다.<br>0.3MM 두께 리얼 레더로 탄탄한 느낌을 주고 불박 기법으로 시그니처 로고를 각인하여 레더라벨에 컬러포인트를 준 부분입니다.
+				</p>
+				<small>
+					글쓴이 ·  6시간 전 ( 글 올리고 나서 이후의 시간 )
+				</small>
+			</a>
+			</div>
+		</section>
 
+		<section>
+			<div>
+				<img src="img/juan.jpg">
+			</div>
+			<div>
+				<a href="magazine1/magazine-list.3.html">
+				<h3>주앙옴므 - OVERSIZED DRIED COTTON SHIRTS (LEMON)</h3>
+				<p>
+					SINCE 2017<br>JUAN HOMME(주앙옴므)는 합리적이고 기능적인 미니멀리즘의 높은 퀄리티와 합리적인 가치를 추구하는 컨템포러리 브랜드이며, 미니멀리즘과 놈코어룩을 기반으로 기능성과 디테일이 녹아있는 데일리 웨어를 지향하는 브랜드입니다.
+				</p>
+				<small>
+					글쓴이 · 6시간 전 ( 글 올리고 나서 이후의 시간 )
+				</small>
+			</a>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="img/mircoday.jpg">
+			</div>
+			<div>
+				<a href="magazine1/magazine-list.4.html">
+				<h3>마이크로데이 - 라인 크레페 미드 부츠</h3>
+				<p>
+					본론으로 넘어가 제가 롤 이벤트 상품으로 마이크로데이 라인 크레페 미드 부츠를 선택한 이유는 이 제품을 처음 봤을 때부터 쉐입이 너무 이쁘게 빠졌고 색상 또한 제 스타일이여서 장바구니에 있던 이 상품이 리스트에 있다는 소식을 듣자마자 고민도 없이 바로 고르게 되었습니다..
+				</p>
+				<small>
+					글쓴이 · 6시간 전 ( 글 올리고 나서 이후의 시간 )
+				</small>
+			</a>
+			</div>
+		</section>
+			<div><a href="#">더 보기 +</a></div>
+	</article>
+</body>
 <!-- footer -->
 <div class="footer">
   <div class="bubbles">
@@ -410,3 +383,4 @@
 </svg>
 <!-- footer -->
 </html>
+  

@@ -1,0 +1,28 @@
+body {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  text-align: -webkit-center;
+}
+caption {
+  padding: 20px;
+}
+
+.data-bd-cont .add_info {
+  float: left;
+  border: 1px solid #e5e5e5;
+  width: 97%;
+  padding: 5px 10px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+
+.data-bd-cont .attach {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.data-bd-cont{
+  align:center;
+}

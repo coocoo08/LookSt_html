@@ -1,0 +1,101 @@
+.re_h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1c1c1c;
+  letter-spacing: 0.5px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+
+
+.bbs-table-list thead th {
+  height: 25px;
+  color: #9d9d9d;
+  /* font-size: 12px; */
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bbs-table-list thead th,
+.bbs-table-list tbody td {
+  padding: 6px 0;
+}
+
+
+table {
+  font-size: 12px;
+  line-height: 1.25;
+  color: #777;
+  font-family: 'Nanum Gothic', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+}
+
+.bbs-table-list {
+  text-align: -webkit-center;
+  display: grid;
+}
+
+
+fieldset {
+  border: none;
+  text-align: end;
+}
+
+.esosub_s {
+  font-style: 10px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #777;
+  font-family: 'Nanum Gothic', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  word-wrap: break-word;
+  word-break: keep-all;
+
+}
+
+section {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.page {
+  display: flex;
+  font-size: 1rem;
+  color: #aaa;
+  justify-content: center;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: 'Noto Sans KR', serif;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
+  
+}
+
+.page p {
+  margin: 0 12px;
+  padding: 0 8px;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.checkpage {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 4px solid #e6002d;
+}
+
+.bbs-table-list tbody td {
+  padding: 6px 0;
+}
+
+
+
+
+.bbs-table-list tbody td {
+  /* height: 25px; */
+  border-bottom: 1px solid #e5e5e5;
+}
