@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <title>admin Goodslist</title>
+    <link rel="stylesheet" href="../css/admin_Goodslist.css">
+    <link rel="stylesheet" href="../css/admin_nav.css">
+    <script src="https://kit.fontawesome.com/e6f78261b2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/admin_Goodslist.js"></script>
+    <script src="../js/nav.js"></script>
+</head>
+<body>
+    <nav th:replace="admin/admin_nav :: navFragment"></nav>
+    <section>
+        <h1>Product List</h1>
+
+        <form class= "search-form" id="search-form" method="get" action="#">
+            </div>
+            <div class="form-group">
+                <label class="form-label">상품분류</label>
+                <span>
+                    <select name="cmode">
+                        <option value="whole">전체</option>
+                        <option value="outer">OUTER</option>
+                        <option value="top">TOP</option>
+                        <option value="shirts">SHIRTS</option>
+                        <option value="bottom">BOTTOM</option>
+                        <option value="acc">ACC</option>
+                        <option value="shoes">SHOES</option>
+                    </select>
+                </span>
+            </div>
+            <div class="form-group">
+                <label class="form-label">상품명</label>
+                <span>
+                    <input type="text" name="item_name">
+                </span>
+            </div>
+            <div class="search-submit-box">
+                <input type="submit" class="search-submit" value="검색">
+            </div>
+        </form>
+
+        <div class="goods-box">
+            <div class="goods-box-top">
+                <div>
+                    선택상품
+                    <select class="manage_option">
+                        <option value="onsale">판매</option>
+                        <option value="soldout">품절</option>
+                        <option value="deletegoods">삭제</option>
+                    </select>
+                    <input type="button" id="managebtn" value="변경">
+                    <input type="button" id="addprdtbtn" value="상품등록">
+                </div>
+                <div class="num-searched-box">
+                    총 <b class="num-searched"><span th:text="${productList.totalElements}"></span></b> 개의 상품이 검색되었습니다.
+                </div>
+            </div>
+            <table class="item-table">
+                <colgroup>
+                    <col width="50px">
+                    <col width="100px">
+                    <col width="150px">
+                    <col width="250Px">
+                    <col width="180px">
+                    <col width="180px">
+                    <col width="150px">
+                    <col width="80px">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" class="checkbox-selectall"></th>
+                        <th>이미지</th>
+                        <th>카테고리</th>
+                        <th>상품명</th>
+                        <th>상품번호</th>
+                        <th>판매가</th>
+                        <th>재고</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="product : ${productList}">
+                        <td><input type="checkbox" class="checkbox-select"></td>
+                        <td class = "table img"><img src="../img/outer.jfif" th:src="@{${item.imgUrl}}" alt="상품사진"></td>
+                        <td><div th:text="${product.firstCategory}">Outer</div></td>
+                        <td><div th:text="${product.itemName}">예쁜 트렌치 코트</div></td>
+                        <td><div th:text="${product.itemIdx}">#1659826</div></td>
+                        <td><b th:text="'₩'+${product.price(product.price, 0, 'COMMA')}">₩32,000</b></td>
+                        <td>
+                            <input type="number" class="product_quantity" min="0" max="100" value="4" th:value="${productList[index.index].productCount}">
+                        </td>
+                        <td>
+                            <button onclick="" class="numberupdatebtn">저장</button>
+                        </td>
+                        <!-- <input type="hidden" class="basket_id" value="1" th:value="${basketList[index.index].id}">
+                        <input type="hidden" class="item_price" value="32000" th:value="${item.price}"> -->
+                    </tr>
+                </tbody>
+                <!--원래코드!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                 <tbody>
+                    <tr th:each = "item, index:${itemList}">
+                        <td><input type="checkbox" class="checkbox-select"></td>
+                        <td><img th:src="@{${item.imgUrl}}" width="70px"></td>
+                        <td>
+                            <div class="item-name item-info"><a href="#" th:text = "${item.itemName} +'<'+ ${product.color}+'>'">베이직 카고 팬츠</a></div>
+                            <div class="item-classification item-info" th:text = "'분류 : ' + ${item.firstCategory}">분류 : BOTTOM</div>
+                            <div class="item-price item-info" th:text = "'가격 : ' + ${item.price}">가격 : 14000원</div>
+                        </td>
+                        <td>
+                            <input type="button" th:if="${item.saleStatus.toString().equals('onsale')}" th:value="판매중">
+                            <input type="button" id="soldoutbtn" th:if="${item.saleStatus.toString().equals('soldout')}" th:value="품절">
+                        </td>
+                        <input type="hidden" class="item_idx" th:value="${product.itemIdx}">
+                        <input type="hidden" class="item_color" th:value="${product.color}">
+                    </tr>
+                </tbody>-->
+            </table>
+            <div class="paginate">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" th:classappend="${1 == productList.pageable.pageNumber + 1} ? 'disabled'">
+                        <a class="page-link" href="#" th:href="@{/admin/itemList(page=${productList.pageable.pageNumber - 1},salestatus=${saleStatus},cmode=${firstCategory},item_name=${itemName})}" tabindex="-1" aria-disabled="true">Prev</a>
+                    </li>
+
+                    <li class="page-item" th:classappend="${i == productList.pageable.pageNumber + 1} ? 'disabled'" th:each="i : ${#numbers.sequence(startPage, endPage)}">
+                        <a class="page-link" href="#" th:href="@{/admin/itemList(page=${i - 1},salestatus=${saleStatus},cmode=${firstCategory},item_name=${itemName})}" th:text="${i}">1</a></li>
+
+                    <li class="page-item" th:classappend="${productList.totalPages == productList.pageable.pageNumber + 1} ? 'disabled'">
+                        <a class="page-link" href="#" th:href="@{/admin/itemList(page=${productList.pageable.pageNumber + 1},salestatus=${saleStatus},cmode=${firstCategory},item_name=${itemName})}">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

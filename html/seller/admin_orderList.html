@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <title>admin orderList</title>
+    <link rel="stylesheet" href="../css/admin_orderList.css">
+    <link rel="stylesheet" href="../css/admin_nav.css">
+    <script src="https://kit.fontawesome.com/e6f78261b2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/admin_orderList.js"></script>
+    <script src="../js/nav.js"></script>
+</head>
+<body>
+    <nav th:replace="admin/admin_nav :: navFragment"></nav>
+    <section>
+        <h1>Order List</h1>
+
+        <form class= "search-form" id="search-form" method="get" action="#">
+            <div class="form-group">
+                <label class="form-label">주문일자</label>
+                <span>
+                    <input type="date" name="firstdate" class="date">&nbsp;~ 
+                    <input type="date" name="lastdate" class="date">
+                </span>
+            </div>
+            <div class="form-group">
+                <label class="form-label">주문상태</label>
+                <span>
+                    <select name="omode">
+                        <!-- <option value="PAYWAITING" th:selected="${#strings.equals( oModeStatus, 'PAYWAITING' )}">입금대기</option> -->
+                        <option value="PAYCOM" th:selected="${#strings.equals( oModeStatus, 'PAYCOM' )}">결제완료</option>
+                        <option value="PRESHIP" th:selected="${#strings.equals( oModeStatus, 'PRESHIP' )}">배송준비중</option>
+                        <option value="INSHIP" th:selected="${#strings.equals( oModeStatus, 'INSHIP' )}">배송중</option>
+                        <option value="COMPLETESHIP" th:selected="${#strings.equals( oModeStatus, 'COMPLETESHIP' )}">배송완료</option>
+                        <!-- <option value="ORDERCANCEL" th:selected="${#strings.equals( oModeStatus, 'ORDERCANCEL' )}">주문취소</option>
+                        <option value="ORDERCHANGE" th:selected="${#strings.equals( oModeStatus, 'ORDERCHANGE' )}">교환</option>
+                        <option value="ORDERREFUND" th:selected="${#strings.equals( oModeStatus, 'ORDERREFUND' )}">반품</option> -->
+                    </select>
+                </span>
+            </div>
+            <div class="form-group">
+                <label class="form-label">검색어</label>
+                <span>
+                    <select name="smode">
+                        <option value="buyer">구매자명</option>
+                    </select>
+                    <input type="text" name="sinput" class="search-input">
+                </span>
+            </div>
+            <div class="search-submit-box">
+                <input type="submit" class="search-submit" value="검색">
+            </div>
+        </form>
+
+        <div class="order-box">
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" class="checkbox-selectall"></th>
+                        <th>주문번호</th>
+                        <th>구매자</th>
+                        <th>주문정보</th>
+                        <th>결제금액</th>
+                        <th>결제방식</th>
+                        <th>주문일자</th>
+                        <th>상태</th>
+                        <th>변경</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="order : ${orderList}">
+                        <td><input type="checkbox" class="checkbox-select"></td>
+                        <td th:text = "${order.number}">178789</td>  <!-- 수정 필요 !!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <td th:text = "${order.name}">김이름</td>
+                        <td th:text = "${order.itemName}">예쁜 트렌치코트</td>
+                        <td th:text = "${order.orderPrice}">34000원</td>
+                        <td th:text = "${order.payment}">카드결제</td>
+                        <td th:text = "${order.orderedAt}">2022-10-17</td>
+                        <td>
+                            <select name="change-omode" id="change-omode" class="omode">
+                                <!-- <option value="whole">전체</option> -->
+                                <!-- <option value="PAYWAITING" th:selected="${#strings.equals( order.orderStatus, 'PAYWAITING' )}">입금대기</option> -->
+                                <option value="PAYCOM" th:selected="${#strings.equals( order.orderStatus, 'PAYCOM' )}">결제완료</option>
+                                <option value="PRESHIP" th:selected="${#strings.equals( order.orderStatus, 'PRESHIP' )}">배송준비중</option>
+                                <option value="INSHIP" th:selected="${#strings.equals( order.orderStatus, 'INSHIP' )}">배송중</option>
+                                <option value="COMPLETESHIP" th:selected="${#strings.equals( order.orderStatus, 'COMPLETESHIP' )}">배송완료</option>
+                                <!-- <option value="ORDERCANCEL" th:selected="${#strings.equals( order.orderStatus, 'ORDERCANCEL' )}">주문취소</option>
+                                <option value="ORDERCHANGE" th:selected="${#strings.equals( order.orderStatus, 'ORDERCHANGE' )}">교환</option>
+                                <option value="ORDERREFUND" th:selected="${#strings.equals( order.orderStatus, 'ORDERREFUND' )}">반품</option> -->
+                            </select>
+                        </td>
+                        <td>
+                            <input type="button" value="변경" class="changestatusbtn">
+                        </td>
+                        <input type="hidden" th:value="${order.orderItemId}" value="1">
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paginate">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" th:classappend="${1 == orderList.pageable.pageNumber + 1} ? 'disabled'">
+                        <a class="page-link" href="#" th:href="@{/admin/orderList(page=${orderList.pageable.pageNumber - 1},firstdate=${firstDate},lastdate=${lastDate},omode=${oMode},smode=${sMode},sinput=${sInput})}" tabindex="-1" aria-disabled="true">Prev</a>
+                    </li>
+
+                    <li class="page-item" th:classappend="${i == orderList.pageable.pageNumber + 1} ? 'disabled'" th:each="i : ${#numbers.sequence(startPage, endPage)}">
+                        <a class="page-link" href="#" th:href="@{/admin/orderList(page=${i - 1},firstdate=${firstDate},lastdate=${lastDate},omode=${oMode},smode=${sMode},sinput=${sInput})}" th:text="${i}">1</a></li>
+
+                    <li class="page-item" th:classappend="${orderList.totalPages == orderList.pageable.pageNumber + 1} ? 'disabled'">
+                        <a class="page-link" href="#" th:href="@{/admin/orderList(page=${orderList.pageable.pageNumber + 1},firstdate=${firstDate},lastdate=${lastDate},omode=${oMode},smode=${sMode},sinput=${sInput})}">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
