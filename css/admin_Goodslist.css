@@ -1,0 +1,210 @@
+/*section*/
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-background-color);
+    height: 100%;
+    align-items: center;
+    padding: 80px;
+}
+
+/*form*/
+section .search-form{
+    background-color: var(--item-background-color);
+    border: 1px solid var(--item-border-color);
+    width: 80%;
+    padding: 20px;
+    color: var(--caption-color);
+}
+
+select {
+    border: 1px solid var(--input-color);
+    height: 30px;
+}
+
+section .search-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.search-form {
+    flex-basis: 15%; 
+}
+section .form-group .form-label {
+    font-weight: bold;
+    flex-basis: 15%;
+    color: dimgray;
+}
+
+section .search-form .form-group span {
+    flex-basis: 85%;
+}
+
+section .search-form .search-submit-box{
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+section .search-form .search-submit-box .search-submit {
+    padding: 7px 15px;
+    color: white;
+} 
+
+.search-submit:hover {
+    background-color: grey;
+}
+/*goods-box*/
+section .goods-box{
+    width: 80%;
+    margin-top: 25px;
+}
+
+section .goods-box .goods-box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+section .goods-box .goods-box-top input[type="button"] {
+    padding: 5px 15px;
+}
+
+
+
+
+table{
+    width: 100%;
+    background-color: var(--item-background-color);
+    border: 1px solid var(--item-border-color);
+    border-collapse: collapse;
+    font-size: 14px;
+}
+td, th {
+    text-align: center;
+    padding: 5px 0;
+}
+
+th {
+    color: black;
+    background-color: #dddddd;
+}
+td {
+    border-top: 1px solid var(--table-line-color);
+}
+
+.item-info {
+    text-align: left;
+    padding: 3px 10px;
+}
+.item-name {
+    border-bottom: 1px solid var(--table-line-color);
+}
+.item-name a{
+    text-decoration: none;
+}
+.item-classification{
+    border-bottom: 1px solid var(--table-line-color);
+    color: navy;
+}
+
+table img {
+    width: 80px;
+    display: block;
+    margin-left: 15px;
+}
+
+/*pagination*/
+section .goods-box .paginate {
+    display:flex;
+    justify-content:center;
+}
+
+section .goods-box .pagination {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--pagenation-color);
+    align-items: center;
+    border-radius: 3px;
+}
+
+section .goods-box .pagination li {
+    padding: 5px 10px;
+}
+
+section .goods-box .pagination a{
+    text-decoration: none;
+    color: black;
+}
+
+section .goods-box .pagination a:active{
+    color: black;
+}
+
+.disabled {
+    pointer-events:none;
+}
+
+/*input 요소*/
+
+input[type="text"]{
+    border: 1px solid var(--input-color);
+    height: 30px;
+    width: 90%;
+}
+
+input[type=checkbox] {
+    zoom: 1.5;
+}
+
+input[type='button'], input[type='submit'] {
+    color: var(--nav-font-color);
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+input[type='button']:hover {
+    background-color: grey;
+}
+
+input[type='button']:hover {
+    filter: brightness(80%);
+}
+
+
+.numberupdatebtn {
+    margin-top: 5px;
+    width: 50px;
+    height: 25px;
+    border: 1px solid var(--font-color-gray);
+    border-radius: 3px;
+    font-size: 12px;
+    color: white; 
+    background-color: black;
+}
+
+.numberupdatebtn:hover {
+    background-color: grey;
+}
+
+#addprdtbtn {
+    color: white;
+    background-color:darkred;
+
+}
+
+#managebtn {
+    color: white;
+    background-color: black;
+}
+
+#managebtn:hover {
+    background-color: grey;
+}
