@@ -73,7 +73,6 @@ section .goods-box .goods-box-top input[type="button"] {
 
 
 
-
 table{
     width: 100%;
     background-color: var(--item-background-color);
@@ -161,7 +160,7 @@ input[type=checkbox] {
 }
 
 input[type='button'], input[type='submit'] {
-    color: var(--nav-font-color);
+    color: white;
     background-color: black;
     border: none;
     border-radius: 5px;
@@ -170,6 +169,17 @@ input[type='button'], input[type='submit'] {
     font-weight: bold;
 
 }
+
+button , #addprdtbtn {
+    color: white;
+    background-color: darkred;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: bold;
+    height: 27.6px;
+}
+
 input[type='button']:hover {
     background-color: grey;
 }
@@ -194,9 +204,11 @@ input[type='button']:hover {
     background-color: grey;
 }
 
-#addprdtbtn {
+#addprdtbtn a {
     color: white;
     background-color:darkred;
+    font-size: 13px;
+    text-decoration: none;
 
 }
 
