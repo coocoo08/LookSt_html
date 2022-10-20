@@ -331,11 +331,32 @@ a {
   }
 }
 
-.checkpage {
-  font-size: 25px;
-  font-weight: 800;
-  color: #222;
+.page {
+  display: flex;
+  font-size: 1rem;
+  color: #aaa;
+  justify-content: center;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: 'Noto Sans KR', serif;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
 }
+
+.page p {
+  margin: 0 12px;
+  padding: 0 8px;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.checkpage {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 4px solid #e6002d;
+}
+
 
 section {
   margin-bottom: 10px;
@@ -344,6 +365,9 @@ section {
 
 .notice1 {
   text-align: end;
+  font-size: 26px;
+  font-weight: 700;
+}
 }
 
 .list_tab[data-v-ff5858e8] {

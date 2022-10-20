@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-  const tagList = document.querySelectorAll(".board_page > p");
+  const tagList = document.querySelectorAll(".page > p");
   for (let i = 0; i < tagList.length; i++) {
     tagList[i].addEventListener("click", function() {
       clearPage();
@@ -14,3 +14,5 @@ window.addEventListener("load", function() {
     }
   }
 });
+
+
