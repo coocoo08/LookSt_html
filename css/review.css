@@ -9,13 +9,10 @@
   margin-bottom: 50px;
 }
 
-
-
 .bbs-table-list thead th {
   height: 25px;
   color: #9d9d9d;
   /* font-size: 12px; */
-  border-top: 1px solid #000000;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -23,7 +20,6 @@
 .bbs-table-list tbody td {
   padding: 6px 0;
 }
-
 
 table {
   font-size: 12px;
@@ -35,8 +31,8 @@ table {
 .bbs-table-list {
   text-align: -webkit-center;
   display: grid;
+  border-top: 1px solid #333;
 }
-
 
 fieldset {
   border: none;
@@ -53,7 +49,14 @@ fieldset {
   border-spacing: 0;
   word-wrap: break-word;
   word-break: keep-all;
+}
 
+.esosub_s_l {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: #1c1c1c;
+  letter-spacing: 0.5px;
 }
 
 section {
@@ -71,7 +74,6 @@ section {
   font-family: 'Noto Sans KR', serif;
   line-height: 1rem;
   letter-spacing: 0.1px;
-  
 }
 
 .page p {
@@ -92,9 +94,6 @@ section {
   padding: 6px 0;
 }
 
-
-
-
 .bbs-table-list tbody td {
   /* height: 25px; */
   border-bottom: 1px solid #e5e5e5;
@@ -104,6 +103,43 @@ section {
   text-align: center;
 }
 
-.tb-left #new{
+.tb-left #new {
   width: 30px;
+}
+
+/* 여기부터! */
+.key-wrap {
+  display: inline-block;
+}
+
+.white_e_s {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: 'Open Sans', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 3px 12px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.MS_input_txt {
+  margin-right: 5px;
+  line-height: 20px;
+  border: 1px solid #e7e7e7;
+  height: 23px;
+  vertical-align: middle;
+}
+
+[type=checkbox], [type=radio] {
+  vertical-align: middle;
+}
+/* 여기까지 끝! */
+
+.bbs-tit {
+  font-size: 9px;
 }
