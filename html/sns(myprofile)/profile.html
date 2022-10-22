@@ -27,9 +27,9 @@
 <header class="top-bar pc">
   <div class="con inline-grid">
     <div>
-      <a href="#" class="top-bar__logo block">
+      <a href="../../html/index.html" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -42,13 +42,7 @@
       <nav class="top-bar__menu-box-1">
         <ul class="inline-grid">
           <li>
-            <a href="#">
-              <span><i class="fa-solid fa-house"></i></span>
-              <span>HOME</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
+            <a href="../../html/sns_list/SNS_main_list.html">
               <span><i class="fa-solid fa-user-pen"></i></span>
               <span>SNS</span>
             </a>
@@ -86,21 +80,40 @@
             </a>
             <ul>
               <li>
-                <a href="../../html/board_list.html">
+                <a href="../../html/magazine/magazine.html">
                   <span><i class="fas fa-chalkboard-teacher"></i></span>
-                  <span>종합게시판</span>
+                  <span>매거진게시판</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="../review/review.html">
                   <span><i class="fas fa-comments"></i></span>
                   <span>리뷰게시판</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="../notice/board_list_FAQ.html">
                   <span><i class="fas fa-question"></i></span>
                   <span>FAQ</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../sns(myprofile)/profile.html">
+              <div id="profile_info">
+                <img src="../../img/프사.jpeg" alt="">
+              </div>
+            </a>
+            <ul>
+              <li>
+                <a href="../html/board_list.html">
+                  <span>마이페이지</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>로그아웃</span>
                 </a>
               </li>
             </ul>
@@ -116,7 +129,7 @@
     <div>
       <a href="#" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -166,7 +179,7 @@
             </a>
             <ul>
               <li>
-                <a href="../../html/board_list.html">
+                <a href="../html/board_list.html">
                   <span><i class="fas fa-chalkboard-teacher"></i></span>
                 </a>
               </li>
@@ -188,6 +201,7 @@
   </div>
 </header>
 <!-- header -->
+
 <body class="myprofile">
   <!-- 여기에 각자 페이지 채울 것 -->
 	<div id="sns_container">
@@ -207,52 +221,37 @@
 					<!-- <li><span class="profile-stat-count">1</span> 팔로워</li> -->
           <li> 
             <div id="container">
-            <span class="profile-stat-count">1&nbsp;&nbsp;&nbsp;</span>
-            <span class="profile-stat-count">10</span>
-            <button id="btn-modal">팔로잉/팔로워</button>
-            <div id="lorem-ipsum"></div>
-            </div>
-    
-            <div id="modal" class="modal-overlay">
-                <div class="modal-window">
-                    <div class="title">
-                        <h2>팔로잉/ 팔로워 리스트</h2>
-                    </div>
-                    <div class="close-area">X</div>
-                    <div class="content">
-                        <p>Ezen_123</p>
-                        <!-- <p>가나다라마바사 아자차카타파하</p>
-                        <p>가나다라마바사 아자차카타파하</p>
-                        <p>가나다라마바사 아자차카타파하</p> -->
-                        
-                    </div>
-                </div>
+            <span class="profile-stat-count">5</span>
+            <!-- 팔로잉 리스트 Modal -->
+            <h1 class="btn">팔로잉</h1>
+            <div class="modal">
+              <!-- 팔로잉 리스트 Modal의 내용 -->
+              <div class="modal-content">
+                <span class="close">&times;</span>                         
+                <p>Ezen_123</p>
+                <p>skstkdlajs</p>
+                <p>binvv</p>
+                <p>cheeee_zu</p>
+                <p>nimneo</p>
+              </div>
             </div>
           </li>
-					 <!-- <li><span class="profile-stat-count">1</span> 팔로워</li> -->
-         <!-- <li> 
-            <div id="container">
-            <span class="profile-stat-count">1</span>
-            <button id="btn-modal">팔로워</button>
-            <div id="lorem-ipsum"></div>
+          <li>
+            <span class="profile-stat-count">5</span>
+            <!-- 팔로워 리스트 Modal -->
+            <h1 class="btn">팔로워</h1>
+            <div class="modal">
+              <!-- 팔로워 리스트 Modal의 내용 -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Ezen_123</p>
+                <p>skstkdlajs</p>
+                <p>binvv</p>
+                <p>cheeee_zu</p>
+                <p>nimneo</p>
+              </div>
             </div>
-    
-            <div id="modal" class="modal-overlay">
-                <div class="modal-window">
-                    <div class="title">
-                        <h2>팔로워 리스트</h2>
-                    </div>
-                    <div class="close-area">X</div>
-                    <div class="content">
-                        <p>Ezen_123</p>
-                         <p>가나다라마바사 아자차카타파하</p>
-                        <p>가나다라마바사 아자차카타파하</p>
-                        <p>가나다라마바사 아자차카타파하</p> 
-                        
-                    </div>
-                </div>
-            </div>
-          </li>   -->
+          </li>
 				</ul>
 			</div>
 			<div class="profile-bio">
@@ -477,4 +476,5 @@
 <script  src="../../js/bannerscript.js"></script>
 <script  src="../../js/LookBookscript.js"></script>
 <script src="../../js/modal.js"></script>
+<!-- <script src="../../js/모달여러개.js"></script> -->
 </html>
