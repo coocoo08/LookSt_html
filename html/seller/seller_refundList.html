@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="_csrf" th:content="${_csrf.token}"/>
     <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
-    <title>seller orderList</title>
+    <title>seller RefundList</title>
     <link rel="stylesheet" href="../../css/seller_orderList.css">
     <link rel="stylesheet" href="../../css/seller_nav.css">
     <script src="https://kit.fontawesome.com/e6f78261b2.js" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
 <body>
     <nav th:replace="admin/admin_nav :: navFragment"></nav>
     <section>
-        <h1>Order List</h1>
+        <h1>Refund List</h1>
 
         <form class= "search-form" id="search-form" method="get" action="#">
             <div class="form-group">
@@ -32,10 +32,12 @@
                 <span>
                     <select name="omode">
                         <!-- <option value="PAYWAITING" th:selected="${#strings.equals( oModeStatus, 'PAYWAITING' )}">입금대기</option> -->
-                        <option value="PAYCOM" th:selected="${#strings.equals( oModeStatus, 'PAYCOM' )}">결제완료</option>
-                        <option value="PRESHIP" th:selected="${#strings.equals( oModeStatus, 'PRESHIP' )}">배송준비중</option>
-                        <option value="INSHIP" th:selected="${#strings.equals( oModeStatus, 'INSHIP' )}">배송중</option>
-                        <option value="COMPLETESHIP" th:selected="${#strings.equals( oModeStatus, 'COMPLETESHIP' )}">배송완료</option>
+                        <option value="CANCELRCPT" th:selected="${#strings.equals( oModeStatus, 'CANCELRCPT' )}">취소접수</option>
+                        <!-- <option value="CANCELCOM" th:selected="${#strings.equals( oModeStatus, 'CANCELCOM' )}">취소완료</option> -->
+                        <option value="INRETURN" th:selected="${#strings.equals( oModeStatus, 'INRETURN' )}">반품처리중</option>
+                        <option value="INREFUND" th:selected="${#strings.equals( oModeStatus, 'INREFUND' )}">환불처리중</option>
+                        <option value="RETURNCOM" th:selected="${#strings.equals( oModeStatus, 'RETURNCOM' )}">반품완료</option>
+                        <option value="REFUNDCOM" th:selected="${#strings.equals( oModeStatus, 'REFUNDCOM' )}">환불완료</option>
                         <!-- <option value="ORDERCANCEL" th:selected="${#strings.equals( oModeStatus, 'ORDERCANCEL' )}">주문취소</option>
                         <option value="ORDERCHANGE" th:selected="${#strings.equals( oModeStatus, 'ORDERCHANGE' )}">교환</option>
                         <option value="ORDERREFUND" th:selected="${#strings.equals( oModeStatus, 'ORDERREFUND' )}">반품</option> -->
@@ -63,7 +65,7 @@
                         <th><input type="checkbox" class="checkbox-selectall"></th>
                         <th>주문번호</th>
                         <th>구매자</th>
-                        <th>주문정보</th>
+                        <th>요청사유</th>
                         <th>결제금액</th>
                         <th>결제방식</th>
                         <th>주문일자</th>
@@ -76,8 +78,8 @@
                         <td><input type="checkbox" class="checkbox-select"></td>
                         <td th:text = "${order.number}">178789</td>  <!-- 수정 필요 !!!!!!!!!!!!!!!!!!!!!!!!-->
                         <td th:text = "${order.name}">김이름</td>
-                        <td th:text = "${order.itemName}">예쁜 트렌치코트<br/>
-                            <h th:text = "${product.itemIdx}">[1659826]</h></td>
+                        <!-- <td th:text = "${}">예쁜 트렌치코트</td> -->
+                        <td th:text = "${}">구매자가 입력한 요청사유</td>
                         <td th:text = "${order.orderPrice}">34000원</td>
                         <td th:text = "${order.payment}">카드결제</td>
                         <td th:text = "${order.orderedAt}">2022-10-17</td>
@@ -85,10 +87,12 @@
                             <select name="change-omode" id="change-omode" class="omode">
                                 <!-- <option value="whole">전체</option> -->
                                 <!-- <option value="PAYWAITING" th:selected="${#strings.equals( order.orderStatus, 'PAYWAITING' )}">입금대기</option> -->
-                                <option value="PAYCOM" th:selected="${#strings.equals( order.orderStatus, 'PAYCOM' )}">결제완료</option>
-                                <option value="PRESHIP" th:selected="${#strings.equals( order.orderStatus, 'PRESHIP' )}">배송준비중</option>
-                                <option value="INSHIP" th:selected="${#strings.equals( order.orderStatus, 'INSHIP' )}">배송중</option>
-                                <option value="COMPLETESHIP" th:selected="${#strings.equals( order.orderStatus, 'COMPLETESHIP' )}">배송완료</option>
+                                <option value="CANCELRCPT" th:selected="${#strings.equals( oModeStatus, 'CANCELRCPT' )}">취소접수</option>
+                                <!-- <option value="CANCELCOM" th:selected="${#strings.equals( oModeStatus, 'CANCELCOM' )}">취소완료</option> -->
+                                <option value="INRETURN" th:selected="${#strings.equals( oModeStatus, 'INRETURN' )}">반품처리중</option>
+                                <option value="INREFUND" th:selected="${#strings.equals( oModeStatus, 'INREFUND' )}">환불처리중</option>
+                                <option value="RETURNCOM" th:selected="${#strings.equals( oModeStatus, 'RETURNCOM' )}">반품완료</option>
+                                <option value="REFUNDCOM" th:selected="${#strings.equals( oModeStatus, 'REFUNDCOM' )}">환불완료</option>
                                 <!-- <option value="ORDERCANCEL" th:selected="${#strings.equals( order.orderStatus, 'ORDERCANCEL' )}">주문취소</option>
                                 <option value="ORDERCHANGE" th:selected="${#strings.equals( order.orderStatus, 'ORDERCHANGE' )}">교환</option>
                                 <option value="ORDERREFUND" th:selected="${#strings.equals( order.orderStatus, 'ORDERREFUND' )}">반품</option> -->
