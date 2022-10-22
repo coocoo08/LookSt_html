@@ -305,7 +305,7 @@ a {
 .listA article {
 	flex: 1 1 300px;
 	display: flex;
-  height: 600px;
+  /* height: 600px; */
 }
 
 .listA a {
@@ -322,7 +322,7 @@ a {
 }
 
 .listA .photo {
-  width: 289px;
+  width: 100%;
 	height: 350px;
 	background-position: center;
 	background-size: cover;
@@ -349,8 +349,10 @@ a {
 }
 
 
-#profile_info >p {
-  line-height: 55px;
+#profile_info > p {
+  /* line-height: 55px; */
+  padding-top: 2%;
+  text-align: center;
   font-size: medium;
 }
 .tag p {
