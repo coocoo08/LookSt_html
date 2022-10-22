@@ -103,3 +103,7 @@ section {
 .tb-center {
   text-align: center;
 }
+
+.tb-left #new{
+  width: 30px;
+}
