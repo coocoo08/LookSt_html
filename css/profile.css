@@ -10,9 +10,9 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 
 /* Base Styles */
 
-:root {
+/* :root {
     font-size: 10px;
-}
+} */
 
 *,
 *::before,
@@ -28,9 +28,9 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
     padding-bottom: 3rem;
 } */
 
-img {
+/* img {
     display: block;
-}
+} */
 
 #sns_container {
     max-width: 93.5rem;
