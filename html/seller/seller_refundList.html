@@ -11,8 +11,8 @@
     <script src="https://use.fontawesome.com/926fe18a63.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <link rel="stylesheet" href="../../css/seller_orderList.css">
-    <link rel="stylesheet" href="../../css/seller_nav.css">
     <link rel="stylesheet" href="../../css/seller_ord_modal.css">
+    <link rel="stylesheet" href="../../css/seller_nav.css">
     <script src="https://kit.fontawesome.com/e6f78261b2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="../../js/seller_orderList.js"></script>
@@ -147,8 +147,38 @@
                         
                             <!-- 첫 번째 Modal의 내용 -->
                             <div class="modal-content">
+                                <span class="info">요청 상세 정보</span>
                                 <span class="close">&times;</span>                         
-                                <p>요청 상세 정보</p>
+                                <div class ="detail-info">
+                                    <span>구매자 :</span>
+                                    <span text = "${order.name}">김이름</span><br/>
+                                    <span>수령주소 :</span><!--수정필요-->
+                                    <span text =  "${order.address}">서울시 00구 00동 00-00 00호</span><br/>
+                                    <span>전화번호 :</span><!--수정필요-->
+                                    <span text =  "${order.phonenumber}">010-1234-1234</span><br/>
+                                    <span>주문번호 :</span>
+                                    <span text =  "${order.number}">178789</span><br/>
+                                    <span>상품번호 :</span>
+                                    <span text =  "${product.itemIdx}">1659826</span><br/>
+                                    <span>상품명 :</span>
+                                    <span text = "${order.itemName}">예쁜 트렌치코트</span><br/>
+                                    <span>상품가격 :</span><!--수정필요-->
+                                    <span text = "${product.Price}">34000원</span><br/>
+                                    <span>구매수량 :</span><!--수정필요-->
+                                    <span text =  "${order.number}">2</span><br/>
+                                    <span>결제일시 :</span>
+                                    <span text = "${order.orderedAt}">2022-10-17</span><br/>
+                                    <span>결제수단 :</span><!--수정필요-->
+                                    <span text = "${order.payment}">카드결제</span><br/>
+                                    <span>환불금액 :</span><!--수정필요-->
+                                    <span text =  "${order.orderPrice}">68000원</span><br/>
+                                    <span>주문상태 :</span><!--수정필요-->
+                                    <span text =  "${order.status}">결제완료</span><br/>
+                                    <span>요청상태 :</span><!--수정필요-->
+                                    <span text =  "${order.reqstatus}">취소접수</span><br/>
+                                    <span>요청사유 :</span><!--수정필요-->
+                                    <span text =  "${order.reqreason}">구매자가 입력한 내용</span><br/>
+                                </div>      
                             </div>
                             </div>
                     </td>
