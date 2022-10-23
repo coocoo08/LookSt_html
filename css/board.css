@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
 }
 
@@ -368,7 +367,7 @@ section {
   font-size: 26px;
   font-weight: 700;
 }
-}
+
 
 .list_tab[data-v-ff5858e8] {
   position: relative;
