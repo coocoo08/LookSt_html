@@ -1,0 +1,45 @@
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+  <link rel="stylesheet" href="../../css/login_signup.css">
+  <div class="signup-box">
+    <form class="signup-user-box">
+      <h2 class="form-signup-heading">회원가입</h2>
+      <div class="signup-input" style="line-height:110%">
+        <a style="color: #000000; font-weight: bold;">이메일</a>
+        <a style="color: #ff0000; font-weight: bold;"> *</a>
+        <input type="text" class="form-control" name="username" placeholder="이메일 주소를 입력해 주세요." required="" autofocus="" />
+        <br/><br/>
+        <a style="color: #000000; font-weight: bold;">비밀번호</a>
+        <a style="color: #ff0000; font-weight: bold;"> *</a>
+        <input type="password" class="form-control" name="password" placeholder="비밀번호를 입력해 주세요. (숫자, 영문, 특수문자 조합 8~20자)" required="" />
+        <br/><br/>
+        <input type="password" class="form-control" name="password" placeholder="비밀번호를 재입력해 주세요." required="" />
+        <br/><br/><br/>
+        <a style="color: #000000; font-weight: bold;">닉네임</a>
+        <a style="color: #ff0000; font-weight: bold;"> *</a>
+        <input type="text" class="form-control" name="username" placeholder="닉네임을 입력해주세요. (영문, 숫자 8-16자)" required="" />
+        <br/><br/>
+        <a style="color: #000000; font-weight: bold;">이름</a>
+        <a style="color: #ff0000; font-weight: bold;"> *</a>
+        <input type="text" class="form-control" name="username" placeholder="이름을 입력해주세요. (한글, 영문)" required="" />
+        <br/><br/><br/>
+        <a style="color: #000000; font-weight: bold;">주소</a>
+        <input type="text" class="form-control" name="username" placeholder="우편번호" required="" />
+        <br/><br/>
+        <input type="text" class="form-control" name="username" placeholder="우편 번호 검색 후 상세주소를 입력해 주세요." required="" />
+        <br/><br/>
+        <input type="text" class="form-control" name="username" placeholder="아파트 등 공동주택일 경우 상세주소(동, 호 등)을 입력해 주세요." required="" />
+        <br/><br/><br/>
+        <a style="color: #000000; font-weight: bold;">자동가입방지</a>
+        <div class="g-recaptcha" data-theme="light" data-sitekey="6Lc5wqIiAAAAAHHvvPeSElqbFFze4aEJZNTDXbme" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>   
+      </div>
+    </form>
+
+    <div class="Check-box-main">
+      <a style="color: #000000; font-weight: bold;">수신동의</a>
+      <form class="Check-list">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" class="check-box1">[선택] 문자메시지 광고성 정보 수신에 동의합니다.<br/>
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" class="check-box1">[선택] 이메일 광고성 정보 수신에 동의합니다.
+      </form>
+    </div>
+    <button class="signup-btn" type="submit" onclick="location.href='../login/signup_success.html'">가입하기</button>
+  </div>

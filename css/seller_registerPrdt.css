@@ -11,13 +11,13 @@ body {
 
 /*section*/
 section {
-    padding: 30px;
+    padding: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: var(--section-background-color);
-    height: 100%;
+    /* height: 100%; */
 }
 
 form {
@@ -164,6 +164,3 @@ input[type='button'].itembtn{
 input[type='button'].deletesizebtn{
     background-color: var(--btn-red);
 }
-
-
-

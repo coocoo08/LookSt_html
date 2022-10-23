@@ -127,7 +127,7 @@ input[type=checkbox] {
     zoom: 1.5;
 }
 
-input[type='button'], input[type='submit'] {
+input[type='button'], input[type='submit'], .btn { /*btn=모달*/
     color: white;
     background-color: black;
     border: none;
@@ -140,6 +140,10 @@ input[type='button']:hover {
     filter: brightness(80%);
 }
 
+.btn:hover {
+    filter: brightness(80%);
+    background-color: dimgray;
+}
 .changestatusbtn:hover {
     background-color: dimgray;
 }

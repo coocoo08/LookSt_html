@@ -6,14 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="_csrf" th:content="${_csrf.token}"/>
     <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
-    <title>seller RefundList</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/seller_header.css"/>
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <link rel="stylesheet" href="../../css/seller_orderList.css">
     <link rel="stylesheet" href="../../css/seller_nav.css">
+    <link rel="stylesheet" href="../../css/seller_ord_modal.css">
     <script src="https://kit.fontawesome.com/e6f78261b2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="../../js/seller_orderList.js"></script>
+    <title>seller RefundList</title>
     
 </head>
+
+	<!-- 헤더 시작 -->
+	<header class="header_start">
+		<div class="header_container">
+			<div class="container-mobile">
+				<a href="index.html" class="header_mo_logo">LookSt</a>
+				
+				<button type="button" class="header_mo_hamburger">
+					<span class="fa fa-bars" title="MENU"></span>
+				</button>
+			</div>
+			
+			<nav class="header_menu">
+				<ul>
+					<li><a href="../../html/index.html"> 나의 매출</a></li>
+					<li><a href="../../html/seller/seller_prdtList.html">나의 상품</a></li>
+					<li><a href="../../html/seller/seller_registerPrdt.html">상품 등록</a></li>
+					<li><a href="#.html">주문</a>
+						<ul>
+							<li><a href="../../html/seller/seller_orderList.html">주문 목록</a></li>
+							<li><a href="../../html/seller/seller_refundList.html">취소/환불/반품</a></li>
+							<!-- <li><a href="list-c.html">3뎁스</a></li> -->
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- 헤더 끝 -->
+
 <body>
     <nav th:replace="admin/admin_nav :: navFragment"></nav>
     <section>
@@ -62,7 +97,7 @@
             <table class="order-table">
                 <thead>
                     <tr>
-                        <th><input type="checkbox" class="checkbox-selectall"></th>
+                        <!-- <th><input type="checkbox" class="checkbox-selectall"></th> -->
                         <th>주문번호</th>
                         <th>구매자</th>
                         <th>요청사유</th>
@@ -71,11 +106,12 @@
                         <th>주문일자</th>
                         <th>상태</th>
                         <th>변경</th>
+                        <th>상세</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr th:each="order : ${orderList}">
-                        <td><input type="checkbox" class="checkbox-select"></td>
+                        <!-- <td><input type="checkbox" class="checkbox-select"></td> -->
                         <td th:text = "${order.number}">178789</td>  <!-- 수정 필요 !!!!!!!!!!!!!!!!!!!!!!!!-->
                         <td th:text = "${order.name}">김이름</td>
                         <!-- <td th:text = "${}">예쁜 트렌치코트</td> -->
@@ -101,7 +137,21 @@
                         <td>
                             <input type="button" value="변경" class="changestatusbtn">
                         </td>
-                        <input type="hidden" th:value="${order.orderItemId}" value="1">
+                        <!-- <input type="hidden" th:value="${order.orderItemId}" value="1"> -->
+                        <td>
+                            <!-- 첫 번째 Modal을 여는 클래스 -->
+                            <button class="btn">상세</button>
+                        
+                            <!-- 첫 번째 Modal -->
+                            <div class="modal">
+                        
+                            <!-- 첫 번째 Modal의 내용 -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>                         
+                                <p>요청 상세 정보</p>
+                            </div>
+                            </div>
+                    </td>
                     </tr>
                 </tbody>
             </table>
@@ -121,5 +171,8 @@
             </div>
         </div>
     </section>
+    <script src="../../js/seller_ord_modal.js">
+        /*modal.js */
+    </script>
 </body>
 </html>

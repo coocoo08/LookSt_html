@@ -1,0 +1,175 @@
+@charset "UTF-8";
+:root {
+  --main-color: black;
+  --accent-color: #bf6a7a;
+  --dark-main-color: #2b5566;
+  --text-bright-color: #fff;
+}
+
+@media (max-width: 599px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "맑은 고딕", "Apple SD Gothic Neo", "sans-serif";
+}
+
+/* 헤더 시작 */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.body_start header {
+  position: static;
+  border-bottom: solid 1px #ddd;
+}
+
+.header_mo_logo {
+  display: inline-block; /* 해당 영역 안에서만 블록을 잡아라. */
+  line-height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #5d9ab2;
+  background-color: var(
+    --main-color
+  ); /* 두번 주는 이유는 변수로 먹히는 브라우져가 있으면 사용하라는 뜻 */
+  color: #fff;
+  color: var(--text-bright-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.header_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header_menu li ul {
+  display: none; /* 안보이게 한다? */
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 200px;
+  color: white;
+  z-index: 200;
+}
+
+.header_menu li:hover ul {
+  display: block; /* 호버될시 블럭을 주자 */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header_menu a {
+  display: block;
+  padding: 15px;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.header_menu a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  header .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 사이 사이에 공간을 줘라 */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header_menu ul {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header_mo_hamburger {
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 28px;
+    opacity: 0.5;
+    cursor: pointer; /* 마우스 올리면 손가락 모양 */
+  }
+
+  .header_mo_hamburger:hover {
+    opacity: 0.3;
+  }
+
+  .header_menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_mo_hamburger {
+    display: none;
+  }
+
+  .header_menu {
+    display: block !important;
+  }
+}
+
+/* @media (max-width: 384px) {
+  .header_container {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .header_container .header_mo_logo {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  .header_container .header_mo_hamburger {
+    color: inherit;
+    opacity: 1;
+  }
+} */
+
+@media (max-width: 767px) {
+  .header_container .header_menu {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}

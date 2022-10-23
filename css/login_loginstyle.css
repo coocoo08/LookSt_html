@@ -1,0 +1,154 @@
+@import "bourbon";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+body {
+	background: #eeeeee !important;	
+}
+.form-signin-heading{
+  margin-top: 10px;
+  position: static;
+  font-size: 40px;
+  text-align: center;
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  height: 440px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.user-box input {
+  margin-bottom: 10px;
+  max-width: 230px;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.login-box-2 {
+  position: absolute;
+  top: 236px;
+}
+.signup {
+  position: absolute;
+  right: 45px;
+}
+.social-login-box {
+  position: absolute;
+  top: 90px;
+  left: 97px;
+}
+.division-line {
+  position: absolute;
+  top: 47px;
+  left: 15px;
+  font-size: 14px;
+}
+
+ul {
+  position: absolute;
+}
+.login-input {
+  top: 115px;
+  left: 5px;
+}
+.login-btn {
+  top: 110px;
+  right: 45px;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+  height: 90px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #000000;
+  color: #ffffff; 
+}
+button:active,
+button:hover,
+button:focus {
+  background: var(--button-hover-bg-color);
+  outline: 0;
+}
+button:disabled {
+  opacity: 0.5;
+}
+:root {
+  --button-color: #000000;
+  --button-bg-color: #000000;
+  --button-hover-bg-color: #505050;
+}
+
+p {
+  margin-block: 0rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+}
+
+a {
+  text-decoration-line: none;
+}
+.google-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #e34a3c;
+}
+.kakao-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #f9e000;
+}
+.naver-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #41c62d;
+}
