@@ -143,8 +143,32 @@
                             
                                 <!-- 첫 번째 Modal의 내용 -->
                                 <div class="modal-content">
-                                    <span class="close">&times;</span>                         
-                                    <p>주문 상세 정보</p>
+                                    <span class="info">주문 상세 정보</span>
+                                    <span class="close">&times;</span>                      
+                                    <div class ="detail-info">
+                                            <span>구매자 :</span>
+                                            <span text = "${order.name}">김이름</span><br/>
+                                            <span>수령주소 :</span><!--수정필요-->
+                                            <span text =  "${order.address}">서울시 00구 00동 00-00 00호</span><br/>
+                                            <span>전화번호 :</span><!--수정필요-->
+                                            <span text =  "${order.phonenumber}">010-1234-1234</span><br/>
+                                            <span>주문번호 :</span>
+                                            <span text =  "${order.number}">178789</span><br/>
+                                            <span>상품번호 :</span>
+                                            <span text =  "${product.itemIdx}">1659826</span><br/>
+                                            <span>상품명 :</span>
+                                            <span text = "${order.itemName}">예쁜 트렌치코트</span><br/>
+                                            <span>상품가격 :</span>
+                                            <span text = "${order.orderPrice}">34000원</span><br/>
+                                            <span>구매수량 :</span><!--수정필요-->
+                                            <span text =  "${order.number}">2</span><br/>
+                                            <span>결제일시 :</span>
+                                            <span text = "${order.orderedAt}">2022-10-17</span><br/>
+                                            <span>결제수단 :</span>
+                                            <span text = "${order.payment}">카드결제</span><br/>
+                                            <span>주문상태 :</span><!--수정필요-->
+                                            <span text =  "${order.status}">결제완료</span><br/>
+                                    </div>    
                                 </div>
                                 </div>
                         </td>
