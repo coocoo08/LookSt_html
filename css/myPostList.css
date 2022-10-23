@@ -260,3 +260,20 @@ svg {
   border-radius: 10%;
   margin: 0 0 5px 5px;
 }
+.user_info .upload_time {
+  color: rgba(73, 71, 71, 0.5);
+}
+/*.follow .user_follow {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 15%;
+  margin-right: 20px;
+} */
+.follow {
+  line-height: 30px;
+  min-width: 82px;
+  margin-left: 380px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}

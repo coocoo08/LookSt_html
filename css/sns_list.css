@@ -352,7 +352,7 @@ svg {
 	flex: 1;
 	margin: 10px;
 	display: block;
-	border: solid 1px #ddd;
+	border: /*solid 1px #ddd;*/
 	color: inherit;
 	text-decoration: none;
 }
@@ -366,6 +366,7 @@ svg {
 	height: 350px;
 	background-position: center;
 	background-size: cover;
+  border-radius: 10%
 }
 
 .listA .tag {
