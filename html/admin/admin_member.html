@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>CodePen - Bootstrap User Profile</title>
+    <title>연습</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/admin_header.css"/>
     <link rel="stylesheet" href="../../css/admin_member.css" />
+
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   </head>
+  <script type="text/javascript">
+    $(function () {
+      $(".header_mo_hamburger").click(function () {
+        $(".header_menu").slideToggle();
+      });
+    });
+  </script>
   <body>
+    <!-- 헤더 시작 -->
+    <header class="header_start">
+      <div class="header_container">
+        <div class="container-mobile">
+          <a href="index.html" class="header_mo_logo">LookSt</a>
+
+          <button type="button" class="header_mo_hamburger">
+            <span class="fa fa-bars" title="MENU"></span>
+          </button>
+        </div>
+
+        <nav class="header_menu">
+          <ul>
+            <li><a href="index.html"> 회원관리</a></li>
+            <li><a href="contents.html">쇼핑관리</a></li>
+            <li><a href="about.html">게시물관리</a></li>
+            <li><a href="contact.html">신청게시판</a></li>
+            <li>
+              <a href="#.html">토글</a>
+              <ul>
+                <li><a href="list-a.html">1뎁스</a></li>
+                <li><a href="list-b.html">2뎁스</a></li>
+                <li><a href="list-c.html">3뎁스</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- 헤더 끝 -->
     <!-- partial:index.partial.html -->
-    <div class="container">
-      <div class="row profile">
+      <div class="col-md-12" style="margin: 10% 0 0 35%;">
         <div class="col-md-3">
           <div class="profile-sidebar">
             <!-- SIDEBAR USERPIC -->
@@ -120,7 +157,8 @@
           </div>
         </div>
       </div>
-    </div>
     <!-- partial -->
   </body>
+
+
 </html>
