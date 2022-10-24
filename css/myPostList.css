@@ -197,6 +197,12 @@
     margin-left: auto;
     margin-right: 10px;
   }
+  #product_img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10%;
+    margin: 0 0 5px 5px;
+}
   .main
     .container
     .story-list
