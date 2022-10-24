@@ -1,0 +1,168 @@
+@import "bourbon";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+body {
+
+}
+.signup-list {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 450px;
+  height: 300px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.signup-list-head {
+  position: absolute;
+  top: 80px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 37px;
+  color: #000000;
+}
+.signup-success-msg2 {
+  position: absolute;
+  top: 140px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-normal {
+  font-weight: normal;
+}
+.division-line {
+  top: 370px;
+  left: 60px;
+  font-size: 14px;
+  position: absolute;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 370px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #000000;
+  color: #ffffff; 
+}
+button:active,
+button:hover,
+button:focus {
+  background: var(--button-hover-bg-color);
+  outline: 0;
+}
+button:disabled {
+  opacity: 0.5;
+}
+:root {
+  --button-color: #000000;
+  --button-bg-color: #000000;
+  --button-hover-bg-color: #505050;
+}
+.seller-reg {
+  position: absolute;
+  top: 400px;
+}
+.social-signup-box {
+  position: absolute;
+  top: 175px;
+}
+
+a {
+  text-decoration-line: none;
+}
+.google-btn {
+  position: absolute;
+  top: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: inline-block;
+  width: 370px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #e34a3c;
+}
+.kakao-btn {
+  position: absolute;
+  top: 65px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: inline-block;
+  width: 370px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #f9e000;
+}
+.kakao_logo {
+  position: absolute;
+  scale: 105%;
+  top: 3px;
+  left: 5.5px;
+}
+.naver-btn {
+  position: absolute;
+  top: 130px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: inline-block;
+  width: 370px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #41c62d;
+}
+.btn_font_style_google {
+  color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  top: 15px;
+  left: 118px;
+}
+.btn_font_style_kakao {
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  top: 15px;
+  left: 122px;
+}
+.btn_font_style_naver {
+  color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  top: 15px;
+  left: 122px;
+}
