@@ -148,3 +148,16 @@ input[type='button']:hover {
     background-color: dimgray;
 }
 
+.detail-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.info {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
