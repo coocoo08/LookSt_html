@@ -170,7 +170,7 @@ input[type='button'], input[type='submit'] {
 
 }
 
-button , #addprdtbtn {
+#addprdtbtn {
     color: white;
     background-color: darkred;
     border: none;
@@ -194,22 +194,38 @@ input[type='button']:hover {
     margin-right: 20px;
     width: 50px;
     height: 25px;
-    border: 1px solid var(--font-color-gray);
+    border: 1px solid;
     border-radius: 5px;
     font-size: 12px;
     color: white; 
     background-color: black;
+    font-weight: bold;
 }
 
-.numberupdatebtn:hover {
+.editPrdt {
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 50px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white; 
+    background-color: black;
+    font-weight: bold;
+}
+
+
+
+.numberupdatebtn:hover , .editPrdt:hover {
     background-color: grey;
 }
 
-#addprdtbtn a {
+#addprdtbtn a, .editPrdt a {
     color: white;
-    background-color:darkred;
     font-size: 13px;
     text-decoration: none;
+    
 
 }
 
