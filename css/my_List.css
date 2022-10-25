@@ -22,6 +22,7 @@
   margin-bottom: 30px;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
+  height: 1538px;
 }
 .main .container .story-list .story-list__item .sl__item__header {
   width: 100%;
@@ -198,7 +199,8 @@
 }
 .main .container .story-list .story-list__item .sl__item__input {
   display: flex;
-  border-top: 1px solid #dbdbdb;
+  /* border-top: 1px solid #dbdbdb; */
+  
 }
 .main .container .story-list .story-list__item .sl__item__input input {
   flex: 9;
@@ -283,8 +285,13 @@ svg {
   padding-bottom: 8px;
   align-items: center;
 }
-.product_picture {
-
+.product {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8% ;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-right: 0;
 }
 .product_list {
   margin: 0 -10px;
@@ -294,10 +301,33 @@ svg {
   height: 128px;
   border-radius: 10% ;
 }
-
 .product_item {
   padding: 0 10px;
   display: inline-block;
-  width: 20%;
+  width: 148px;
+  height: 188px;
   vertical-align: top;
+}
+.picture {
+  display: flex;
+}
+.product_name {
+  padding-top: 6px;
+  text-align: center;
+} 
+.product_desc p {
+  padding-top: 6px;
+  text-align: center;
+}
+.amount {
+  margin-left: 7px;
+}
+.like_mylist i {
+  margin: 15px 0 0 10px;
+  padding-top: 10px;
+}
+.social_count {
+  padding-top: 12px;
+  display: flex;
+  margin: 10px;
 }
