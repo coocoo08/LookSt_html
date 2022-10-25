@@ -1,0 +1,63 @@
+/* board_write_register */
+
+article {
+  margin: 200px 0;
+}
+
+.contents {
+  border-radius: 10px;
+  border: 1px solid #999;
+  padding: 50px 5%;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.img1 {
+  width: 100%;
+  vertical-align: top;
+}
+
+.donepic {
+  width: 150px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: 'KoPubWorldBatang';
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 30px 0;
+  text-align: center;
+}
+
+button {
+
+  width: 48%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+
+}
+
+button {
+  display: inline-block;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #111;
+  color: white;
+
+}
+/* end */
