@@ -284,5 +284,20 @@ svg {
   align-items: center;
 }
 .product_picture {
-  
+
+}
+.product_list {
+  margin: 0 -10px;
+}
+#product_pic {
+  width: 128px;
+  height: 128px;
+  border-radius: 10% ;
+}
+
+.product_item {
+  padding: 0 10px;
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
 }
