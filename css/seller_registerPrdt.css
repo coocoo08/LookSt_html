@@ -103,10 +103,10 @@ input[type='file'] {
 
 .imgupload .imguploadbtn {
     display: inline-block;
-    color: var(--nav-font-color);
+    color: white;
     border-radius: 5px;
     padding: 5px 8px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     background-color: black;
 }
@@ -137,11 +137,11 @@ input[type='text'] {
 }
 
 input[type='button'], input[type='submit'] {
-    color: var(--nav-font-color);
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 8px 16px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     background-color: black;
 }

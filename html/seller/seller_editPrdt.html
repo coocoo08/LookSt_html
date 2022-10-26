@@ -10,8 +10,8 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <link rel="stylesheet" href="../../css/seller_registerPrdt.css">
     <link rel="stylesheet" href="../../css/seller_nav.css">
-    <script src="../../js/seller_registerPrdt.js"></script>
-    <title>seller registerPrdt</title>
+    <script src="../../js/seller_editPrdt.js"></script>
+    <title>seller editPrdt</title>
     
 </head>
 
@@ -47,7 +47,7 @@
 <body>
     <nav th:replace="admin/admin_nav :: navFragment"></nav>
     <section>
-        <h1>Add Product</h1>
+        <h1>Edit Product</h1>
 
         <form action="/admin/register" th:action="@{/admin/register}" method="POST" enctype="multipart/form-data" onsubmit="return sendToServer()">
         <!-- 상품 기본정보 -->

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 :root {
-  --main-color: #5d9ab2;
+  --main-color: black;
   --accent-color: #bf6a7a;
-  --dark-main-color: #2b5566;
+  --dark-main-color: black;
   --text-bright-color: #fff;
 }
 
@@ -53,7 +53,7 @@ header {
   line-height: 70px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #5d9ab2;
+  background-color: black;
   background-color: var(
     --main-color
   ); /* 두번 주는 이유는 변수로 먹히는 브라우져가 있으면 사용하라는 뜻 */

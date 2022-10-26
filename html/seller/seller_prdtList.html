@@ -12,8 +12,6 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <link rel="stylesheet" href="../../css/seller_prdtList.css">
     <link rel="stylesheet" href="../../css/seller_nav.css">
-    <script src="https://kit.fontawesome.com/e6f78261b2.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="../../js/seller_prdtList.js"></script>
     <title>seller ProductList</title>
     
@@ -32,7 +30,7 @@
 			
 			<nav class="header_menu">
 				<ul>
-					<li><a href="../../html/index.html"> 나의 매출</a></li>
+					<li><a href="../../html/seller/seller_mySales.html"> 나의 매출</a></li>
 					<li><a href="../../html/seller/seller_prdtList.html">나의 상품</a></li>
 					<li><a href="../../html/seller/seller_registerPrdt.html">상품 등록</a></li>
 					<li><a href="#.html">주문</a>
@@ -128,11 +126,12 @@
                         <td><div th:text="${product.firstCategory}">Outer</div></td>
                         <td><div th:text="${product.itemName}">예쁜 트렌치 코트</div></td>
                         <td><div th:text="${product.itemIdx}">#1659826</div></td>
-                        <td><b th:text="'₩'+${product.price(product.price, 0, 'COMMA')}">₩32,000</b></td>
+                        <td><b th:text="'₩'+${product.price(product.price, 0, 'COMMA')}">₩34,000</b></td>
                         <td>
                             <input type="number" class="product_quantity" min="0" max="100" value="4" th:value="${productList[index.index].productCount}">
                         </td>
                         <td>
+                            <button class="editPrdt"><a href="../../html/seller/seller_editPrdt.html">수정</a></button>
                             <button onclick="" class="numberupdatebtn">저장</button>
                         </td>
                         <!-- <input type="hidden" class="basket_id" value="1" th:value="${basketList[index.index].id}">
