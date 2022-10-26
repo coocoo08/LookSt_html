@@ -45,7 +45,7 @@
     display: flex;
   }
   .setting-container .setting__content div .item__title {
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     width: 80px;
   }
@@ -59,8 +59,8 @@
     border: 1px solid #dbdbdb;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 16px;
-    width: 80%;
+    font-size: 20px;
+    width: 95%;
   }
   /*.setting-container .setting__content .content-item__10 .item__input {
     display: flex;
@@ -85,11 +85,11 @@
   .setting-container .setting__content .content-item__11 .item__input button {
     border: 0;
     background-color: #000000;
-    padding: 5px 9px;
+    padding: 13px 18px;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
-    
+    font-size: 20px;
   }
   .setting-container .setting__content .content-item__11 .item__input button:hover{
     background-color: gray;
@@ -110,7 +110,6 @@ input[type='file'] {
 
 .img-box img {
   width: 100px;
-  margin-right: 10px;
 }
 
 .imgupload .imguploadbtn {
@@ -144,7 +143,7 @@ input[type='file'] {
     flex-direction: column;
   }
   .setting-container .setting__content div .item__title {
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
     padding-left: 5px;
   }
@@ -171,13 +170,13 @@ input[type='file'] {
   color: #999;
 }
 .section {
-  width: 90%;
   margin: 30px;
   align-items: center;
 }
 .article {
   /* border: 1px solid #ccc; */
   /*padding: 20px;*/
+  position: relative;
   min-height: 230px;
 }
 .item {
@@ -191,7 +190,6 @@ input[type='file'] {
   width: 180px;
   height: 180px;
   position: absolute;
-  left: 0;
   top: 0;
   z-index: 2;
   cursor: pointer;
@@ -212,7 +210,6 @@ input[type='file'] {
   display: block;
   width: 200px;
   height: 200px;
-  left: 0;
   top: 0;
 }
 .delete {
