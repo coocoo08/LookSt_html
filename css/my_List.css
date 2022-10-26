@@ -20,9 +20,9 @@
 }
 .main .container .story-list .story-list__item {
   margin-bottom: 30px;
-  border: 1px solid #dbdbdb;
+  /* border: 1px solid #dbdbdb; */
   border-radius: 4px;
-  height: 1538px;
+  height: 100%x;
 }
 .main .container .story-list .story-list__item .sl__item__header {
   width: 100%;
@@ -330,4 +330,57 @@ svg {
   padding-top: 12px;
   display: flex;
   margin: 10px;
+}
+.profile_info img {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 10px 0 10px;
+}
+.commment_detail {
+  margin-top: -3px;
+}
+.user_nm {
+  margin-right: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.comment_txt {
+  margin-right: 4px;
+  font-size: 14px;
+  letter-spacing: -.21px;
+}
+.comment_box {
+  display: flex;
+  padding: 10px 0;
+}
+.btn_more {
+  display: flex;
+  padding-left: 42px;
+  height: 49px;
+  font-size: 14px;
+  align-items: center;
+  color: rgba(34,34,34,.5);
+}
+
+@media (max-width:935px) {
+  .main .container .story-list .story-list__item .sl__item__header{
+    display: flex;
+  }
+  .user_info>p{
+    display: inline;
+  }
+
+  .follow{
+    margin-left: 70%;
+  }
+}
+
+@media (max-width:500px) {
+
+  .follow{
+    margin-left: 30%;
+  }
 }
