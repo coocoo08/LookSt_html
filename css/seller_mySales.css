@@ -5,6 +5,10 @@ body {
 .chart {
     border: 3px solid lightgrey;
     height: 50%;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    margin-left: 10%;
 }
 
 section > h1  {
@@ -14,3 +18,5 @@ section > h1  {
     text-align: center;
     margin-top: 7%; 
 }
+
+

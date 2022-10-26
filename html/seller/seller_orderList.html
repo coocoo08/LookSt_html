@@ -64,7 +64,7 @@
                 <label class="form-label">주문상태</label>
                 <span>
                     <select name="omode">
-                        <!-- <option value="PAYWAITING" th:selected="${#strings.equals( oModeStatus, 'PAYWAITING' )}">입금대기</option> -->
+                        <option value="PAYWAITING" th:selected="${#strings.equals( oModeStatus, 'PAYWAITING' )}">결제대기</option>
                         <option value="PAYCOM" th:selected="${#strings.equals( oModeStatus, 'PAYCOM' )}">결제완료</option>
                         <option value="PRESHIP" th:selected="${#strings.equals( oModeStatus, 'PRESHIP' )}">배송준비중</option>
                         <option value="INSHIP" th:selected="${#strings.equals( oModeStatus, 'INSHIP' )}">배송중</option>
@@ -118,7 +118,7 @@
                         <td>
                             <select name="change-omode" id="change-omode" class="omode">
                                 <!-- <option value="whole">전체</option> -->
-                                <!-- <option value="PAYWAITING" th:selected="${#strings.equals( order.orderStatus, 'PAYWAITING' )}">입금대기</option> -->
+                                <option value="PAYWAITING" th:selected="${#strings.equals( order.orderStatus, 'PAYWAITING' )}">결제대기</option> -->
                                 <option value="PAYCOM" th:selected="${#strings.equals( order.orderStatus, 'PAYCOM' )}">결제완료</option>
                                 <option value="PRESHIP" th:selected="${#strings.equals( order.orderStatus, 'PRESHIP' )}">배송준비중</option>
                                 <option value="INSHIP" th:selected="${#strings.equals( order.orderStatus, 'INSHIP' )}">배송중</option>
