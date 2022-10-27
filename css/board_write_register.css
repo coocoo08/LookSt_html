@@ -8,6 +8,8 @@ article {
   border-radius: 10px;
   border: 1px solid #999;
   padding: 50px 5%;
+  width: 50%;
+  margin: 100px auto;
 }
 
 h4 {
