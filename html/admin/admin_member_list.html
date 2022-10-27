@@ -9,11 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../css/admin_member_modal.css" />
     <link rel="stylesheet" href="../../css/admin_header.css" />
-    <link rel="stylesheet" href="../../css/admin_table.css" />
     <link rel="stylesheet" href="../../css/admin_member_list.css" />
-    <link rel="stylesheet" href="../../css/admin_member.css" />
     <title>LookSt관리자페이지</title>
   </head>
   <!-- 헤더 끝 -->
@@ -47,197 +44,104 @@
         </nav>
       </div>
     </header>
-    <div>
-      <table class="tablesaw" data-tablesaw>
-        <thead>
-          <tr>
-            <th scope="col">
-              <label
-                ><input type="checkbox" data-tablesaw-checkall /><span
-                  class="sr-only"
-                >
-                  Check All</span
-                ></label
-              >
-            </th>
-            <th scope="col">
-              아이디
-              <a href="#" data-tablesaw-checkall="#checkall-target">전체선택</a>
-            </th>
-            <th scope="col">이름</th>
-            <th scope="col">가입일</th>
-            <th scope="col">
-              <abbr title="Rotten Tomato Rating">최근접속일</abbr>
-            </th>
-            <th scope="col">관리</th>
-          </tr>
-        </thead>
-        <tbody id="checkall-target">
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">1</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input class="modalbtn" type="button" value="관리" /></td>
-            <!-- 첫 번째 Modal -->
-            <div class="modal">
-              <!-- 첫 번째 Modal의 내용 -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>첫 번째 Modal</p>
-              </div>
-            </div>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">2</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">3</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">4</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">5</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">6</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">7</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">8</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only">9</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label
-                ><input type="checkbox" /><span class="sr-only"> 1</span></label
-              >
-            </td>
-            <td class="title">
-              <a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a>
-            </td>
-            <td>김현민</td>
-            <td>2022-10-21</td>
-            <td>2022-10-21</td>
-            <td><input type="button" value="관리" /></td>
-          </tr>
-        </tbody>
+    <!-- body -->
+    <div class="table-users">
+      <div class="header">Users</div>
+
+      <table class="tbody" cellspacing="0">
+        <tr>
+          <th>Picture</th>
+          <th width="100">아이디</th>
+          <th width="100">이름</th>
+          <th width="150">가입일</th>
+          <th width="150">최근 접속일</th>
+          <th width="100">권한</th>
+          <th width="150">관리</th>
+        </tr>
+
+        <tr>
+          <td>
+            <img
+              src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82"
+              alt=""
+            />
+          </td>
+          <td>ezen</td>
+          <td>김현민</td>
+          <td>2022-10-26</td>
+          <td>2022-10-26</td>
+          <td>판매자</td>
+          <!-- <td>Blanditiis, aliquid numquam iure voluptatibus ut maiores explicabo ducimus neque, nesciunt rerum perferendis, inventore.</td> -->
+          <td>
+            <input class="btn" type="button" value="수정" />
+            <input class="btn" type="button" value="삭제" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img
+              src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82"
+              alt=""
+            />
+          </td>
+          <td>ezen</td>
+          <td>김현민</td>
+          <td>2022-10-26</td>
+          <td>2022-10-26</td>
+          <td>판매자</td>
+          <td>
+            <input class="btn" type="button" value="수정" />
+            <input class="btn" type="button" value="삭제" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img
+              src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82"
+              alt=""
+            />
+          </td>
+          <td>ezen</td>
+          <td>김현민</td>
+          <td>2022-10-26</td>
+          <td>2022-10-26</td>
+          <td>판매자</td>
+          <td>
+            <input class="btn" type="button" value="수정" />
+            <input class="btn" type="button" value="삭제" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img
+              src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82"
+              alt=""
+            />
+          </td>
+          <td>ezen</td>
+          <td>김현민</td>
+          <td>2022-10-26</td>
+          <td>2022-10-26</td>
+          <td>판매자</td>
+          <td>
+            <input class="btn" type="button" value="수정" />
+            <input class="btn" type="button" value="삭제" />
+          </td>
+        </tr>
       </table>
     </div>
+    <!-- body -->
   </body>
-	<!-- modal -->
-	<!-- <script src="../../js/admin_member.js"></script> -->
-			<script src="https://use.fontawesome.com/926fe18a63.js"></script>
-			<!-- 테이블 축소 -->
-			<script src="../../js/admin_table.js"></script>
-			<script src="../../js/admin_tablesaw_init.js"></script>
-			<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-			<script>
-				$(function () {
-					$(".header_mo_hamburger").click(function () {
-						$(".header_menu").slideToggle();
-					});
-				});
-			</script>
-
+  <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script>
+    $(function () {
+      $(".header_mo_hamburger").click(function () {
+        $(".header_menu").slideToggle();
+      });
+    });
+  </script>
 </html>
