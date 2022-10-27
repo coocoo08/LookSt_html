@@ -19,7 +19,8 @@ body {
     height: 50%;
     justify-content: center;
     width: 80%;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px;
     place-self: center;
 }
 
@@ -42,10 +43,9 @@ section {
 
 #Header{
     
-    width:100%; border:1px solid #cccccc; 
-    font-size:20px; font-weight:bold; text-align:center;
+    width:100%; border:1px solid #cccccc; padding: 7px;
+    font-size:15px; font-weight:bold; text-align:left;
     place-self: center;
-    
 }
 
 #Wrap{
@@ -61,4 +61,8 @@ section {
     width: 50%;
     float:left;  border:1px solid #cccccc; 
     height: 180px;
+}
+
+ul {
+    list-style-type: none;
 }
