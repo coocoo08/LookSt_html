@@ -1,3 +1,5 @@
+@import url(board.css) srceen;
+
 * {
   padding: 0;
 }
@@ -543,3 +545,26 @@ textarea[name=comment] {
   vertical-align: middle;
 }
 
+
+/* 데스크탑 */
+
+
+@media (max-width: 1024px) {
+  .faq-text{
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {    
+  .faq-text{
+    width: 55%;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-text{
+    width: 30%;
+    font-size: 13px;
+  }
+}
