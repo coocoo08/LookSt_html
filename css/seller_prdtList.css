@@ -11,7 +11,7 @@ section {
 /*form*/
 section .search-form{
     background-color: var(--item-background-color);
-    border: 1px solid var(--item-border-color);
+    border: 2px solid var(--item-border-color);
     width: 80%;
     padding: 20px;
     color: var(--caption-color);
@@ -76,7 +76,7 @@ section .goods-box .goods-box-top input[type="button"] {
 table{
     width: 100%;
     background-color: var(--item-background-color);
-    border: 1px solid var(--item-border-color);
+    border: 2px solid var(--item-border-color);
     border-collapse: collapse;
     font-size: 14px;
 }
