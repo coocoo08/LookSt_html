@@ -1,5 +1,5 @@
 body {
-  background-color: #91ced4;
+  background-color: #FFFFFF;
 }
 body * {
   box-sizing: border-box;
@@ -118,7 +118,7 @@ td>input{
 @media screen and (max-width: 500px) {
   .header {
     background-color: transparent;
-    color: white;
+    color: black;
     font-size: 2em;
     font-weight: 700;
     padding: 0;
