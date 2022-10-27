@@ -16,7 +16,7 @@
   .main .container .story-list {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 600px;
   }
   .main .container .story-list .story-list__item {
     margin-bottom: 30px;
@@ -80,13 +80,25 @@
     .story-list
     .story-list__item
     .sl__item__header
-    .edit{
-      margin-right: 5%;
+    .post_edit{
+      /* margin-right: 5%; */
       background-color: black;
       color: white;
       padding: 0.3rem;
       border-radius: 0.3rem;
   }
+  .main
+  .container
+  .story-list
+  .story-list__item
+  .sl__item__header
+  .post_delete{
+    margin-right: 2%;
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
   .main .container .story-list .story-list__item .sl__item__img {
     height: 600px;
   }
@@ -130,6 +142,10 @@
     .sl__item__contents__icon
     button:first-child {
     margin-left: 10px;
+  }
+  #product_img{
+    width: 100px;
+    height: 100px;
   }
   .main
     .container
@@ -197,12 +213,6 @@
     margin-left: auto;
     margin-right: 10px;
   }
-  #product_img {
-    width: 48px;
-    height: 48px;
-    border-radius: 10%;
-    margin: 0 0 5px 5px;
-}
   .main
     .container
     .story-list
