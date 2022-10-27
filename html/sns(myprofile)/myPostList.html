@@ -7,7 +7,7 @@
   <!---->
   <link rel="stylesheet" href="../../css/bannerstyle.css">
   <!---->
-  <link rel="stylesheet" href="../../css/LookBookstyle.css">
+  <!-- <link rel="stylesheet" href="../../css/LookBookstyle.css"> -->
   <!---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!---->
@@ -223,8 +223,21 @@
                 <div class="sl__item__contents">
                     <div class="sl__item__contents__icon">
                         <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-
-                        <button onclick="clickBtn()"><i class="far fa-comment"></i></button>
+                        <!-- 첫 번째 Modal을 여는 클래스 -->
+    <h1 class="btn"><i class="far fa-comment"></i></h1>
+ 
+    <!-- 첫 번째 Modal -->
+    <div class="modal">
+ 
+      <!-- 첫 번째 Modal의 내용 -->
+      <div class="modal-content">
+        <span class="close">&times;</span>                         
+        <p>댓글리스트</p>
+      <div class="user_nick">ezen_123</div>
+      <div class="comment">멋져요~!</div>
+      </div>
+    </div>
+                        <!-- <button onclick="clickBtn()"><i class="far fa-comment"></i></button> -->
                     </div>
                     <div class="sl__item__contents__content">
                         <p>ㅎㅇㅎㅇㅎㅇ</p>
