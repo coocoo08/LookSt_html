@@ -1,8 +1,8 @@
 .Upload-title{
-  margin: 5% 0 0 40%;
+  margin: 30px auto;
   background-color: #000;
   color: #fff;
-  width: 15%;
+  width: 150px;
   font-size: 25px;
   padding: 1%;
   border-radius: 50%;
@@ -20,11 +20,10 @@
     border-left: 2px solid #262626;
   } */
   .setting-container {
-    width: 50%;
+    width: 900px;
     margin: auto;
     border: 1px solid gainsboro;
     margin-top: 30px;
-    display: flex;
     border-radius: 4px;
     /* text-align: center; */
 }
@@ -79,8 +78,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3% 3% 3% 0;
-    align-items: flex-end;
+    margin: 3px;
+    align-items: stretch;
   }
   .setting-container .setting__content .content-item__11 .item__input button {
     border: 0;
@@ -90,6 +89,7 @@
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+    margin-top: 30px;
   }
   .setting-container .setting__content .content-item__11 .item__input button:hover{
     background-color: gray;
@@ -170,7 +170,7 @@ input[type='file'] {
   color: #999;
 }
 .section {
-  margin: 30px;
+  margin: auto;
   align-items: center;
 }
 .article {
