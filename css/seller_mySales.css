@@ -2,15 +2,37 @@ body {
     background-color: white;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .chart {
     border: 3px solid lightgrey;
     height: 50%;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    place-self: center;
 }
 
 section > h1  {
     font-size: 24px;
     font-weight: bold;
-    padding: 5px 10px;
     text-align: center;
-    margin-top: 7%; 
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-background-color);
+    height: 100%;
+    padding: 5%;
+}
+
+.new {
+    border: 3px solid lightgrey;
+    margin-top: 2%;
+    width: 30%;
+    place-self: center;
 }

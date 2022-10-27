@@ -30,7 +30,7 @@ form {
 .item {
     width: 70%;
     background-color: var(--item-background-color);
-    border: 1px solid var(--item-border-color);
+    border: 2px solid  #e6e9ed;
     padding: 15px 20px;
     margin-bottom: 20px;
 }
@@ -39,7 +39,7 @@ form {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--table-line-color);
+    border-bottom: 2px solid  #e6e9ed;
     margin-bottom: 20px;
     color : var(--caption-color);
 }
