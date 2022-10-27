@@ -11,7 +11,7 @@
     <script src="https://use.fontawesome.com/926fe18a63.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<link rel="stylesheet" href="../../css/seller_mySales.css">
-	<!-- <link rel="stylesheet" href="../../css/seller_nav.css"> -->
+	<!--<link rel="stylesheet" href="../../css/seller_nav.css">-->
     <title>seller mySales</title>
     
 </head>
@@ -49,10 +49,38 @@
     <nav th:replace="admin/admin_nav :: navFragment"></nav>
     <section>
         <h1>My Shop</h1>
-			<div class="chart">
-            		<canvas id="myChart" width="800" height="200"></canvas>
-        	</div>
-
+		<div class="chart">
+            <canvas id="myChart" width="800" height="200"></canvas>
+        </div>
+	</section>
+	<section>
+	<div class="newOrdcnt">
+		<div id="Header">
+			Header
+			</div>
+		
+		<div id="Wrap">
+			<div id="content">
+				<ul>
+					<li>menu1</li>
+					<li>menu2</li>
+					<li>menu3</li>
+				</ul>
+			</div>
+			<div>
+				<div id="Side_banner">
+					<ul>
+						<li>menu4</li>
+						<li>menu5</li>
+						<li>menu6</li>
+					</ul>
+				</div>
+			</div>
+			   
+		</div>
+	</div>
+		 
+		
      </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
     <script src="../../js/seller_mySales.js"></script>

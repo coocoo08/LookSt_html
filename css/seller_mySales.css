@@ -5,6 +5,14 @@ body {
 * {
     box-sizing: border-box;
 }
+.newOrdcnt {
+    position: absolute;
+    top: 500px;
+    width: 70%;
+    place-self: center;
+    height: 200px;
+   
+}
 
 .chart {
     border: 3px solid lightgrey;
@@ -30,9 +38,27 @@ section {
     padding: 5%;
 }
 
-.new {
-    border: 3px solid lightgrey;
-    margin-top: 2%;
-    width: 30%;
+
+
+#Header{
+    
+    width:100%; border:1px solid #cccccc; 
+    font-size:20px; font-weight:bold; text-align:center;
     place-self: center;
+    
+}
+
+#Wrap{
+    width:100%; 
+    overflow:hidden;
+} 
+#content{
+    width: 50%;
+    float:left; border:1px solid #cccccc; 
+    height: 180px;
+}
+#Side_banner{
+    width: 50%;
+    float:left;  border:1px solid #cccccc; 
+    height: 180px;
 }
