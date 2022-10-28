@@ -1,6 +1,4 @@
-body {
-	font-family: helvetica
-}
+
 
 .container {
 	width: 320px;
@@ -108,7 +106,8 @@ a {
 
 .faq-content p {
     margin: 0 1.2em;
-    padding: 1.250em 0
+    padding: 1.250em 0;
+		font-size: 13px;
 
 }
 
