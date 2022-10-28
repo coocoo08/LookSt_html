@@ -70,20 +70,20 @@
     </section>
     <section>
       <div class="newOrdcnt">
-        <div id="Header">주문관리 / 매출현황</div>
+        <div id="Header">&emsp;주문관리 / 매출현황</div>
 
         <div id="Wrap">
           <div id="content">
             <ul>
-              <li>신규주문(결제완료) ??건</li>
-              <li>결제대기 ??건</li>
+              <li>신규주문(결제완료) <h4 id ="lia" text =  "${order.orderStatus}"> New 2 건</h4></li>
+              <li>결제대기 <h4 id ="lia" text =  "${order.orderStatus}">11 건</h4></li>
             </ul>
           </div>
           <div>
             <div id="Side_banner">
               <ul>
-                <li>오늘 얼마 ??원</li>
-                <li>이번달 얼마 ??원</li>
+                <li>오늘 매출 <h4 id ="lib" text =  "${order.orderPrice}">123000 원</li>
+                <li>11월 총 매출 <h4 id ="lib" text =  "${order.orderPrice}">12345000 원</li>
               </ul>
             </div>
           </div>
