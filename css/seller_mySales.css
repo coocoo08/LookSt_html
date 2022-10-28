@@ -5,13 +5,22 @@ body {
 * {
     box-sizing: border-box;
 }
+.newOrdcnt {
+    position: absolute;
+    top: 500px;
+    width: 70%;
+    place-self: center;
+    height: 200px;
+   
+}
 
 .chart {
     border: 3px solid lightgrey;
     height: 50%;
     justify-content: center;
     width: 80%;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px;
     place-self: center;
 }
 
@@ -30,9 +39,30 @@ section {
     padding: 5%;
 }
 
-.new {
-    border: 3px solid lightgrey;
-    margin-top: 2%;
-    width: 30%;
+
+
+#Header{
+    
+    width:100%; border:1px solid #cccccc; padding: 7px;
+    font-size:15px; font-weight:bold; text-align:left;
     place-self: center;
+}
+
+#Wrap{
+    width:100%; 
+    overflow:hidden;
+} 
+#content{
+    width: 50%;
+    float:left; border:1px solid #cccccc; 
+    height: 180px;
+}
+#Side_banner{
+    width: 50%;
+    float:left;  border:1px solid #cccccc; 
+    height: 180px;
+}
+
+ul {
+    list-style-type: none;
 }
