@@ -384,3 +384,11 @@ svg {
     margin-left: 30%;
   }
 }
+.user_info .user_id {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.user_info .upload_time {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

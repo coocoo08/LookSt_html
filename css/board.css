@@ -2,13 +2,16 @@
 
 * {
   padding: 0;
+
 }
+
 
 /* html {
   font-size: 10px;
 } */
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -66,27 +69,27 @@ a {
   border-top: 2px solid #000;
 }
 
-.board_list > div {
+.board_list>div {
   border-bottom: 1px solid #ddd;
   font-size: 0;
 }
 
-.board_list > div.top {
+.board_list>div.top {
   border-bottom: 1px solid #999;
 }
 
-.board_list > div:last-child {
+.board_list>div:last-child {
   border-bottom: 1px solid #000;
 }
 
-.board_list > div > div {
+.board_list>div>div {
   display: inline-block;
   padding: 15px 0;
   text-align: center;
   font-size: 1.0rem;
 }
 
-.board_list > div.top > div {
+.board_list>div.top>div {
   font-weight: 600;
 }
 
@@ -116,10 +119,10 @@ a {
 }
 
 
-.board_page{
- display: flex;
- justify-content: center;
- letter-spacing:  25px;
+.board_page {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 25px;
 }
 
 .board_view {
@@ -170,9 +173,7 @@ a {
   font-size: 1.0rem;
 }
 
-.board_view .info dl dt {
 
-}
 
 .board_view .info dl dd {
   margin-left: 10px;
@@ -266,70 +267,70 @@ a {
 
 @media (max-width: 1000px) {
   .board_wrap {
-      width: 100%;
-      min-width: 320px;
-      /* padding: 0 30px; */
-      box-sizing: border-box;
+    width: 100%;
+    min-width: 320px;
+    /* padding: 0 30px; */
+    box-sizing: border-box;
   }
 
   .board_list .num,
   .board_list .writer,
   .board_list .count {
-      display: none;
+    display: none;
   }
 
   .board_list .date {
-      width: 40%;
+    width: 40%;
   }
 
   .board_list .title {
-      text-indent: 10px;
+    text-indent: 10px;
   }
 
   .board_list .top .title {
-      text-indent: 0;
+    text-indent: 0;
   }
 
   .board_view .info dl {
-      width: 50%;
-      padding: 0;
+    width: 50%;
+    padding: 0;
   }
 
   .board_view .info dl:nth-child(-n+2) {
-      margin-bottom: 5px;
+    margin-bottom: 5px;
   }
 
   .board_view .info dl::before {
-      display: none;
+    display: none;
   }
 
   .board_view .info dl dt,
   .board_view .info dl dd {
-      font-size: 1.0rem;
+    font-size: 1.0rem;
   }
 
   .board_write .info dl {
-      width: 49%;
+    width: 49%;
   }
 
   .board_write .info dl:first-child {
-      margin-right: 2%;
+    margin-right: 2%;
   }
 
   .board_write .title dt,
   .board_write .info dt {
-      display: none;
+    display: none;
   }
 
   .board_write .title dd,
   .board_write .info dd {
-      width: 100%;
+    width: 100%;
   }
 
   .board_write .title input[type="text"],
   .board_write .info input[type="text"],
   .board_write .info input[type="password"] {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -387,41 +388,45 @@ section {
 @import url(https://fonts.googleapis.com/css?family=Open Sans);
 
 .faq-heading {
-  font-family: Lato;   
+  font-family: Lato;
   font-weight: 400;
   font-size: 15px;
-   -webkit-transition: text-indent 0.2s;
+  -webkit-transition: text-indent 0.2s;
   text-indent: 20px;
   color: #333;
+
 }
 
 .faq-text {
-  font-family: Open Sans;   
+  font-family: Open Sans;
   font-weight: 400;
   color: #333;
-  width:95%;
-  padding-left:20px;
-  margin-bottom:30px;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .faq {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   background: white;
   border-radius: 4px;
   position: relative;
   border: 1px solid #E1E1E1;
 }
+
 .faq label {
   display: block;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   height: 56px;
-  padding-top:1px;
- 
+  padding-top: 1px;
   background-color: #FAFAFA;
   border-bottom: 1px solid #E1E1E1;
+
 }
 
 .faq input[type="checkbox"] {
@@ -442,27 +447,28 @@ section {
   top: -30px;
   right: 27px;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
- .faq input[type="checkbox"]:checked + label > .faq-arrow {
+.faq input[type="checkbox"]:checked+label>.faq-arrow {
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
   transition: transform 0.8s, -webkit-transform 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
- .faq input[type="checkbox"]:checked + label {
+
+.faq input[type="checkbox"]:checked+label {
   display: block;
-  background: rgba(255,255,255,255) !important;
+  background: rgba(255, 255, 255, 255) !important;
   color: #4f7351;
   height: 225px;
   transition: height 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
- .faq input[type='checkbox']:not(:checked) + label {
+.faq input[type='checkbox']:not(:checked)+label {
   display: block;
   transition: height 0.8s;
   height: 60px;
@@ -473,9 +479,8 @@ section {
   display: none;
 }
 
-/* 아코디언 끝 *//
-
-
+/* 아코디언 끝 */
+/
 /* QNA 댓글 */
 
 .comment {
@@ -489,11 +494,11 @@ section {
 }
 
 .list img {
-  width:50px;
+  width: 50px;
 }
 
 .list>:nth-child(2) {
-  width:100%;
+  width: 100%;
   padding-left: 15px;
 }
 
@@ -502,16 +507,18 @@ section {
 }
 
 .list>:nth-child(3) img {
-  width:25px;
+  width: 25px;
 }
 
-input, select {
+input,
+select {
   height: 40px;
   font-size: 1rem;
   padding-left: 7px;
 }
 
-select, textarea {
+select,
+textarea {
   border: 1px solid #bbb;
   border-radius: 5px;
   width: 100%;
@@ -519,7 +526,7 @@ select, textarea {
 
 textarea {
   height: 200px;
-  padding:10px 0 0 7px;
+  padding: 10px 0 0 7px;
   resize: none;
   font-size: 1rem;
   font-family: 'Noto Sans KR', sans-serif;
@@ -541,30 +548,25 @@ textarea[name=comment] {
   justify-content: space-between;
 }
 
-[type=checkbox], [type=radio] {
+[type=checkbox],
+[type=radio] {
   vertical-align: middle;
 }
 
 
-/* 데스크탑 */
 
 
-@media (max-width: 1024px) {
-  .faq-text{
-    width: 75%;
-  }
+dd {
+  margin: 0 0 0 1px;
+
 }
 
-@media (max-width: 768px) {    
-  .faq-text{
-    width: 55%;
-    font-size: 13px;
-  }
+dl {
+  display: flex;
+  s
 }
 
-@media (max-width: 480px) {
-  .faq-text{
-    width: 30%;
-    font-size: 13px;
-  }
+dt {
+  line-height: 2.5;
+
 }

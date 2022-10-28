@@ -1,8 +1,8 @@
 .Upload-title{
-  margin: 5% 0 0 40%;
+  margin: 30px auto;
   background-color: #000;
   color: #fff;
-  width: 15%;
+  width: 150px;
   font-size: 25px;
   padding: 1%;
   border-radius: 50%;
@@ -20,11 +20,10 @@
     border-left: 2px solid #262626;
   } */
   .setting-container {
-    width: 50%;
+    width: 900px;
     margin: auto;
     border: 1px solid gainsboro;
     margin-top: 30px;
-    display: flex;
     border-radius: 4px;
     /* text-align: center; */
 }
@@ -54,42 +53,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
   }
   .setting-container .setting__content div .item__input textarea {
     border: 1px solid #dbdbdb;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 20px;
-    width: 95%;
+    width: 99%;
   }
-  /*.setting-container .setting__content .content-item__10 .item__input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .setting-container .setting__content .content-item__10 .item__input span {
-    width: 160px;
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 5px;
-    padding: 0;
-  }*/
   .setting-container .setting__content .content-item__11 .item__input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3% 3% 3% 0;
-    align-items: flex-end;
+    margin: 3px;
+    align-items: stretch;
   }
   .setting-container .setting__content .content-item__11 .item__input button {
     border: 0;
     background-color: #000000;
     padding: 13px 18px;
-    border-radius: 4px;
+    border-radius: 10px;
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+    margin: 10px;
   }
   .setting-container .setting__content .content-item__11 .item__input button:hover{
     background-color: gray;
@@ -170,8 +158,12 @@ input[type='file'] {
   color: #999;
 }
 .section {
-  margin: 30px;
+  margin: auto;
   align-items: center;
+}
+.section-mid{
+  margin: 0 20px 100px 20px;
+  align-items: flex-start;
 }
 .article {
   /* border: 1px solid #ccc; */
@@ -182,7 +174,7 @@ input[type='file'] {
 .item {
   display: inline-block;
   position: relative;
-  margin: 12px;
+  margin: 15px;
   width: 180px;
   height: 180px;
 }

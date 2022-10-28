@@ -1,11 +1,16 @@
+.profileEdit-title{
+  margin: 30px auto;
+  background-color: #000;
+  color: #fff;
+  width: 150px;
+  font-size: 25px;
+  padding: 1%;
+  border-radius: 50%;
+}
 .main {
-    padding-top: 150px;
     background-color: white;
-    margin-bottom: 421px;
   }
-  /* ul li a {
-    color: #262626;
-  } */
+
   .setting-container {
     background-color: #fff;
   }
