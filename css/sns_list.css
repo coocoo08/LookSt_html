@@ -440,3 +440,15 @@ svg {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.upload_btn {
+  display: inline;
+  padding: 8px 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.upload_area {
+  
+  
+}
