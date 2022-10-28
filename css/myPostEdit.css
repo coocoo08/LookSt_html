@@ -1,8 +1,8 @@
 .Upload-title{
-  margin: 5% 0 0 40%;
+  margin: 30px auto;
   background-color: #000;
   color: #fff;
-  width: 15%;
+  width: 150px;
   font-size: 25px;
   padding: 1%;
   border-radius: 50%;
@@ -20,11 +20,10 @@
     border-left: 2px solid #262626;
   } */
   .setting-container {
-    width: 80%;
+    width: 900px;
     margin: auto;
     border: 1px solid gainsboro;
     margin-top: 30px;
-    display: flex;
     border-radius: 4px;
     /* text-align: center; */
 }
@@ -45,9 +44,8 @@
     display: flex;
   }
   .setting-container .setting__content div .item__title {
-    text-align: left;
+    text-align: center;
     font-size: 30px;
-    margin-left: 90px;
     width: 80px;
   }
   .setting-container .setting__content div .item__input {
@@ -55,42 +53,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
   }
   .setting-container .setting__content div .item__input textarea {
     border: 1px solid #dbdbdb;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 16px;
-    width: 80%;
-  }
-  .setting-container .setting__content .content-item__10 .item__input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .setting-container .setting__content .content-item__10 .item__input span {
-    width: 160px;
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 5px;
-    padding: 0;
+    font-size: 20px;
+    width: 99%;
   }
   .setting-container .setting__content .content-item__11 .item__input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3% 3% 3% 0;
-    align-items: flex-end;
+    margin: 3px;
+    align-items: stretch;
   }
   .setting-container .setting__content .content-item__11 .item__input button {
     border: 0;
     background-color: #000000;
-    padding: 5px 9px;
-    border-radius: 4px;
+    padding: 13px 18px;
+    border-radius: 10px;
     color: #fff;
     cursor: pointer;
-    
+    font-size: 20px;
+    margin: 10px;
   }
   .setting-container .setting__content .content-item__11 .item__input button:hover{
     background-color: gray;
@@ -111,7 +98,6 @@ input[type='file'] {
 
 .img-box img {
   width: 100px;
-  margin-right: 10px;
 }
 
 .imgupload .imguploadbtn {
@@ -127,34 +113,38 @@ input[type='file'] {
 .imguploadbtn:hover{
   background-color: grey;
 }
-  @media screen and (max-width: 935px) {
-    .setting-container {
-      width: 100%;
-    }
-    /* .setting-container .setting__menu {
-      display: none;
-    } */
-    .setting-container .setting__content {
-      padding-left: 20px;
-    }
-    .setting-container .setting__content > div:not(:first-child) {
-      flex-direction: column;
-    }
-    .setting-container .setting__content div .item__title {
-      text-align: left;
-      margin-bottom: 5px;
-      padding-left: 5px;
-    }
-  
-    .setting-container .setting__content .content-item__01 .post_img img{
-      flex: 1;
-      text-align: left;
-      padding: 0;
-    }
-    .setting-container .setting__content .content-item__01 .img_btn img {
-      flex: 4;
-    }
+@media screen and (max-width: 935px) {
+  .setting-container {
+    width: 100%;
   }
+  .Upload-title{
+    width: 100px;
+    font-size: 14px;
+  }
+  .preview img{
+    width: 100px;
+  }
+  .setting-container .setting__content {
+    padding-left: 20px;
+  }
+  .setting-container .setting__content > div:not(:first-child) {
+    flex-direction: column;
+  }
+  .setting-container .setting__content div .item__title {
+    text-align: center;
+    margin-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  .setting-container .setting__content .content-item__01{
+    flex: 1;
+    text-align: center;
+    padding: 0;
+  }
+  .setting-container .setting__content .content-item__01 {
+    flex: 4;
+  }
+}
   
   .footer {
     margin-top: 150px;
@@ -168,32 +158,37 @@ input[type='file'] {
   color: #999;
 }
 .section {
-  width: 80%;
-  margin: 30px auto;
+  margin: auto;
+  align-items: center;
+}
+.section-mid{
+  margin: 0 20px 100px 20px;
+  align-items: flex-start;
 }
 .article {
   /* border: 1px solid #ccc; */
   /*padding: 20px;*/
+  position: relative;
   min-height: 230px;
 }
 .item {
   display: inline-block;
   position: relative;
-  margin: 12px;
-  width: 200px;
-  height: 200px;
+  margin: 15px;
+  width: 180px;
+  height: 180px;
 }
 .addImg {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   position: absolute;
-  left: 0;
   top: 0;
   z-index: 2;
   cursor: pointer;
 }
 .addImg .plus-icon{
   margin: 6px;
+  width: 180px;
   height: 180px;
   text-align: center;
   font-size: 20px;
@@ -207,7 +202,6 @@ input[type='file'] {
   display: block;
   width: 200px;
   height: 200px;
-  left: 0;
   top: 0;
 }
 .delete {

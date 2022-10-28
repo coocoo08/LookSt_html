@@ -89,21 +89,18 @@ td>input{
     position: absolute;
   }
   td:nth-child(2):before {
-    content: "아이디 : ";
+    content: "글제목 : ";
   }
   td:nth-child(3):before {
-    content: "이름 : ";
+    content: "작성자 : ";
   }
   td:nth-child(4):before {
-    content: "가입일 : ";
+    content: "작성일 : ";
   }
   td:nth-child(5):before {
-    content: "최근 접속일 : ";
+    content: "최근 수정일 : ";
   }
   td:nth-child(6):before {
-    content: "권한 : ";
-  }
-  td:nth-child(7):before {
     content: "관리 : ";
   }
 

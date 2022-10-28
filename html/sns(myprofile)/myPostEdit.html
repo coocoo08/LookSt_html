@@ -7,7 +7,7 @@
   <!---->
   <link rel="stylesheet" href="../../css/bannerstyle.css">
   <!---->
-  <link rel="stylesheet" href="../../css/LookBookstyle.css">
+  <!--<link rel="stylesheet" href="../../css/LookBookstyle.css">-->
   <!---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!---->
@@ -208,68 +208,52 @@
             <div class="content-item__01">
               <!--이미지 업로드 시작-->
               <div class="section">
-                <h2><i class="fa-solid fa-camera-retro" style="font-size: 30px;"></i></h2>
-                <!-- <p class="desc">
-                <a href="https://github.com/chuanzaizai/img-upload-delete"></a>
-                </p> -->
                 <div class="article">
                     <div class="item">
                         <div class="addImg">
                             <div class="plus-icon">
-                                <i class="fa fa-plus-circle fa-4x"></i>
+                                <i class="fa fa-camera-retro fa-4x"></i>
                             </div>
                         </div>
                         <input name="url" type="file" class="upload_input" onchange="change(this)" />
                         <div class="preBlock">
-                            <img class="preview" id="preview" alt="" name="pic" width="200" height="200" />
+                            <img class="preview" id="preview" alt="" name="pic"/>
                         </div>
                         <div class="delete">×</div>
                     </div>
                     <div class="item">
                         <div class="addImg">
                             <div class="plus-icon">
-                                <i class="fa fa-plus-circle fa-4x"></i>
+                                <i class="fa fa-camera-retro fa-4x"></i>
                             </div>
                         </div>
                         <input name="url" type="file" class="upload_input" onchange="change(this)" />
                         <div class="preBlock">
-                            <img class="preview" alt="" name="pic" width="200" height="200" />
+                            <img class="preview" alt="" name="pic"/>
                         </div>
                         <div class="delete">×</div>
                     </div>
                     <div class="item">
                         <div class="addImg">
                             <div class="plus-icon">
-                                <i class="fa fa-plus-circle fa-4x"></i>
+                                <i class="fa fa-camera-retro fa-4x"></i>
                             </div>
                         </div>
                         <input name="url" type="file" class="upload_input" onchange="change(this)" />
                         <div class="preBlock">
-                            <img class="preview" alt="" name="pic" width="200" height="200" />
+                            <img class="preview" alt="" name="pic"/>
                         </div>
                         <div class="delete">×</div>
                     </div>
                     <div class="item">
                         <div class="addImg">
                             <div class="plus-icon">
-                                <i class="fa fa-plus-circle fa-4x"></i>
+                                <i class="fa fa-camera-retro fa-4x"></i>
                             </div>
                         </div>
                         <input name="url" type="file" class="upload_input" onchange="change(this)" />
                         <div class="preBlock">
-                            <img class="preview" alt="" name="pic" width="200" height="200" />
-                        </div>
-                        <div class="delete">×</div>
-                    </div>
-                    <div class="item">
-                        <div class="addImg">
-                            <div class="plus-icon">
-                                <i class="fa fa-plus-circle fa-4x"></i>
-                            </div>
-                        </div>
-                        <input name="url" type="file" class="upload_input" onchange="change(this)" />
-                        <div class="preBlock">
-                            <img class="preview" alt="" name="pic" width="200" height="200" />
+                            <img class="preview" alt="" name="pic"/>
                         </div>
                         <div class="delete">×</div>
                     </div>
@@ -277,17 +261,21 @@
               </div>
               <!--이미지 업로드 끝-->
             </div>
-            <div class="content-item__05">
-                <div class="item__title">&#128393;</div><br/>
-                <div class="item__input">
-                    <textarea name="intro" id="" rows="3" placeholder="ㅎㅇㅎㅇㅎㅇ"></textarea>
-                </div>
+            <div class="section-mid">
+              <div><i class="fa-solid fa-tag fa-3x"></i></div>
             </div>
-            <div class="content-item__11">
-                <div class="item__title"></div>
+            <div class="content-item__05">
+              <div class="section">
                 <div class="item__input">
-                    <button>업로드</button>
+                    <textarea name="intro" id="" rows="3" placeholder="글을 작성해주세요."></textarea>
                 </div>
+                <div class="content-item__11">
+                  <div class="item__title"></div>
+                  <div class="item__input">
+                      <button>수정</button>
+                  </div>
+              </div>
+              </div>
             </div>
         </article>
     </section>

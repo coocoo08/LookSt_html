@@ -7,7 +7,7 @@
   <!---->
   <link rel="stylesheet" href="../../css/bannerstyle.css">
   <!---->
-  <link rel="stylesheet" href="../../css/LookBookstyle.css">
+  <!-- <link rel="stylesheet" href="../../css/LookBookstyle.css"> -->
   <!---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!---->
@@ -223,15 +223,28 @@
                 <div class="sl__item__contents">
                     <div class="sl__item__contents__icon">
                         <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-
-                        <button onclick="clickBtn()"><i class="far fa-comment"></i></button>
+                        <!-- 첫 번째 Modal을 여는 클래스 -->
+    <h1 class="btn"><i class="far fa-comment"></i></h1>
+ 
+    <!-- 첫 번째 Modal -->
+    <div class="modal">
+ 
+      <!-- 첫 번째 Modal의 내용 -->
+      <div class="modal-content">
+        <span class="close">&times;</span>                         
+        <p>댓글리스트</p>
+      <div class="user_nick">ezen_123</div>
+      <div class="comment">멋져요~!</div>
+      </div>
+    </div>
+                        <!-- <button onclick="clickBtn()"><i class="far fa-comment"></i></button> -->
                     </div>
                     <div class="sl__item__contents__content">
                         <p>ㅎㅇㅎㅇㅎㅇ</p>
                         <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
                     </div>
                     <div style=" float:left;">
-                      <img src="../../img/mircoday.jpg" id="product_img" >
+                      <img src="../../img/털신.jpeg" id="product_img" >
                       <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
                         <span >Nike Air Force 1'07 Low White<br>133,000원</span>
                       </div>
@@ -268,7 +281,7 @@
                       <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
                   </div>
                   <div style=" float:left;">
-                    <img src="../../img/mircoday.jpg" id="product_img" >
+                    <img src="../../img/털신.jpeg" id="product_img" >
                     <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
                       <span >Nike Air Force 1'07 Low White<br>133,000원</span>
                     </div>
@@ -305,7 +318,7 @@
                       <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
                   </div>
                   <div style=" float:left;">
-                    <img src="../../img/mircoday.jpg" id="product_img" >
+                    <img src="../../img/털신.jpeg" id="product_img" >
                     <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
                       <span >Nike Air Force 1'07 Low White<br>133,000원</span>
                     </div>
@@ -342,7 +355,7 @@
                       <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
                   </div>
                   <div style=" float:left;">
-                    <img src="../../img/mircoday.jpg" id="product_img" >
+                    <img src="../../img/털신.jpeg" id="product_img" >
                     <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
                       <span >Nike Air Force 1'07 Low White<br>133,000원</span>
                     </div>
@@ -379,7 +392,7 @@
                       <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
                   </div>
                   <div style=" float:left;">
-                    <img src="../../img/mircoday.jpg" id="product_img" >
+                    <img src="../../img/털신.jpeg" id="product_img" >
                     <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
                       <span >Nike Air Force 1'07 Low White<br>133,000원</span>
                     </div>
@@ -416,7 +429,7 @@
                       <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
                   </div>
                   <div style=" float:left;">
-                    <img src="../../img/mircoday.jpg" id="product_img" >
+                      <img src="../../img/털신.jpeg" id="product_img" >
                     <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
                       <span >Nike Air Force 1'07 Low White<br>133,000원</span>
                     </div>
@@ -581,4 +594,5 @@
 <script  src="../../js/bannerscript.js"></script>
 <script  src="../../js/LookBookscript.js"></script>
 <script src="../../js/modal.js"></script>
+<script src="../../js/like.js"></script>
 </html>

@@ -49,9 +49,9 @@ article {
   max-width: 1000px;
   border: 1px solid #eee;
   border-radius: 12px;
-  padding: 60px 30px 70px 30px;
+  padding: 60px 5% ;
   margin: 0 auto;
-  margin-bottom: 120px;
+
 }
 
 input[type="text"] {
