@@ -410,7 +410,7 @@ svg {
   margin: 0 0 5px 5px;
 }
 .social_header {
-  position: fixed;
+  position: absolute;
   top: 100px;
   left: 0px;
   width: 100%;
