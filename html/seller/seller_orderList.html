@@ -21,31 +21,47 @@
 	<!-- 헤더 시작 -->
 	<header class="header_start">
 		<div class="header_container">
-			<div class="container-mobile">
-				<a href="index.html" class="header_mo_logo">LookSt</a>
-				
-				<button type="button" class="header_mo_hamburger">
-					<span class="fa fa-bars" title="MENU"></span>
-				</button>
-			</div>
-			
-			<nav class="header_menu">
+		  <div class="container-mobile">
+			<a href="../../html/seller/seller_mySales.html" class="header_mo_logo">LookSt</a>
+	
+			<button type="button" class="header_mo_hamburger">
+			  <span class="fa fa-bars" title="MENU"></span>
+			</button>
+		  </div>
+	
+		  <nav class="header_menu">
+			<ul>
+			  <li>
+				<a href="../../html/index.html"> 홈으로</a>
+			  </li>	
+			  <li>
+				<a href="../../html/seller/seller_mySales.html"> 나의 매출</a>
+			  </li>
+			  <li>
+				<a href="../../html/seller/seller_prdtList.html">나의 상품</a>
+			  </li>
+			  <li>
+				<a href="../../html/seller/seller_registerPrdt.html">상품 등록</a>
+			  </li>
+			  <li>
+				<a href="#.html">주문</a>
 				<ul>
-					<li><a href="../../html/seller/seller_mySales.html"> 나의 매출</a></li>
-					<li><a href="../../html/seller/seller_prdtList.html">나의 상품</a></li>
-					<li><a href="../../html/seller/seller_registerPrdt.html">상품 등록</a></li>
-					<li><a href="#.html">주문</a>
-						<ul>
-							<li><a href="../../html/seller/seller_orderList.html">주문 목록</a></li>
-							<li><a href="../../html/seller/seller_refundList.html">취소/환불/반품</a></li>
-							<!-- <li><a href="list-c.html">3뎁스</a></li> -->
-						</ul>
-					</li>
+				  <li>
+					<a href="../../html/seller/seller_orderList.html">주문 목록</a>
+				  </li>
+				  <li>
+					<a href="../../html/seller/seller_refundList.html"
+					  >취소/환불/반품</a
+					>
+				  </li>
+				  <!-- <li><a href="list-c.html">3뎁스</a></li> -->
 				</ul>
-			</nav>
+			  </li>
+			</ul>
+		  </nav>
 		</div>
-	</header>
-	<!-- 헤더 끝 -->
+	  </header>
+	  <!-- 헤더 끝 -->
 
 <body>
     <nav th:replace="admin/admin_nav :: navFragment"></nav>
