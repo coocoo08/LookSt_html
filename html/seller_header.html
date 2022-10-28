@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/seller_header.css"/>
+	<!-- 단만 가로폭 device-width, 확대 배율initial-scale -->
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <title>LookSt관리자페이지</title>
+
+	<script type="text/javascript">
+		$(function() {
+			$(".header_mo_hamburger").click(function() {
+				$(".header_menu").slideToggle();
+			});
+		});
+	</script>
+</head>
+
+<body class="body_start">
+	<!-- 헤더 시작 -->
+	<header class="header_start">
+		<div class="header_container">
+		  <div class="container-mobile">
+			<a href="../../html/seller/seller_mySales.html" class="header_mo_logo">LookSt</a>
+	
+			<button type="button" class="header_mo_hamburger">
+			  <span class="fa fa-bars" title="MENU"></span>
+			</button>
+		  </div>
+	
+		  <nav class="header_menu">
+			<ul>
+			  <li>
+				<a href="../html/index.html"> 홈으로</a>
+			  </li>	
+			  <li>
+				<a href="../../html/seller/seller_mySales.html"> 나의 매출</a>
+			  </li>
+			  <li>
+				<a href="../../html/seller/seller_prdtList.html">나의 상품</a>
+			  </li>
+			  <li>
+				<a href="../../html/seller/seller_registerPrdt.html">상품 등록</a>
+			  </li>
+			  <li>
+				<a href="#.html">주문</a>
+				<ul>
+				  <li>
+					<a href="../../html/seller/seller_orderList.html">주문 목록</a>
+				  </li>
+				  <li>
+					<a href="../../html/seller/seller_refundList.html"
+					  >취소/환불/반품</a
+					>
+				  </li>
+				  <!-- <li><a href="list-c.html">3뎁스</a></li> -->
+				</ul>
+			  </li>
+			</ul>
+		  </nav>
+		</div>
+	  </header>
+	  <!-- 헤더 끝 -->
+  
+</body>
+</html>
