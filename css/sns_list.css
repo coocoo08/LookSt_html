@@ -449,6 +449,7 @@ svg {
   box-sizing: border-box;
 }
 .upload_area {
-  
-  
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  margin-right: 20%
 }
