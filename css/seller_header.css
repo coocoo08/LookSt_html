@@ -99,10 +99,11 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.fa-solid fa-house {
-  background-color: wheat;
-  color : black;
+i {
+  place-self: center;
+  font-size: 18px;
 }
+
 
 @media (min-width: 768px) {
   header .header_container {
