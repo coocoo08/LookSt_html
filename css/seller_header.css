@@ -99,12 +99,11 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#homebtn {
-  background-color: navy;
-  color : white;
-  border-radius: 10px;
-  height : 10px;
+i {
+  place-self: center;
+  font-size: 18px;
 }
+
 
 @media (min-width: 768px) {
   header .header_container {

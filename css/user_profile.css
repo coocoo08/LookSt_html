@@ -32,15 +32,6 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 /*img {
     display: block;
 }*/
-.profile-title {
-    margin: 30px auto;
-    background-color: #000;
-    color: #fff;
-    width: 200px;
-    font-size: 25px;
-    padding: 1%;
-    border-radius: 50%;
-}
 
 #sns_container {
     max-width: 93.5rem;
@@ -70,7 +61,7 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 /* Profile Section */
 
 .profile {
-    padding-bottom: 3rem;
+    padding: 3rem 0;
     
 }
 
