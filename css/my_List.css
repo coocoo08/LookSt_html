@@ -392,3 +392,28 @@ svg {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+
+.social_header {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  width: 100%;
+  padding-bottom: 16px;
+}
+.style_tab_list {
+  display: flex;
+  justify-content: center;
+}
+.tab_item.tab_on {
+  background-color: black;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 19px;
+}
+.tab_item {
+  padding: 8px 14px;
+  min-width: 59px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: -.27px;
+}
