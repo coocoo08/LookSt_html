@@ -99,11 +99,9 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#homebtn {
-  background-color: navy;
-  color : white;
-  border-radius: 10px;
-  height : 10px;
+.fa-solid fa-house {
+  background-color: wheat;
+  color : black;
 }
 
 @media (min-width: 768px) {
