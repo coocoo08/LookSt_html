@@ -2,7 +2,6 @@
 
 * {
   padding: 0;
-
 }
 
 
@@ -22,8 +21,8 @@ a {
 }
 
 .board_wrap {
-  width: 1000px;
-  margin: 100px auto;
+  width: 100%;
+  margin: 100px auto 0;
 }
 
 .board_title {

@@ -10,7 +10,7 @@ body {
     top: 500px;
     width: 70%;
     place-self: center;
-    height: 200px;
+    /* height: 200px; */
    
 }
 
@@ -37,6 +37,7 @@ section {
     background-color: var(--section-background-color);
     height: 100%;
     padding: 5%;
+    margin-bottom: 10%;
 }
 
 
@@ -50,19 +51,30 @@ section {
 
 #Wrap{
     width:100%; 
-    overflow:hidden;
+    
 } 
 #content{
     width: 50%;
     float:left; border:1px solid #cccccc; 
-    height: 180px;
+    /* height: 180px; */
 }
 #Side_banner{
     width: 50%;
     float:left;  border:1px solid #cccccc; 
-    height: 180px;
+    /* height: 180px; */
 }
 
 ul {
     list-style-type: none;
+    padding-inline-start : 20px;
 }
+
+#lia , #lib {
+    text-align: right;
+    margin-right: 10%;
+    font-size: 15px;
+    color: darkred;
+    margin-block-start : 5px;
+    font-weight: bolder;
+}
+

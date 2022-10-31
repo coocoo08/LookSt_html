@@ -7,27 +7,29 @@
   <!---->
   <link rel="stylesheet" href="../../css/bannerstyle.css">
   <!---->
-  <!-- <link rel="stylesheet" href="../../css/LookBookstyle.css"> -->
+  <link rel="stylesheet" href="../../css/LookBookstyle.css">
   <!---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!---->
-  <link rel="stylesheet" href="../../css/myPostList.css">
+  <link rel="stylesheet" href="../../css/profile.css">
   <!---->
-  <link rel="stylesheet" href="../../css/comment-modal.css">
+  <link rel="stylesheet" href="../../css/modal.css">
+  <!---->
+  <link rel="stylesheet" href="../../css/footerstyle.css">
   <!---->
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../css/main_shopstyle.css">
   <!---->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-  <link rel="stylesheet" href="../../css/footerstyle.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="../css/footerstyle.css">
 
 </head>
+<!-- header -->
 <header class="top-bar pc">
   <div class="con inline-grid">
     <div>
       <a href="../../html/index.html" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -127,7 +129,7 @@
     <div>
       <a href="#" class="top-bar__logo block">
         <span>
-          <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -200,354 +202,128 @@
 </header>
 <!-- header -->
 
-<body>
+<body class="myprofile">
   <!-- 여기에 각자 페이지 채울 것 -->
-  <main class="main">
-    <section class="container">
-        <article class="story-list">
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div><a href="../../html/sns(myprofile)/profile.html">Zzindda</a></div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/후드티네이비.jpeg" alt="">
-                </div>
-                <div class="sl__item__contents">
-                    <div class="sl__item__contents__icon">
-                        <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-                        <!-- 댓글 Modal을 여는 클래스 -->
-    <button class="btn"><i class="far fa-comment"></i></button>
-    <!-- 댓글 Modal -->
-    <div class="modal">
-      <!-- 댓글 Modal의 내용 -->
-      <div class="modal-content">
-        <span class="close">&times;</span>                         
-        <h3>댓글</h3>
-        <div class="comments">
-          <span class="user_nick">ezen_123</span>
-          <span class="comment">멋져요~!</span>
-          <span class="comment_date">어제</span>
-        </div>
-        <div class="comments">
-          <span class="user_nick">dkahffk</span>
-          <span class="comment">안냐세유~</span>
-          <span class="comment_date">7년전</span>
-        </div>
-        <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-      </div>
-    </div>
-                        <!-- <button onclick="clickBtn()"><i class="far fa-comment"></i></button> -->
-                    </div>
-                    <div class="sl__item__contents__content">
-                        <p>ㅎㅇㅎㅇㅎㅇ</p>
-                        <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
-                    </div>
-                    <div style=" float:left;">
-                      <img src="../../img/털신.jpeg" id="product_img" >
-                      <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
-                        <span >Nike Air Force 1'07 Low White<br>133,000원</span>
-                      </div>
-                    </div>
-                    <!-- <div class="sl__item__input">
-                        <input type="text" placeholder="댓글 달기...">
-                        <button>게시</button>
-                    </div> -->
-                </div>
-            </div>
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div><a href="../../html/sns(myprofile)/profile.html">Zzindda</a></div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/아메카지.jpeg" alt="">
-                </div>
-                <div class="sl__item__contents">
-                  <div class="sl__item__contents__icon">
-                      <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-
-                      <button class="btn"><i class="far fa-comment"></i></button>
-                      <!-- 댓글 Modal -->
-                      <div class="modal">
-                        <!-- 댓글 Modal의 내용 -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>                         
-                          <h3>댓글</h3>
-                          <div class="comments">
-                            <span class="user_nick">ezen_123</span>
-                            <span class="comment">멋져요~!</span>
-                            <span class="comment_date">어제</span>
-                          </div>
-                          <div class="comments">
-                            <span class="user_nick">dkahffk</span>
-                            <span class="comment">안냐세유~</span>
-                            <span class="comment_date">7년전</span>
-                          </div>
-                          <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                        </div>
-                      </div>                
-                    </div>
-                  </div>
-                  <div class="sl__item__contents__content">
-                      <p>ㅎㅇㅎㅇㅎㅇ</p>
-                      <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
-                  </div>
-                  <div style=" float:left;">
-                    <img src="../../img/털신.jpeg" id="product_img" >
-                    <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
-                      <span >Nike Air Force 1'07 Low White<br>133,000원</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sl__item__input">
-                      <input type="text" placeholder="댓글 달기...">
-                      <button>게시</button>
-                  </div> -->
+	<div id="sns_container">
+		<div class="profile">
+			<div class="profile-image">
+				<img src="../../img/프사2.jpg" alt="" >
+			</div>
+			<div class="profile-user-settings">
+				<h1 class="profile-user-name">MyMelody</h1>
+				<button class="profile-edit-btn">팔로우</button>
+				</div>
+			<div class="profile-stats">
+				<ul>
+					<li><span class="profile-stat-count">6</span> 게시물</li>
+					<!-- <li><span class="profile-stat-count">1</span> 팔로워</li> -->
+          <li> 
+            <!-- <div id="container"> -->
+            <span class="profile-stat-count">5</span>
+            <!-- 팔로잉 리스트 Modal -->
+            <h1 class="btn">팔로잉</h1>
+            <div class="modal">
+              <!-- 팔로잉 리스트 Modal의 내용 -->
+              <div class="modal-content">
+                <span class="close">&times;</span> 
+                <h2>팔로잉</h2>                      
+                <p>ezen_123</p>
+                <p>skstkdlajs</p>
+                <p>binvv</p>
+                <p>cheeee_zu</p>
+                <p>nimneo</p>
+              </div>
+            <!-- </div> -->
+          </li>
+          <li>
+            <span class="profile-stat-count">5</span>
+            <!-- 팔로워 리스트 Modal -->
+            <h1 class="btn">팔로워</h1>
+            <div class="modal">
+              <!-- 팔로워 리스트 Modal의 내용 -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>팔로워</h2>
+                <p>ezen_123</p>
+                <p>skstkdlajs</p>
+                <p>binvv</p>
+                <p>cheeee_zu</p>
+                <p>nimneo</p>
               </div>
             </div>
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div><a href="../../html/sns(myprofile)/profile.html">Zzindda</a></div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/아메카지2.jpeg" alt="">
-                </div>
-                <div class="sl__item__contents">
-                  <div class="sl__item__contents__icon">
-                      <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-
-                      <button class="btn"><i class="far fa-comment"></i></button>
-                      <!-- 댓글 Modal -->
-                      <div class="modal">
-                        <!-- 댓글 Modal의 내용 -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>                         
-                          <h3>댓글</h3>
-                          <div class="comments">
-                            <span class="user_nick">ezen_123</span>
-                            <span class="comment">멋져요~!</span>
-                            <span class="comment_date">어제</span>
-                          </div>
-                          <div class="comments">
-                            <span class="user_nick">dkahffk</span>
-                            <span class="comment">안냐세유~</span>
-                            <span class="comment_date">7년전</span>
-                          </div>
-                          <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                        </div>
-                      </div>                
-                    </div>
-                  <div class="sl__item__contents__content">
-                      <p>ㅎㅇㅎㅇㅎㅇ</p>
-                      <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
-                  </div>
-                  <div style=" float:left;">
-                    <img src="../../img/털신.jpeg" id="product_img" >
-                    <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
-                      <span >Nike Air Force 1'07 Low White<br>133,000원</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sl__item__input">
-                      <input type="text" placeholder="댓글 달기...">
-                      <button>게시</button>
-                  </div> -->
-              </div>
-            </div>
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div><a href="../../html/sns(myprofile)/profile.html">Zzindda</a></div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/데일리룩.jpeg" alt="">
-                </div>
-                <div class="sl__item__contents">
-                  <div class="sl__item__contents__icon">
-                      <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-
-                      <button class="btn"><i class="far fa-comment"></i></button>
-                      <!-- 댓글 Modal -->
-                      <div class="modal">
-                        <!-- 댓글 Modal의 내용 -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>                         
-                          <h3>댓글</h3>
-                          <div class="comments">
-                            <span class="user_nick">ezen_123</span>
-                            <span class="comment">멋져요~!</span>
-                            <span class="comment_date">어제</span>
-                          </div>
-                          <div class="comments">
-                            <span class="user_nick">dkahffk</span>
-                            <span class="comment">안냐세유~</span>
-                            <span class="comment_date">7년전</span>
-                          </div>
-                          <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                        </div>
-                      </div>                
-                    </div>
-                  </div>
-                  <div class="sl__item__contents__content">
-                      <p>ㅎㅇㅎㅇㅎㅇ</p>
-                      <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
-                  </div>
-                  <div style=" float:left;">
-                    <img src="../../img/털신.jpeg" id="product_img" >
-                    <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
-                      <span >Nike Air Force 1'07 Low White<br>133,000원</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sl__item__input">
-                      <input type="text" placeholder="댓글 달기...">
-                      <button>게시</button>
-                  </div> -->
-              </div>
-            </div>
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div><a href="../../html/sns(myprofile)/profile.html">Zzindda</a></div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/데일리룩2.jpeg" alt="">
-                </div>
-                <div class="sl__item__contents">
-                  <div class="sl__item__contents__icon">
-                      <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-
-                      <button class="btn"><i class="far fa-comment"></i></button>
-                      <!-- 댓글 Modal -->
-                      <div class="modal">
-                        <!-- 댓글 Modal의 내용 -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>                         
-                          <h3>댓글</h3>
-                          <div class="comments">
-                            <span class="user_nick">ezen_123</span>
-                            <span class="comment">멋져요~!</span>
-                            <span class="comment_date">어제</span>
-                          </div>
-                          <div class="comments">
-                            <span class="user_nick">dkahffk</span>
-                            <span class="comment">안냐세유~</span>
-                            <span class="comment_date">7년전</span>
-                          </div>
-                          <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                        </div>
-                      </div>                
-                    </div>
-                  </div>
-                  <div class="sl__item__contents__content">
-                      <p>ㅎㅇㅎㅇㅎㅇ</p>
-                      <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
-                  </div>
-                  <div style=" float:left;">
-                    <img src="../../img/털신.jpeg" id="product_img" >
-                    <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
-                      <span >Nike Air Force 1'07 Low White<br>133,000원</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sl__item__input">
-                      <input type="text" placeholder="댓글 달기...">
-                      <button>게시</button>
-                  </div> -->
-              </div>
-            </div>
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div><a href="../../html/sns(myprofile)/profile.html">Zzindda</a></div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/데일리룩3.jpeg" alt="">
-                </div>
-                <div class="sl__item__contents">
-                  <div class="sl__item__contents__icon">
-                      <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-
-                      <button class="btn"><i class="far fa-comment"></i></button>
-                      <!-- 댓글 Modal -->
-                      <div class="modal">
-                        <!-- 댓글 Modal의 내용 -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>                         
-                          <h3>댓글</h3>
-                          <div class="comments">
-                            <span class="user_nick">ezen_123</span>
-                            <span class="comment">멋져요~!</span>
-                            <span class="comment_date">어제</span>
-                          </div>
-                          <div class="comments">
-                            <span class="user_nick">dkahffk</span>
-                            <span class="comment">안냐세유~</span>
-                            <span class="comment_date">7년전</span>
-                          </div>
-                          <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                        </div>
-                      </div>                
-                    </div>
-                  </div>
-                  <div class="sl__item__contents__content">
-                      <p>ㅎㅇㅎㅇㅎㅇ</p>
-                      <p>#오늘 #뭐먹지 #점심 #추천해줘</p>
-                  </div>
-                  <div style=" float:left;">
-                      <img src="../../img/털신.jpeg" id="product_img" >
-                    <div style="display: inline-block; font-size: 14px; padding-top: 10px;">
-                      <span >Nike Air Force 1'07 Low White<br>133,000원</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sl__item__input">
-                      <input type="text" placeholder="댓글 달기...">
-                      <button>게시</button>
-                  </div> -->
-              </div>
-            </div>
-        </article>
-    </section>
+          </li>
+				</ul>
+			</div>
+			<div class="profile-bio">
+				<p><span class="profile-real-name">@mymelody</span> ㅎㅇ 나는 마이멜로디야 📷✈️🏕️</p>
+			</div>
+		</div>
+		<!-- End of profile section -->
+	</div>
+	<!-- End of container -->
+<main>
+	<div id="sns_container">
+		<div class="gallery">
+			<div class="gallery-item" tabindex="0">
+				<img src="../../img/후드티네이비.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 999</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 999</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gallery-item" tabindex="0">
+				<img src="../../img/아메카지.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 27</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gallery-item" tabindex="0">
+				<img src="../../img/아메카지2.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 23</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+					</ul>
+				</div>
+			</div>
+      <div class="gallery-item" tabindex="0">
+				<img src="../../img/데일리룩.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 21</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 6</li>
+					</ul>
+				</div>
+			</div>
+      <div class="gallery-item" tabindex="0">
+				<img src="../../img/데일리룩2.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 12</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+					</ul>
+				</div>
+			</div>
+      <div class="gallery-item" tabindex="0">
+				<img src="../../img/데일리룩3.jpeg" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 1</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End of gallery -->
+<!-- 
+		<div class="loader"></div> -->
+	</div>
+	<!-- End of container -->
 </main>
 </body>
 
@@ -700,5 +476,5 @@
 <script  src="../../js/bannerscript.js"></script>
 <script  src="../../js/LookBookscript.js"></script>
 <script src="../../js/modal.js"></script>
-<script src="../../js/like.js"></script>
+<!-- <script src="../../js/모달여러개.js"></script> -->
 </html>

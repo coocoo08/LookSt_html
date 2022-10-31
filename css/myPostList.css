@@ -19,7 +19,7 @@
     width: 600px;
   }
   .main .container .story-list .story-list__item {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     border: 1px solid #dbdbdb;
     border-radius: 4px;
   }
@@ -275,7 +275,7 @@
   
   @media screen and (max-width: 935px) {
     .main .container {
-      width: 100%;
+      margin: auto;
     }
     .main .container .story-list .story-list__item .sl__item__img {
       height: 100%;
