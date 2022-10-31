@@ -457,3 +457,26 @@ svg {
   padding-bottom: 10px;
   margin-right: 20%
 }
+.like_comment 
+button:first-child
+.active {
+  color: red;
+
+}
+.like_comment {
+  display: flex;
+  height: 40px;
+  margin-top: 4px;
+}
+.like_comment button {
+background-color: transparent;
+width: 40px;
+font-size: 25px;
+margin-right: 10px;
+border: 0;
+cursor: pointer;
+}
+.like_comment 
+button:first-child{
+  margin-left: 10px;
+}
