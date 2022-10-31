@@ -201,3 +201,17 @@ a {
   outline: 0;
 } */
 
+.like_comment 
+button:first-child
+.active {
+  color: red;
+  display: flex;
+  height: 40px;
+  margin-top: 4px;
+  background-color: transparent;
+  width: 40px;
+  font-size: 25px;
+  margin-right: 10px;
+  border: 0;
+  cursor: pointer;
+}
