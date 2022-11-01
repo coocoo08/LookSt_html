@@ -341,7 +341,8 @@ CREATE TABLE PROFILE
     PROFILE_IMG    character varying(200) DEFAULT 'default.jpg' NOT NULL,
     PROFILE_UUID    character varying(100) NOT NULL,
     PROFILE_TYPE    character(1) NOT NULL,
-    PROFILE_DATE    timestamp without time zone NOT NULL
+    PROFILE_DATE    timestamp without time zone NOT NULL,
+    PROFILE_INTRO   character varying(30) 
 );
 
 COMMENT ON COLUMN PROFILE.MEMBER_ID IS '아이디(E-Mail)';
@@ -357,6 +358,8 @@ COMMENT ON COLUMN PROFILE.PROFILE_TYPE IS '이미지타입';
 COMMENT ON COLUMN PROFILE.PROFILE_DATE IS '프로필등록일';
 
 COMMENT ON TABLE PROFILE IS '프로필 이미지';
+
+COMMENT ON TABLE PROFILE IS '프로필 자기소개글';
 
 CREATE UNIQUE INDEX PROFILE_PK ON PROFILE
 ( MEMBER_ID,PROFILE_NO );
