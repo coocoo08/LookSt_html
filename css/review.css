@@ -144,6 +144,10 @@ section {
   font-size: 9px;
 }
 
+section {
+  text-align: right;
+}
+
 .black_e_s {
   background-color: #333333;
   border: 1px solid #1c1c1c;
@@ -151,11 +155,11 @@ section {
   cursor: pointer;
   color: #ffffff;
   font-family: 'Open Sans', verdana,Dotum, AppleGothic, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 1rem;
   letter-spacing: 0.5px;
   font-weight: 600;
-  padding: 3px 12px;
+  padding: 10px 20px;
   text-decoration: none;
   margin: 50px 0 30px;
-  transform: translateX(2700%);
+  
 }
