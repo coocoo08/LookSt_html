@@ -2,24 +2,33 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Lookst</title>
-  <!--header css-->
+  <title>CodePen - JS-​section</title>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!doctype html>
+<html lang="En">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+	<title>JS-section</title>
+	<link rel="stylesheet" href="../../css/magazineview.css">
+	<!--header css-->
   <link rel="stylesheet" href="../../css/headerstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!--board css-->
-  <link rel="stylesheet" href="../../css/board.css">
   <!--fofter css-->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
   <link rel="stylesheet" href="../../css/footerstyle.css">
-  <script src="../../js/board.js"></script>
 </head>
 <header class="top-bar pc">
   <div class="con inline-grid">
     <div>
       <a href="../../html/index.html" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -119,7 +128,7 @@
     <div>
       <a href="#" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -192,56 +201,60 @@
 </header>
 <!-- header -->
 <body>
-  <div class="board_wrap">
-    <div class="board_title">
-        <strong>공지사항</strong>
-        <ul class="notice1">
-        <a href="board_list.html">공지사항</a>
-        <a href="board_list_FAQ.html">FAQ</a>
-        <a href="board_list_QNA.html">1:1 문의</a>
-        </ul>
-    </div>
-    <div class="board_list_wrap">
-        <div class="board_list">
-            <div>
-                <div class="title"><a href="../../html/notice/board_notice_view.html">개인정보 취급방침 변경안내</a></div>
-            </div>
-            <div>
-                <div class="title"><a href="#">[공지] 정산 지연 안내</a></div>
-            </div>
-            <div>
-                <div class="title"><a href="#">[이벤트 발표] LUCKY DRAW - 아이폰 14 프로 128GB</a></div>
-            </div>
-            <div>
-                <div class="title"><a href="#">[이벤트 발표] LUCKY DRAW - 에르메스 주얼리 풀세트</a></div>
-            </div>
-            <div>
-                <div class="title"><a href="#">[공지] 서비스 수수료 안내</a></div>
-            </div>
-            <div>
-              <div class="title"><a href="#">[공지] 10월 거래 혜택 이벤트 안내</a></div>
-          </div>
-          <div>
-            <div class="title"><a href="#">[이벤트 발표] LUCKY DRAW - 소니 플레이스테이션 5 풀세트
 
-            </a></div>
-        </div>
-        </div>
-        <section>
-        </section>
-        <div class="page">
-          <p class="">1</p>
-          <p class="">2</p>
-          <p class="">3</p>
-          <p class="">4</p>
-          <p class="">5</p>
-        </div>
-    </div>
-</div>
+	<section class="card">
+
+		<main>
+
+			<div class="top-section">
+				<img id="image-container" src="../../img/magazine1.jpg" alt="">
+			</div>
+
+			<div class="nav">
+				<img onclick="change_img(this)" src="../../img/magazine1.jpg" alt="">
+				<img onclick="change_img(this)" src="../../img/magazine2.jpg" alt="">
+				<img onclick="change_img(this)" src="../../img/magazine3.jpg" alt="">
+				<img onclick="change_img(this)" src="../../img/magazine4.jpg" alt="">
+			</div>
+
+		</main>
+
+		<container>
+
+			<h1>Winner</h1>
+			<p><br>
+				<p>순수 조형예술에서 영감을 받아 파인드 카푸어는 아름다운 삶을 만드는 데 전념하는 패션 브랜드입니다.
+					클래식과 트렌드를 융합한 참신한 디자인으로 패션의 본질을 탐구하며 세계와 적극적으로 소통하며 패션, 인생, 아름다움을 옹호하는 사람으로서 시대를 초월한 컬렉션을 제공하기 위해 노력하는 브랜드라고 소개시켜드리고 싶습니다.
+				<p><br>플랩 쉐입과 금속 포인트로 미니멀 하면서도 유니크한 매력이 돋보이는 마크 18입니다.
+							 자석이 달린 플랩으로 간편하게 오픈할 수 있으며, 아담한 사이즈로 가벼운 외출에 좋은 크로스백입니다.
+				<p><br>스트랩 조절이 가능하여 개인에 맞게 원하는 길이로 연출 가능하고 소프트한 크링클드 소재와 가벼운 무게감, 차분한 컬러로 다양한 데일리 룩에 포인트로 스타일링이 가능합니다.
+				<p><br>Material : Artificial Leather
+					 <br>Body : 18cm(w) x 10.5cm(h) x 5cm(d)
+					 <br>Shoulder Strap : 96cm(l)~127cm(l) x 3.5cm(w)
+					 <br>Weight : 170g
+				</p>
+				<p></p><br>
+				<h2> <br>파인드카푸어 - 숲을 연상시키는 찡한 컬러감의 마주치면 바로 그린 입덕 모든 계절에 잘 어울리는 마크백 18 크링클드 딥그린</h2>
+				<a class="btn" href="../../html/magazine/magazine.html">목록 보기</a>
+
+		</container>
+
+	</section>
+
+  <script>
+      var container = document.getElementById("image-container");
+      // img 자신 즉, this로 arguments 설정하고 파라미터 image에 값을 넘김
+
+      function change_img(image) {
+      // this의 src 값을 container에 넘김
+
+      container.src = image.src;
+    }
+
+  </script>
+  
 </body>
-
-<!-- footer -->
-<footer>
+<!-- partial:index.partial.html -->
 <div class="footer">
   <div class="bubbles">
     <div class="bubble" style="--size:4.2908066578443504rem; --distance:8.075961203512044rem; --position:48.32661339041409%; --time:2.703807505610421s; --delay:-2.5934022497160973s;"></div>
@@ -381,6 +394,5 @@
     </filter>
   </defs>
 </svg>
-</footer>
-<!-- footer -->
+<!-- partial -->
 </html>
