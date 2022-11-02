@@ -2,33 +2,33 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Lookst</title>
+  <title>CodePen - JS-​section</title>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!doctype html>
+<html lang="En">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+	<title>JS-section</title>
+	<link rel="stylesheet" href="../../css/magazineview.css">
+	<!--header css-->
   <link rel="stylesheet" href="../../css/headerstyle.css">
-  <!---->
-  <!-- <link rel="stylesheet" href="../../css/bannerstyle.css"> -->
-  <!---->
-  <!-- <link rel="stylesheet" href="../../css/LookBookstyle.css"> -->
-  <!---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!---->
-  <link rel="stylesheet" href="../../css/myPostList.css">
-  <!---->
-  <link rel="stylesheet" href="../../css/comment-modal.css">
-  <!---->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="../../css/main_shopstyle.css"> -->
-  <!---->
+  <!--fofter css-->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
   <link rel="stylesheet" href="../../css/footerstyle.css">
-
 </head>
 <header class="top-bar pc">
   <div class="con inline-grid">
     <div>
       <a href="../../html/index.html" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -128,7 +128,7 @@
     <div>
       <a href="#" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../../img/look.png" alt="look" style="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -200,241 +200,60 @@
   </div>
 </header>
 <!-- header -->
-
 <body>
-  <div class="profile-title" style="text-align: center;">마이리스트</div>
-  <!-- 여기에 각자 페이지 채울 것 -->
-  <main class="main">
-    <section class="container">
-        <article class="story-list">
-          <!-- 첫번째 게시물 시작 -->
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div class="user_info">
-                      <a href="../../html/sns(myprofile)/profile.html" class="user_id">Kuromi</a>
-                      <p href="#" class="upload_time">어제</p>
-                    </div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/후드티네이비.jpeg" alt="">
-                </div>
-                <div class="product_title">
-                  <span class="title_text">상품태그
-                    <strong class="num">2</strong>
-                    개
-                  </span>  
-                </div>
-                <div class="product_list_area">
-                  <ul class="product_list" style="transform: translateX(0px);">
-                    <li class='product_item'>
-                      <a href="../../html/shop/product.html" class="product_link">
-                        <div class="product">
-                          <picture class="product_picture">
-                            <img src="../../img/털신.jpeg" id="product_pic">
-                          </picture>
-                        </div>
-                        <div class="product_desc">
-                          <div class="product_name">Nike Air Force Low Woolly</div>
-                        </div>
-                        <div class="price_box">
-                          <span class="amount"><strong>159,000원</strong></span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class='product_item'>
-                      <a href="#" class="product_link">
-                        <div class="product">
-                          <picture class="product_picture">
-                            <img src="../../img/짚신.jpeg" id="product_pic">
-                          </picture>
-                        </div>
-                        <div class="product_desc">
-                          <div class="product_name">Nike Air Force Low Straw</div>
-                        </div>
-                        <div class="price_box">
-                          <span class="amount"><strong>250,000원</strong></span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="sl__item__contents">
-                  <div class="like_mylist">
-                    <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-                    <button class="btn"><i class="far fa-comment"></i></button>
-                    <!-- 댓글 Modal -->
-                    <div class="modal">
-                      <!-- 댓글 Modal의 내용 -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>                         
-                        <h3>댓글</h3>
-                        <div class="comments">
-                          <span class="user_nick">ezen_123</span>
-                          <span class="comment">멋져요~!</span>
-                          <span class="comment_date">어제</span>
-                        </div>
-                        <div class="comments">
-                          <span class="user_nick">dkahffk</span>
-                          <span class="comment">안냐세유~</span>
-                          <span class="comment_date">7년전</span>
-                        </div>
-                        <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                      </div>
-                    </div>                
-                  </div>
-                </div>
-                <div class="social_count">
-                  <a href="#" class="like_count">
-                    공감
-                    <strong>100</strong>
-                    개
-                  </a>
-                </div>
-                <div class="sl__item__input" style="padding: 10px">
-                  <div class="comment_area">
-                    <a href="#" class="comment_count" >
-                      댓글
-                      <strong>2</strong>
-                      개
-                    </a>
-                  </div>
-                </div>
-                <div class="sl__item__contents__content">
-                    <span class="text_link">
-                      <span class="text">
-                        <a class="hashtag" href="#">#털신</a>
-                        <a class="hashtag" href="#">#짚신</a>
-                        예쁜 신발들^^
-                      </span>
-                    </span>
-                </div>
-            </div>
-            <!-- 게시물 1 끝 -->
-            <!-- 두번째 게시물 시작 -->
-            <div class="story-list__item">
-              <div class="sl__item__header">
-                  <div>
-                      <img src="../../img/프사.jpeg" alt="">
-                      <svg viewbox="0 0 110 110">
-                          <circle cx="55" cy="55" r="53" />
-                      </svg>
-                  </div>
-                  <div class="user_info">
-                    <a href="../../html/sns(myprofile)/profile.html" class="user_id">Kuromi</a>
-                    <p href="#" class="upload_time">어제</p>
-                  </div>
-                  <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                  <div class="post_delete">삭제</div>
-              </div>
-              <div class="sl__item__img">
-                  <img src="../../img/후드티네이비.jpeg" alt="">
-              </div>
-              <div class="product_title">
-                <span class="title_text">상품태그
-                  <strong class="num">2</strong>
-                  개
-                </span>  
-              </div>
-              <div class="product_list_area">
-                <ul class="product_list" style="transform: translateX(0px);">
-                  <li class='product_item'>
-                    <a href="../../html/shop/product.html" class="product_link">
-                      <div class="product">
-                        <picture class="product_picture">
-                          <img src="../../img/털신.jpeg" id="product_pic">
-                        </picture>
-                      </div>
-                      <div class="product_desc">
-                        <div class="product_name">Nike Air Force Low Woolly</div>
-                      </div>
-                      <div class="price_box">
-                        <span class="amount"><strong>159,000원</strong></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class='product_item'>
-                    <a href="#" class="product_link">
-                      <div class="product">
-                        <picture class="product_picture">
-                          <img src="../../img/짚신.jpeg" id="product_pic">
-                        </picture>
-                      </div>
-                      <div class="product_desc">
-                        <div class="product_name">Nike Air Force Low Straw</div>
-                      </div>
-                      <div class="price_box">
-                        <span class="amount"><strong>250,000원</strong></span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="sl__item__contents">
-                <div class="like_mylist">
-                  <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-                  <button class="btn"><i class="far fa-comment"></i></button>
-                  <!-- 댓글 Modal -->
-                  <div class="modal">
-                    <!-- 댓글 Modal의 내용 -->
-                    <div class="modal-content">
-                      <span class="close">&times;</span>                         
-                      <h3>댓글</h3>
-                      <div class="comments">
-                        <span class="user_nick">ezen_123</span>
-                        <span class="comment">멋져요~!</span>
-                        <span class="comment_date">어제</span>
-                      </div>
-                      <div class="comments">
-                        <span class="user_nick">dkahffk</span>
-                        <span class="comment">안냐세유~</span>
-                        <span class="comment_date">7년전</span>
-                      </div>
-                      <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                    </div>
-                  </div>                
-                </div>
-              </div>
-              <div class="social_count">
-                <a href="#" class="like_count">
-                  공감
-                  <strong>100</strong>
-                  개
-                </a>
-              </div>
-              <div class="sl__item__input" style="padding: 10px">
-                <div class="comment_area">
-                  <a href="#" class="comment_count" >
-                    댓글
-                    <strong>2</strong>
-                    개
-                  </a>
-                </div>
-              </div>
-              <div class="sl__item__contents__content">
-                  <span class="text_link">
-                    <span class="text">
-                      <a class="hashtag" href="#">#털신</a>
-                      <a class="hashtag" href="#">#짚신</a>
-                      예쁜 신발들^^
-                    </span>
-                  </span>
-              </div>
-          </div>
-          <!-- 게시물2 끝  -->
-          </div>
-        </article>
-    </section>
-</main>
-</body>
 
+	<section class="card">
+
+		<main>
+
+			<div class="top-section">
+				<img id="image-container" src="../../img/magazine1.jpg" alt="">
+			</div>
+
+			<div class="nav">
+				<img onclick="change_img(this)" src="../../img/magazine1.jpg" alt="">
+				<img onclick="change_img(this)" src="../../img/magazine2.jpg" alt="">
+				<img onclick="change_img(this)" src="../../img/magazine3.jpg" alt="">
+				<img onclick="change_img(this)" src="../../img/magazine4.jpg" alt="">
+			</div>
+
+		</main>
+
+		<container>
+
+			<h1>FIND KAPOOR</h1>
+			<p><br>
+				<p>순수 조형예술에서 영감을 받아 파인드 카푸어는 아름다운 삶을 만드는 데 전념하는 패션 브랜드입니다.
+					클래식과 트렌드를 융합한 참신한 디자인으로 패션의 본질을 탐구하며 세계와 적극적으로 소통하며 패션, 인생, 아름다움을 옹호하는 사람으로서 시대를 초월한 컬렉션을 제공하기 위해 노력하는 브랜드라고 소개시켜드리고 싶습니다.
+				<p><br>플랩 쉐입과 금속 포인트로 미니멀 하면서도 유니크한 매력이 돋보이는 마크 18입니다.
+							 자석이 달린 플랩으로 간편하게 오픈할 수 있으며, 아담한 사이즈로 가벼운 외출에 좋은 크로스백입니다.
+				<p><br>스트랩 조절이 가능하여 개인에 맞게 원하는 길이로 연출 가능하고 소프트한 크링클드 소재와 가벼운 무게감, 차분한 컬러로 다양한 데일리 룩에 포인트로 스타일링이 가능합니다.
+				<p><br>Material : Artificial Leather
+					 <br>Body : 18cm(w) x 10.5cm(h) x 5cm(d)
+					 <br>Shoulder Strap : 96cm(l)~127cm(l) x 3.5cm(w)
+					 <br>Weight : 170g
+				</p>
+				<p></p><br>
+				<h2> <br>파인드카푸어 - 숲을 연상시키는 찡한 컬러감의 마주치면 바로 그린 입덕 모든 계절에 잘 어울리는 마크백 18 크링클드 딥그린</h2>
+				<a class="btn" href="../../html/magazine/magazine.html">목록 보기</a>
+
+		</container>
+
+	</section>
+
+  <script>
+      var container = document.getElementById("image-container");
+      // img 자신 즉, this로 arguments 설정하고 파라미터 image에 값을 넘김
+
+      function change_img(image) {
+      // this의 src 값을 container에 넘김
+
+      container.src = image.src;
+    }
+
+  </script>
+  
+</body>
 <!-- partial:index.partial.html -->
 <div class="footer">
   <div class="bubbles">
@@ -472,7 +291,6 @@
     <div class="bubble" style="--size:3.7475419802201957rem; --distance:9.64784625838658rem; --position:77.81320811793586%; --time:2.7300118103079365s; --delay:-3.5454097613844358s;"></div>
     <div class="bubble" style="--size:5.915997211130302rem; --distance:9.260449856486169rem; --position:70.98729450146898%; --time:2.226530906286513s; --delay:-2.5357954285483406s;"></div>
     <div class="bubble" style="--size:3.204045335567546rem; --distance:9.713805623738974rem; --position:49.88906215046968%; --time:2.4243380169060367s; --delay:-3.300548061339865s;"></div>
-    <div class="bubble" style="--size:5.154544043912497rem; --distance:6.346771943716771rem; --position:97.19797748187557%; --time:2.559863742731297s; --delay:-2.3553841212749136s;"></div>
     <div class="bubble" style="--size:5.580960391149969rem; --distance:6.318115644267316rem; --position:-2.299885006998026%; --time:2.9731575087818314s; --delay:-2.2002573939788093s;"></div>
     <div class="bubble" style="--size:2.03172314758819rem; --distance:6.282006926931849rem; --position:27.762339069789185%; --time:3.16272754492543s; --delay:-3.6317186432104536s;"></div>
     <div class="bubble" style="--size:3.6357837556344608rem; --distance:8.068070047008181rem; --position:71.41148448786002%; --time:2.6528247352690766s; --delay:-3.231759428924927s;"></div>
@@ -485,7 +303,6 @@
     <div class="bubble" style="--size:2.6290860068969755rem; --distance:6.542025201523603rem; --position:41.447417047323405%; --time:3.560543878953631s; --delay:-3.9454976558140187s;"></div>
     <div class="bubble" style="--size:4.1215437529515375rem; --distance:6.93441403852198rem; --position:3.19567385157052%; --time:3.6860773554610695s; --delay:-2.635534664248181s;"></div>
     <div class="bubble" style="--size:2.364006790826881rem; --distance:9.155706673670753rem; --position:73.43094286761772%; --time:2.945075042111573s; --delay:-3.1094005708553634s;"></div>
-    <div class="bubble" style="--size:5.622111352453258rem; --distance:8.937198076711974rem; --position:97.10991695930298%; --time:3.0684349225862833s; --delay:-2.162917719903087s;"></div>
     <div class="bubble" style="--size:3.7947067893415616rem; --distance:9.308139662714702rem; --position:66.55922930309234%; --time:3.1653721035542626s; --delay:-3.5613071811227686s;"></div>
     <div class="bubble" style="--size:4.42263259364884rem; --distance:8.965425433803203rem; --position:90.70179662366769%; --time:3.3636133204934726s; --delay:-2.11175095894715s;"></div>
     <div class="bubble" style="--size:2.6393292102561094rem; --distance:9.363065692796093rem; --position:1.5256552151499108%; --time:3.648058424588528s; --delay:-3.382732016156239s;"></div>
@@ -578,13 +395,4 @@
   </defs>
 </svg>
 <!-- partial -->
-
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-<script src="../../js/bannerscript.js"></script>
-<script src="../../js/LookBookscript.js"></script>
-<script src="../../js/comment.js"></script>
-<script src="../../js/modal.js"></script>
-<script src="../../js/like.js"></script>
 </html>

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <!--header css-->
   <link rel="stylesheet" href="../../css/headerstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -12,12 +13,9 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
   <link rel="stylesheet" href="../../css/footerstyle.css">
-  <!--review css-->
-  <link rel="stylesheet" href="../../css/review.css">
-  <script src="../../js/review.js"></script>
-  <title>Document</title>
+  <!--view css-->
+  <link rel="stylesheet" href="../../css/board_notice_view.css">
 </head>
-<!-- header -->
 <header class="top-bar pc">
   <div class="con inline-grid">
     <div>
@@ -197,445 +195,149 @@
 <!-- header -->
 
 <body>
-  <div class="bbs-tit">
-    <h2 class="re_h2">REVIEW</h2>
-    <form action="review.html" name="form1" class="re_form">
-      <fieldset>
-        <legend></legend>
-        <label>
-          <input type="radio" name="r-list" value="ok"  class="MS_input_checkbox"> NAME
-        </label>
-        <label>
-          <input type="radio" name="r-list" value="ok"  
-            class="MS_input_checkbox"> SUBJECT
-        </label>
-        <label>
-          <input type="radio" name="r-list" value="ok"  class="MS_input_checkbox"> CONTENT
-        </label>
-        <span class="key-wrap">
-          <input type="text" name="stext" value="ok" class="MS_input_txt"> <a href="javascript:document.form1.submit();"
-            class="white_e_s" style="padding:6.5px 8px; margin-left:-9px;">OK</a>
-        </span>
-      </fieldset>
-    </form>
-  </div>
-  <div class="bbs-table-list">
-    <table summary="No, content,Name,Data,Hits">
-      <!-- 일반 게시글 -->
-      <thead>
-        <tr>
-          <th scope="col">
-            <div class="esosub_s">NO</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s"></div>
-          </th>
-          <!-- .상품정보가 있을 경우에만 나타남 -->
-          <th scope="col">
-            <div class="esosub_s"></div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">SUBJECT</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">NAME</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">DATE</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">HIT</div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- .공지사항 리스트 시작 -->
-        <tr>
-          <td>
-            <div class="tb-center"><img src="https://www.amai.co.kr/images/d3/modern_simple/common/icon_box_arrow.gif">
+  <div id="contentWrapper">
+    <div id="contentWrap">
+      <div id="content">
+        <div id="bbsData">
+          <div class="page-body">
+            <div class="bbs-tit">
+              <h2 class="esosub"><strong>공지사항</strong></h2>
             </div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_notice.gif"> </div>
-          </td>
-          <!-- .상품정보가 있을 경우에만 나타남 -->
-          <td colspan="2">
-            <div class="tb-left">
-              <a href="reviewNotice.html">
-                <font color="#FF600F"><b>리뷰 게시판 특성에 맞지않거나 악의성 비방글, 판매글, 타 사이트 홍보글은 삭제될 수 있습니다.</b></font>
-              </a>
+            <div class="bbs-table-view">
+              <table summary="게시글 보기">
+                <caption></caption>
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="tb-center"><b>개인정보 취급방침 변경안내</b></div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="line">
+                      <div class="cont-sub-des">
+
+                        <div>
+                          <span style="margin-left: 20px; padding-left:3px ">&nbsp;<font class="esosub_l" style="font-size:10px;">NAME :
+                            </font> LookSt</span>
+
+                        </div>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="data-bd-cont">
+                        <div id="MS_WritenBySEB">
+                          <p>안녕하세요.</p>
+                          <p>항상 저희 LookSt를 이용해주시는 회원님께 감사의 말씀을 드립니다.</p>
+                          <p>회원 가입시&nbsp;본인확인을 위한 휴대폰 인증 서비스 제공을 위해</p>
+                          <p>당사의 개인정보취급방침이 아래와 같이 개정됩니다.</p>
+                          <p>변경내용은 홈페이지 하단의&nbsp;개인정보취급방침에서 확인가능합니다.</p>
+                          <p>&nbsp;</p>
+                          <p>[개인정보취급위탁] 변경내용</p>
+                          <p>현재)</p>
+                          <!--StartFragment-->
+                          <p class="바탕글"><span>가.
+                              CJ택배 : 상품 배송 업무 및 배송위치 / 도착정보 등의 서비스 제공</span></p>
+                          <p class="바탕글"><span>나.
+                              (주)코리아센터닷컴 : 고객정보DB시스템 위탁운영(전산아웃소싱)</span></p>
+                          <p class="바탕글"><span>다.
+                              케이지이니시스, 케이지모빌리언스 : 결제관련</span></p>
+                          <p class="바탕글"><span>↓</span>
+                          </p>
+                          <p class="바탕글">변경)</p>
+                          <!--StartFragment-->
+                          <p class="바탕글"><span>가.
+                              CJ택배 : 상품 배송 업무 및 배송위치 / 도착정보 등의 서비스 제공</span></p>
+                          <p><span>나.
+                              (주)코리아센터닷컴 : 고객정보DB시스템 위탁운영(전산아웃소싱)</span></p>
+                          <p class="바탕글"><span>다.
+                              케이지이니시스, 케이지모빌리언스 : 결제관련</span></p>
+                          <p class="바탕글"><span>라.
+                              드림시큐리티 : 휴대폰 본인확인</span></p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr size="1" color="#E5E5E5">
+              <div class="view-link">
+                <dl class="bbs-link con-link">
+                  <dt></dt>
+                  <dd>
+                  </dd>
+                </dl>
+                <dl class="bbs-link">
+                  <dt></dt>
+                  <dd>
+                    <a href="../../html/notice/board_list.html"style="padding:3px 12px;">LIST</a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="bbs-table-list">
+                <table summary="게시글 목록">
+                  <caption></caption>
+                  <colgroup>
+                    <col>
+                    <col width="100">
+                    <col width="90">
+                    <col width="70">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <div class="esosub_s" style="font-size:10px;">SUBJECT</div>
+                      </th>
+                      <th scope="col">
+                        <div class="esosub_s" style="font-size:10px">NAME</div>
+                      </th>
+                      <th scope="col">
+                        <div class="esosub_s" style="font-size:10px">DATE</div>
+                      </th>
+                      <th scope="col">
+                        <div class="esosub_s" style="font-size:10px">HIT</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="tb-left">
+                          <img src="https://www.amai.co.kr/board/images/neo_default.gif">
+                          <img src="https://www.amai.co.kr/board/images/neo_head.gif" style="margin-left: 00px">
+                          <a
+                            href="/board/board.html?code=chups_board5&amp;page=1&amp;type=v&amp;board_cate=&amp;num1=999923&amp;num2=00000&amp;s_id=&amp;stext=&amp;ssubject=&amp;shname=&amp;scontent=&amp;sbrand=&amp;sgid=&amp;datekey=&amp;branduid=&amp;number=&amp;lock=N"><b>개인정보
+                              취급방침 변경안내</b></a>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="tb-center">
+                          <img src="https://www.amai.co.kr/board/images/neo_adminimg.gif">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="tb-center" style="font-size: 10px">2014-06-24</div>
+                      </td>
+                      <td>
+                        <div class="tb-center" style="font-size: 10px">20227</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              운영진 </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2010/10/20</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">342449</div>
-          </td>
-        </tr>
-        <!--. 공지사항 리스트 끝! -->
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23999</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/new.png">
-              <a href="#">[브랜드명] 상품 제목 - 아디다스 퍼피렛 </a>
-              <!--. 스팸글 처리 -->
-              <a href="#"> 상품 리뷰 한줄평 - 너무이뻐요</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 끝 -->
-      </tbody>
-    </table>
-  </div>
-  <section>
-    <a href="../../html/magazine/magazineWrite.html" class="black_e_s">WRITE</a>
-  </section>
-  <div class="page">
-    <p class="">1</p>
-    <p class="">2</p>
-    <p class="">3</p>
-    <p class="">4</p>
-    <p class="">5</p>
+          </div><!-- .page-body -->
+        </div><!-- #bbsData -->
+      </div><!-- #content -->
+    </div><!-- #contentWrap -->
   </div>
 </body>
 <!-- footer -->
 <footer>
-  <section></section>
   <div class="footer">
     <div class="bubbles">
       <div class="bubble"
@@ -1009,6 +711,5 @@
   </svg>
 </footer>
 <!-- footer -->
-
 
 </html>

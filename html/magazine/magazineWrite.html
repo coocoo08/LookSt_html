@@ -5,18 +5,17 @@
   <title>Lookst</title>
   <link rel="stylesheet" href="../../css/headerstyle.css">
   <!---->
-  <!-- <link rel="stylesheet" href="../../css/bannerstyle.css"> -->
+  <link rel="stylesheet" href="../../css/bannerstyle.css">
   <!---->
-  <!-- <link rel="stylesheet" href="../../css/LookBookstyle.css"> -->
+  <!--<link rel="stylesheet" href="../../css/LookBookstyle.css">-->
   <!---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!---->
-  <link rel="stylesheet" href="../../css/myPostList.css">
+  <link rel="stylesheet" href="../../css/upload magazine.css">
   <!---->
-  <link rel="stylesheet" href="../../css/comment-modal.css">
+  <!-- <link rel="stylesheet" href="../../css/comment-modal.css"> -->
   <!---->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="../../css/main_shopstyle.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../css/main_shopstyle.css">
   <!---->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
@@ -128,7 +127,7 @@
     <div>
       <a href="#" class="top-bar__logo block">
         <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+          <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
           <i class="fa-solid fa-file-magnifying-glass"></i>
         </span>
         <span>
@@ -202,237 +201,86 @@
 <!-- header -->
 
 <body>
-  <div class="profile-title" style="text-align: center;">마이리스트</div>
-  <!-- 여기에 각자 페이지 채울 것 -->
+  <div class="Upload-title" style="text-align: center;">매거진 업로드</div>
   <main class="main">
-    <section class="container">
-        <article class="story-list">
-          <!-- 첫번째 게시물 시작 -->
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
+    <section class="setting-container">
+        <article class="setting__content">
+            <div class="content-item__01">
+              <!--이미지 업로드 시작-->
+              <div class="section">
+                <div class="article">
+                    <div class="item">
+                        <div class="addImg">
+                            <div class="plus-icon">
+                                <i class="fa fa-camera-retro fa-4x"></i>
+                            </div>
+                        </div>
+                        <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                        <div class="preBlock">
+                            <img class="preview" id="preview" alt="" name="pic"/>
+                        </div>
+                        <div class="delete">×</div>
                     </div>
-                    <div class="user_info">
-                      <a href="../../html/sns(myprofile)/profile.html" class="user_id">Kuromi</a>
-                      <p href="#" class="upload_time">어제</p>
+                    <div class="item">
+                        <div class="addImg">
+                            <div class="plus-icon">
+                                <i class="fa fa-camera-retro fa-4x"></i>
+                            </div>
+                        </div>
+                        <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                        <div class="preBlock">
+                            <img class="preview" alt="" name="pic"/>
+                        </div>
+                        <div class="delete">×</div>
                     </div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/후드티네이비.jpeg" alt="">
-                </div>
-                <div class="product_title">
-                  <span class="title_text">상품태그
-                    <strong class="num">2</strong>
-                    개
-                  </span>  
-                </div>
-                <div class="product_list_area">
-                  <ul class="product_list" style="transform: translateX(0px);">
-                    <li class='product_item'>
-                      <a href="../../html/shop/product.html" class="product_link">
-                        <div class="product">
-                          <picture class="product_picture">
-                            <img src="../../img/털신.jpeg" id="product_pic">
-                          </picture>
+                    <div class="item">
+                        <div class="addImg">
+                            <div class="plus-icon">
+                                <i class="fa fa-camera-retro fa-4x"></i>
+                            </div>
                         </div>
-                        <div class="product_desc">
-                          <div class="product_name">Nike Air Force Low Woolly</div>
+                        <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                        <div class="preBlock">
+                            <img class="preview" alt="" name="pic"/>
                         </div>
-                        <div class="price_box">
-                          <span class="amount"><strong>159,000원</strong></span>
+                        <div class="delete">×</div>
+                    </div>
+                    <div class="item">
+                        <div class="addImg">
+                            <div class="plus-icon">
+                                <i class="fa fa-camera-retro fa-4x"></i>
+                            </div>
                         </div>
-                      </a>
-                    </li>
-                    <li class='product_item'>
-                      <a href="#" class="product_link">
-                        <div class="product">
-                          <picture class="product_picture">
-                            <img src="../../img/짚신.jpeg" id="product_pic">
-                          </picture>
+                        <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                        <div class="preBlock">
+                            <img class="preview" alt="" name="pic"/>
                         </div>
-                        <div class="product_desc">
-                          <div class="product_name">Nike Air Force Low Straw</div>
-                        </div>
-                        <div class="price_box">
-                          <span class="amount"><strong>250,000원</strong></span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                        <div class="delete">×</div>
+                    </div>
                 </div>
-                <div class="sl__item__contents">
-                  <div class="like_mylist">
-                    <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-                    <button class="btn"><i class="far fa-comment"></i></button>
-                    <!-- 댓글 Modal -->
-                    <div class="modal">
-                      <!-- 댓글 Modal의 내용 -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>                         
-                        <h3>댓글</h3>
-                        <div class="comments">
-                          <span class="user_nick">ezen_123</span>
-                          <span class="comment">멋져요~!</span>
-                          <span class="comment_date">어제</span>
-                        </div>
-                        <div class="comments">
-                          <span class="user_nick">dkahffk</span>
-                          <span class="comment">안냐세유~</span>
-                          <span class="comment_date">7년전</span>
-                        </div>
-                        <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                      </div>
-                    </div>                
-                  </div>
-                </div>
-                <div class="social_count">
-                  <a href="#" class="like_count">
-                    공감
-                    <strong>100</strong>
-                    개
-                  </a>
-                </div>
-                <div class="sl__item__input" style="padding: 10px">
-                  <div class="comment_area">
-                    <a href="#" class="comment_count" >
-                      댓글
-                      <strong>2</strong>
-                      개
-                    </a>
-                  </div>
-                </div>
-                <div class="sl__item__contents__content">
-                    <span class="text_link">
-                      <span class="text">
-                        <a class="hashtag" href="#">#털신</a>
-                        <a class="hashtag" href="#">#짚신</a>
-                        예쁜 신발들^^
-                      </span>
-                    </span>
-                </div>
+              </div>
+              <!--이미지 업로드 끝-->
             </div>
-            <!-- 게시물 1 끝 -->
-            <!-- 두번째 게시물 시작 -->
-            <div class="story-list__item">
-              <div class="sl__item__header">
-                  <div>
-                      <img src="../../img/프사.jpeg" alt="">
-                      <svg viewbox="0 0 110 110">
-                          <circle cx="55" cy="55" r="53" />
-                      </svg>
-                  </div>
-                  <div class="user_info">
-                    <a href="../../html/sns(myprofile)/profile.html" class="user_id">Kuromi</a>
-                    <p href="#" class="upload_time">어제</p>
-                  </div>
-                  <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                  <div class="post_delete">삭제</div>
-              </div>
-              <div class="sl__item__img">
-                  <img src="../../img/후드티네이비.jpeg" alt="">
-              </div>
-              <div class="product_title">
-                <span class="title_text">상품태그
-                  <strong class="num">2</strong>
-                  개
-                </span>  
-              </div>
-              <div class="product_list_area">
-                <ul class="product_list" style="transform: translateX(0px);">
-                  <li class='product_item'>
-                    <a href="../../html/shop/product.html" class="product_link">
-                      <div class="product">
-                        <picture class="product_picture">
-                          <img src="../../img/털신.jpeg" id="product_pic">
-                        </picture>
-                      </div>
-                      <div class="product_desc">
-                        <div class="product_name">Nike Air Force Low Woolly</div>
-                      </div>
-                      <div class="price_box">
-                        <span class="amount"><strong>159,000원</strong></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class='product_item'>
-                    <a href="#" class="product_link">
-                      <div class="product">
-                        <picture class="product_picture">
-                          <img src="../../img/짚신.jpeg" id="product_pic">
-                        </picture>
-                      </div>
-                      <div class="product_desc">
-                        <div class="product_name">Nike Air Force Low Straw</div>
-                      </div>
-                      <div class="price_box">
-                        <span class="amount"><strong>250,000원</strong></span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="sl__item__contents">
-                <div class="like_mylist">
-                  <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-                  <button class="btn"><i class="far fa-comment"></i></button>
-                  <!-- 댓글 Modal -->
-                  <div class="modal">
-                    <!-- 댓글 Modal의 내용 -->
-                    <div class="modal-content">
-                      <span class="close">&times;</span>                         
-                      <h3>댓글</h3>
-                      <div class="comments">
-                        <span class="user_nick">ezen_123</span>
-                        <span class="comment">멋져요~!</span>
-                        <span class="comment_date">어제</span>
-                      </div>
-                      <div class="comments">
-                        <span class="user_nick">dkahffk</span>
-                        <span class="comment">안냐세유~</span>
-                        <span class="comment_date">7년전</span>
-                      </div>
-                      <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                    </div>
-                  </div>                
+            <div class="section-mid">
+            </div>
+            <div class="content-item__05">
+              <div class="section">
+                <div class="item__input">
+                    <textarea name="intro" id="" rows="3" placeholder="글을 작성해주세요."></textarea>
                 </div>
+                <div class="content-item__11">
+                  <div class="item__title"></div>
+                  <div class="item__input">
+                    <button>업로드</button>
+                  </div>
               </div>
-              <div class="social_count">
-                <a href="#" class="like_count">
-                  공감
-                  <strong>100</strong>
-                  개
-                </a>
               </div>
-              <div class="sl__item__input" style="padding: 10px">
-                <div class="comment_area">
-                  <a href="#" class="comment_count" >
-                    댓글
-                    <strong>2</strong>
-                    개
-                  </a>
-                </div>
-              </div>
-              <div class="sl__item__contents__content">
-                  <span class="text_link">
-                    <span class="text">
-                      <a class="hashtag" href="#">#털신</a>
-                      <a class="hashtag" href="#">#짚신</a>
-                      예쁜 신발들^^
-                    </span>
-                  </span>
-              </div>
-          </div>
-          <!-- 게시물2 끝  -->
-          </div>
+            </div>
         </article>
     </section>
-</main>
+  </main>
+
+  
 </body>
 
 <!-- partial:index.partial.html -->
@@ -579,12 +427,9 @@
 </svg>
 <!-- partial -->
 
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-<script src="../../js/bannerscript.js"></script>
-<script src="../../js/LookBookscript.js"></script>
-<script src="../../js/comment.js"></script>
-<script src="../../js/modal.js"></script>
-<script src="../../js/like.js"></script>
+<script  src="../../js/bannerscript.js"></script>
+<script  src="../../js/LookBookscript.js"></script>
+<script src="../../js/myPostEdit.js"></script>
 </html>

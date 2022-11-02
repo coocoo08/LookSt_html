@@ -344,12 +344,12 @@ svg {
 
 .listA article {
 	flex: 1 1 300px;
-	display: flex;
+	padding: 5px;
   /* height: 600px; */
 }
 
 .listA a {
-	flex: 1;
+	/* flex: 1; */
 	margin: 10px;
 	display: block;
 	/*border: solid 1px #ddd;*/
@@ -389,14 +389,18 @@ svg {
   margin: 10px
 }
 
+#profile_info{
+  display: flex;
+}
 
+.productDetail { display : flex}
 #profile_info > p {
   /* line-height: 55px; */
   padding-top: 2%;
   text-align: center;
   font-size: medium;
 }
-.tag p {
+.tag a {
   font-size: 14px;
   opacity: 0.8;
 }
@@ -407,7 +411,7 @@ svg {
   width: 48px;
   height: 48px;
   border-radius: 10%;
-  margin: 0 0 5px 5px;
+  margin: 0 0 5px 0;
 }
 .social_header {
   position: absolute;
@@ -452,4 +456,27 @@ svg {
   box-sizing: border-box;
   padding-bottom: 10px;
   margin-right: 20%
+}
+.like_comment 
+button:first-child
+.active {
+  color: red;
+
+}
+.like_comment {
+  display: flex;
+  height: 40px;
+  margin-top: 4px;
+}
+.like_comment button {
+background-color: transparent;
+width: 40px;
+font-size: 25px;
+margin-right: 10px;
+border: 0;
+cursor: pointer;
+}
+.like_comment 
+button:first-child{
+  margin-left: 10px;
 }

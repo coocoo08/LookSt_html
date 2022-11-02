@@ -3,177 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <title>Lookst</title>
+  
+  <link rel="stylesheet" href="../../css/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="../../css/headerstyle.css">
-
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-<header class="top-bar pc">
-  <div class="con inline-grid">
-    <div>
-      <a href="#" class="top-bar__logo block">
-        <span>
-          <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
-          <i class="fa-solid fa-file-magnifying-glass"></i>
-        </span>
-        <span>
-          LookSt
-        </span>
-      </a>
+  <header class="top-bar pc">
+    <div class="con inline-grid">
+      <div>
+        <a href="../../html/index.html" class="top-bar__logo block">
+          <span>
+            <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+            <i class="fa-solid fa-file-magnifying-glass"></i>
+          </span>
+          <span>
+            LookSt
+          </span>
+        </a>
+      </div>
+      <div></div>
+      <div class="inline-grid text-right">
+        <nav class="top-bar__menu-box-1">
+          <ul class="inline-grid">
+            <li>
+              <a href="../../html/sns_list/SNS_main_list.html">
+                <span><i class="fa-solid fa-user-pen"></i></span>
+                <span>SNS</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="fas fa-shopping-bag"></i></span>
+                <span>SHOP</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-shirt"></i></span>
+                    <span>상의</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-person-dress"></i></span>
+                    <span>하의</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-glasses"></i></span>
+                    <span>악세사리</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="fa-solid fa-folder-open"></i></span>
+                <span>게시판</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="../html/board_list.html">
+                    <span><i class="fas fa-chalkboard-teacher"></i></span>
+                    <span>종합게시판</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-comments"></i></span>
+                    <span>리뷰게시판</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-question"></i></span>
+                    <span>FAQ</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <div id="profile_info">
+                  <img src="../../img/프사.jpeg" alt="">
+                </div>
+              </a>
+              <ul>
+                <li>
+                  <a href="../html/board_list.html">
+                    <span>마이페이지</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>로그아웃</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div></div>
-    <div class="inline-grid text-right">
-      <nav class="top-bar__menu-box-1">
-        <ul class="inline-grid">
-          <li>
-            <a href="#">
-              <span><i class="fa-solid fa-house"></i></span>
-              <span>HOME</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="fa-solid fa-user-pen"></i></span>
-              <span>SNS</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="fas fa-shopping-bag"></i></span>
-              <span>SHOP</span>
-            </a>
-            <ul>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-shirt"></i></span>
-                  <span>상의</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-person-dress"></i></span>
-                  <span>하의</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-glasses"></i></span>
-                  <span>악세사리</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="fa-solid fa-folder-open"></i></span>
-              <span>게시판</span>
-            </a>
-            <ul>
-              <li>
-                <a href="../html/board_list.html">
-                  <span><i class="fas fa-chalkboard-teacher"></i></span>
-                  <span>종합게시판</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-comments"></i></span>
-                  <span>리뷰게시판</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-question"></i></span>
-                  <span>FAQ</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+  </header>
+  
+  <header class="top-bar mobile">
+    <div class="con inline-grid">
+      <div>
+        <a href="#" class="top-bar__logo block">
+          <span>
+            <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+            <i class="fa-solid fa-file-magnifying-glass"></i>
+          </span>
+          <span>
+            LookSt
+          </span>
+        </a>
+      </div>
+      <div></div>
+      <div class="inline-grid text-right">
+        <nav class="top-bar__menu-box-1">
+          <ul class="inline-grid">
+            <li>
+              <a href="#">
+                <span><i class="fa-solid fa-house"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="fa-solid fa-user-pen"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="fas fa-shopping-bag"></i></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-shirt"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-person-dress"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-glasses"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="fa-solid fa-folder-open"></i></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="../html/board_list.html">
+                    <span><i class="fas fa-chalkboard-teacher"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-comments"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-question"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
-</header>
-
-<header class="top-bar mobile">
-  <div class="con inline-grid">
-    <div>
-      <a href="#" class="top-bar__logo block">
-        <span>
-          <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
-          <i class="fa-solid fa-file-magnifying-glass"></i>
-        </span>
-        <span>
-          LookSt
-        </span>
-      </a>
-    </div>
-    <div></div>
-    <div class="inline-grid text-right">
-      <nav class="top-bar__menu-box-1">
-        <ul class="inline-grid">
-          <li>
-            <a href="#">
-              <span><i class="fa-solid fa-house"></i></span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="fa-solid fa-user-pen"></i></span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="fas fa-shopping-bag"></i></span>
-            </a>
-            <ul>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-shirt"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-person-dress"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-glasses"></i></span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="fa-solid fa-folder-open"></i></span>
-            </a>
-            <ul>
-              <li>
-                <a href="../html/board_list.html">
-                  <span><i class="fas fa-chalkboard-teacher"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-comments"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-question"></i></span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-<!-- partial -->
+  </header>
+  <!-- header -->
   
 </body>
 </html>
@@ -186,7 +198,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../../css/cart.css">
 </head>
 
 
@@ -218,12 +229,23 @@
                         <td><img src="image/keyboard.jpg" alt="magic keyboard"></td>
                         <td>
                             <p>메카닉 패딩 야상점퍼</p>
-                            <sapn class="infor">옵션: XL </sapn><span
+                      
                                 
                         </td>
                         <td class="cart__list__option">
-                            <p>사이즈:XL/1개</p>
-                            <button class="cart__list__optionbtn">주문조건 추가/변경</button>
+                            	        			<div class="product-count">
+	        				<div class="option">수량
+                  <button class="button_qun">-</button>
+							    <input type="text" name="quantity" value="1" class="qty" />
+							    <button class="button_qun">+</button>
+                  &nbsp;&nbsp;&nbsp;&nbsp;사이즈
+                            <select id="size" name="size" class="form-control">
+                              <option>S</option>
+                              <option>M</option>
+                              <option>L</option>
+                              <option>XL</option>
+                            </select>
+                  </div>
                         </td>
                         <td><span class="infor">116,620원</span><br>
                             <button class="cart__list__orderbtn">주문하기</button>
@@ -236,13 +258,24 @@
                             <img src="image/mouse.jpg" alt="magic mouse">
                         </td>
                         <td style="width: 27%;">
-                            <p>asdasdsad</p>
-                            <span class=" infor">옵션: XL </span>
+                            <p>아이폰</p>
+                            
                         </td>
-                        <td class="cart__list__option" style="width: 27%;">
-                            <p>사이즈:XL/1개</p>
-                            <button class="cart__list__optionbtn">주문조건 추가/변경</button>
-                        </td>
+                        <td class="cart__list__option">
+                          <div class="product-count">
+                <div class="option">수량
+                <button class="button_qun">-</button>
+                <input type="text" name="quantity" value="1" class="qty" />
+                <button class="button_qun">+</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;사이즈
+                          <select id="size" name="size" class="form-control">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                          </select>
+                </div>
+                      </td>
                         <td style="width: 15%;"><span class="infor">88,900원</span><br>
                             <button class="cart__list__orderbtn">주문하기</button>
                         </td>
