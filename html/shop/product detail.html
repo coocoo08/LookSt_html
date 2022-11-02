@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Lookst</title>
-  
-  <link rel="stylesheet" href="../../css/cart.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="../../css/headerstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
   <header class="top-bar pc">
@@ -114,7 +112,7 @@
       <div>
         <a href="#" class="top-bar__logo block">
           <span>
-            <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+            <img src="../img/look.png" alt="look" style ="width: 40px; height: 30px;">
             <i class="fa-solid fa-file-magnifying-glass"></i>
           </span>
           <span>
@@ -197,96 +195,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/product detail.css">
+
     <title>Document</title>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="../../css/headerstyle.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 </head>
-
-
 <body>
     
-    <div class="section_caption">
-        장바구니
-    </div>
-    <section class="cart">
-        <div class="cart__information">
-            <ul>
-                <li>모든 상품은 무료배송입니다.</li>
-            </ul>
-        </div>
-        <table class="cart__list">
-            <form>
-                <thead>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td colspan="2">상품정보</td>
-                        <td>옵션</td>
-                        <td>상품금액</td>
-                        <td>배송비</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="cart__list__detail">
-                        <td><input type="checkbox"></td>
-                        <td><img src="image/keyboard.jpg" alt="magic keyboard"></td>
-                        <td>
-                            <p>메카닉 패딩 야상점퍼</p>
-                            <sapn class="infor">옵션: XL </sapn>
-                                
-                        </td>
-                        <td class="cart__list__option">
-                            	        			<div class="product-count">
-	        				<div>수량</div>
-                  <div class="qtyminus">-</div>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"><div class="pd-wrap">
+		<div class="container">
+	       
+	        <div class="row">
+	        	<div class="col-md-6">
+	        		<div id="slider" class="owl-carousel product-slider">
+						<div class="item">
+						  	<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+					</div>
+					<div id="thumb" class="owl-carousel product-thumb">
+						<div class="item">
+						  	<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+					</div>
+	        	</div>
+	        	<div class="col-md-6">
+	        		<div class="product-dtl">
+        				<div class="product-info">
+		        			<div class="product-name">NIKE</div>
+							</div>
+		        			<div class="product-price-discount"><span>139,000 원</span>
+		        		</div>
+	        			<p>메카닉 패딩 야상점퍼</p>
+	        			<div class="row">
+	        				<div class="col-md-6">
+	        					<label for="size">사이즈</label>
+								<select id="size" name="size" class="form-control">
+									<option>S</option>
+									<option>M</option>
+									<option>L</option>
+									<option>XL</option>
+								</select>
+	        				</div>
+	        				
+	        			</div>
+	        			<div class="product-count">
+	        				<label for="size">수량</label>
+	        				<form action="#" class="display-flex">
+							    <div class="qtyminus">-</div>
 							    <input type="text" name="quantity" value="1" class="qty">
 							    <div class="qtyplus">+</div>
-                            <label for="size">사이즈</label>
-                            <select id="size" name="size" class="form-control">
-                              <option>S</option>
-                              <option>M</option>
-                              <option>L</option>
-                              <option>XL</option>
-                            </select>
-                        </td>
-                        <td><span class="infor">116,620원</span><br>
-                            <button class="cart__list__orderbtn">주문하기</button>
-                        </td>
-                        <td>무료</td>
-                    </tr>
-                    <tr class="cart__list__detail">
-                        <td style="width: 2%;"><input type="checkbox"></td>
-                        <td style="width: 13%;">
-                            <img src="image/mouse.jpg" alt="magic mouse">
-                        </td>
-                        <td style="width: 27%;">
-                            <p>asdasdsad</p>
-                            <span class=" infor">옵션: XL </span>
-                        </td>
-                        <td class="cart__list__option" style="width: 27%;">
-                            <p>사이즈:XL/1개</p>
-                            <button class="cart__list__optionbtn">주문조건 추가/변경</button>
-                        </td>
-                        <td style="width: 15%;"><span class="infor">88,900원</span><br>
-                            <button class="cart__list__orderbtn">주문하기</button>
-                        </td>
-                        <td style="width: 15%;">무료</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3"><input type="checkbox"> <button class="cart__list__optionbtn">선택상품 삭제</button>
-                            <button class="cart__list__optionbtn">전체상품 삭제</button>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tfoot>
-            </form>
-        </table>
-        <div class="cart__mainbtns">
-            <button class="cart__bigorderbtn left">쇼핑 계속하기</button>
-            <button class="cart__bigorderbtn right">주문하기</button>
-        </div>
-    </section>
+							</form>
+							<a href="#" class="round-black-btn">장바구니 담기</a>
+                            <a href="#" class="round-black-btn">주문 하기</a>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="product-info-tabs">
+		        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				  	<li class="nav-item">
+				    	<a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">상세정보</a>
+				  	</li>
+				  	<!-- <li class="nav-item">
+				    	<a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Regram (5)</a>-->
+				  	</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  	<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+						<img src="../../img/dog.jpg" alt="look" style ="width: 1000px; height: 1500px">
+           
+				  	</div>
+           
+				  <!--	<div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+				  		<div class="review-heading">REVIEWS</div>
+				  		<p class="mb-20">There are no reviews yet.</p>
+				  		<form class="review-form">
+		        			<div class="form-group">
+			        			<label>Your rating</label>
+			        			<div class="reviews-counter">
+									<div class="rate">
+									    <input type="radio" id="star5" name="rate" value="5" />
+									    <label for="star5" title="text">5 stars</label>
+									    <input type="radio" id="star4" name="rate" value="4" />
+									    <label for="star4" title="text">4 stars</label>
+									    <input type="radio" id="star3" name="rate" value="3" />
+									    <label for="star3" title="text">3 stars</label>
+									    <input type="radio" id="star2" name="rate" value="2" />
+									    <label for="star2" title="text">2 stars</label>
+									    <input type="radio" id="star1" name="rate" value="1" />
+									    <label for="star1" title="text">1 star</label>
+									</div>
+								</div>
+							</div>
+		        			<div class="form-group">
+			        			<label>Your message</label>
+			        			<textarea class="form-control" rows="10"></textarea>
+			        		</div>
+			        		<div class="row">
+				        		<div class="col-md-6">
+				        			<div class="form-group">
+					        			<input type="text" name="" class="form-control" placeholder="Name*">
+					        		</div>
+					        	</div>
+				        		<div class="col-md-6">
+				        			<div class="form-group">
+					        			<input type="text" name="" class="form-control" placeholder="Email Id*">
+					        		</div>
+					        	</div>
+					        </div>
+					        <button class="round-black-btn">Submit Review</button>
+			        	</form>
+				  	</div>
+				</div>
+			</div>-->
+			
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 
@@ -325,12 +398,9 @@
     <div class="bubble" style="--size:3.143298414822098rem; --distance:7.83032364046995rem; --position:7.470577263493219%; --time:2.159170743537223s; --delay:-3.7884120770636653s;"></div>
     <div class="bubble" style="--size:5.9947195334543535rem; --distance:9.364508055323533rem; --position:73.2674918482873%; --time:2.6789808791169256s; --delay:-3.322300264203757s;"></div>
     <div class="bubble" style="--size:5.849737662440903rem; --distance:8.658085803013954rem; --position:84.6582747117964%; --time:2.8590300299778404s; --delay:-3.417278774276576s;"></div>
-    <div class="bubble" style="--size:2.157658969129897rem; --distance:9.153346282766588rem; --position:102.04148236373015%; --time:3.4069505975198777s; --delay:-3.9782790394518015s;"></div>
     <div class="bubble" style="--size:3.4452944198954727rem; --distance:9.843290963673136rem; --position:28.724081478146715%; --time:2.856131514598489s; --delay:-2.535714245851967s;"></div>
     <div class="bubble" style="--size:3.7735368470187964rem; --distance:6.104898548956798rem; --position:22.150279400203083%; --time:2.540981885656788s; --delay:-2.1611593800540114s;"></div>
-    <div class="bubble" style="--size:4.917886218294121rem; --distance:9.993493708864051rem; --position:98.15651987425849%; --time:3.33037940208478s; --delay:-2.041667073086239s;"></div>
     <div class="bubble" style="--size:5.055001998648006rem; --distance:8.251383899793675rem; --position:60.49673529309388%; --time:2.037439834973155s; --delay:-3.5755894976162415s;"></div>
-    <div class="bubble" style="--size:3.8535932223830187rem; --distance:6.185647824636111rem; --position:101.99059456233972%; --time:3.938537608122086s; --delay:-2.370151087394576s;"></div>
     <div class="bubble" style="--size:5.5781208048327215rem; --distance:7.234836825351714rem; --position:40.53622405075764%; --time:2.502330875672742s; --delay:-3.0573415000804522s;"></div>
     <div class="bubble" style="--size:5.263489767501143rem; --distance:7.000216527902599rem; --position:83.35917832483504%; --time:3.8265031319310014s; --delay:-2.005076204245884s;"></div>
     <div class="bubble" style="--size:2.752178596909559rem; --distance:8.372526480485448rem; --position:42.180361377436355%; --time:3.160546882627316s; --delay:-3.175383909792701s;"></div>
@@ -341,23 +411,18 @@
     <div class="bubble" style="--size:3.7475419802201957rem; --distance:9.64784625838658rem; --position:77.81320811793586%; --time:2.7300118103079365s; --delay:-3.5454097613844358s;"></div>
     <div class="bubble" style="--size:5.915997211130302rem; --distance:9.260449856486169rem; --position:70.98729450146898%; --time:2.226530906286513s; --delay:-2.5357954285483406s;"></div>
     <div class="bubble" style="--size:3.204045335567546rem; --distance:9.713805623738974rem; --position:49.88906215046968%; --time:2.4243380169060367s; --delay:-3.300548061339865s;"></div>
-    <div class="bubble" style="--size:5.154544043912497rem; --distance:6.346771943716771rem; --position:97.19797748187557%; --time:2.559863742731297s; --delay:-2.3553841212749136s;"></div>
     <div class="bubble" style="--size:5.580960391149969rem; --distance:6.318115644267316rem; --position:-2.299885006998026%; --time:2.9731575087818314s; --delay:-2.2002573939788093s;"></div>
-    <div class="bubble" style="--size:4.996889999131701rem; --distance:8.39581358288939rem; --position:102.37717104322755%; --time:2.415419658282517s; --delay:-2.9064564041891576s;"></div>
     <div class="bubble" style="--size:2.03172314758819rem; --distance:6.282006926931849rem; --position:27.762339069789185%; --time:3.16272754492543s; --delay:-3.6317186432104536s;"></div>
     <div class="bubble" style="--size:3.6357837556344608rem; --distance:8.068070047008181rem; --position:71.41148448786002%; --time:2.6528247352690766s; --delay:-3.231759428924927s;"></div>
     <div class="bubble" style="--size:4.1197215496534785rem; --distance:7.901741213557316rem; --position:91.90967840832884%; --time:2.238678342380493s; --delay:-2.4590534621610405s;"></div>
     <div class="bubble" style="--size:5.038368653942239rem; --distance:7.386629879533456rem; --position:19.860081680783416%; --time:2.9000628165116296s; --delay:-2.647681735490383s;"></div>
-    <div class="bubble" style="--size:5.536732084203305rem; --distance:9.783397798641241rem; --position:104.21147375122908%; --time:2.9373708925660305s; --delay:-2.504642674035783s;"></div>
     <div class="bubble" style="--size:2.830511097366262rem; --distance:8.18190097456138rem; --position:54.41990407505971%; --time:2.9063032771689685s; --delay:-2.0004785044843665s;"></div>
     <div class="bubble" style="--size:5.454775171508125rem; --distance:6.812221495315662rem; --position:27.978550155546856%; --time:3.975017670506362s; --delay:-3.113363085836937s;"></div>
-    <div class="bubble" style="--size:3.8151002049375062rem; --distance:9.56054167722786rem; --position:104.65795219082003%; --time:2.246927264555817s; --delay:-3.0284903971860935s;"></div>
     <div class="bubble" style="--size:3.309160143077275rem; --distance:9.720734712291033rem; --position:88.53710449773278%; --time:2.164264234283891s; --delay:-3.217535577195952s;"></div>
     <div class="bubble" style="--size:5.534243786590294rem; --distance:6.173008656097134rem; --position:91.85239953439208%; --time:3.7874748844187125s; --delay:-2.427449989233317s;"></div>
     <div class="bubble" style="--size:2.6290860068969755rem; --distance:6.542025201523603rem; --position:41.447417047323405%; --time:3.560543878953631s; --delay:-3.9454976558140187s;"></div>
     <div class="bubble" style="--size:4.1215437529515375rem; --distance:6.93441403852198rem; --position:3.19567385157052%; --time:3.6860773554610695s; --delay:-2.635534664248181s;"></div>
     <div class="bubble" style="--size:2.364006790826881rem; --distance:9.155706673670753rem; --position:73.43094286761772%; --time:2.945075042111573s; --delay:-3.1094005708553634s;"></div>
-    <div class="bubble" style="--size:5.622111352453258rem; --distance:8.937198076711974rem; --position:97.10991695930298%; --time:3.0684349225862833s; --delay:-2.162917719903087s;"></div>
     <div class="bubble" style="--size:3.7947067893415616rem; --distance:9.308139662714702rem; --position:66.55922930309234%; --time:3.1653721035542626s; --delay:-3.5613071811227686s;"></div>
     <div class="bubble" style="--size:4.42263259364884rem; --distance:8.965425433803203rem; --position:90.70179662366769%; --time:3.3636133204934726s; --delay:-2.11175095894715s;"></div>
     <div class="bubble" style="--size:2.6393292102561094rem; --distance:9.363065692796093rem; --position:1.5256552151499108%; --time:3.648058424588528s; --delay:-3.382732016156239s;"></div>
@@ -374,11 +439,9 @@
     <div class="bubble" style="--size:5.439152187627973rem; --distance:8.081300397501971rem; --position:32.81545049053851%; --time:3.691296820797107s; --delay:-3.744960396693226s;"></div>
     <div class="bubble" style="--size:2.3968425360756997rem; --distance:7.079659229422833rem; --position:51.08363220799441%; --time:2.766508971807242s; --delay:-3.5083787753667774s;"></div>
     <div class="bubble" style="--size:4.244363868008829rem; --distance:7.449309860243353rem; --position:46.406568383429786%; --time:2.0207586677653717s; --delay:-3.6997555909712894s;"></div>
-    <div class="bubble" style="--size:5.253791352791174rem; --distance:8.388654026088048rem; --position:99.92183460340009%; --time:3.250118684907271s; --delay:-2.1815767912799564s;"></div>
     <div class="bubble" style="--size:2.8484680679620595rem; --distance:8.618311179589803rem; --position:59.485553902462854%; --time:2.9282706448018616s; --delay:-3.717863376369714s;"></div>
     <div class="bubble" style="--size:4.514041449563373rem; --distance:9.699938580037578rem; --position:8.23669500550458%; --time:2.135169717747449s; --delay:-2.3405673839902605s;"></div>
     <div class="bubble" style="--size:5.430258216946162rem; --distance:6.808974630844494rem; --position:24.86061506497585%; --time:3.472193429976784s; --delay:-3.9605560339887287s;"></div>
-    <div class="bubble" style="--size:4.74080081640708rem; --distance:7.230802586997612rem; --position:98.25096460495622%; --time:2.05339138988228s; --delay:-3.430684150889087s;"></div>
     <div class="bubble" style="--size:3.94631185642472rem; --distance:8.349601443735434rem; --position:16.626963981713484%; --time:3.4773380989866665s; --delay:-2.121395469425764s;"></div>
     <div class="bubble" style="--size:4.612509290946329rem; --distance:8.239771296325275rem; --position:92.33825282152138%; --time:2.8964882186269723s; --delay:-2.0440732444841005s;"></div>
     <div class="bubble" style="--size:5.4603660890318775rem; --distance:8.315517091916739rem; --position:78.92931334151213%; --time:2.6902787827194183s; --delay:-2.1644488703619444s;"></div>
@@ -394,10 +457,8 @@
     <div class="bubble" style="--size:5.748732026071309rem; --distance:6.47708159852385rem; --position:70.00591292595362%; --time:3.161860023334691s; --delay:-3.6552474292976185s;"></div>
     <div class="bubble" style="--size:4.26448480695773rem; --distance:7.3598347086653435rem; --position:66.9152523944303%; --time:2.6618219957914793s; --delay:-2.1520299619245358s;"></div>
     <div class="bubble" style="--size:5.465798139706841rem; --distance:9.578435840057rem; --position:79.17605375357549%; --time:3.667015302472614s; --delay:-3.272778679078954s;"></div>
-    <div class="bubble" style="--size:3.4159165268425573rem; --distance:6.5709003750076995rem; --position:102.92639222719366%; --time:2.9686929326107085s; --delay:-3.6904044976030335s;"></div>
     <div class="bubble" style="--size:5.190131395198499rem; --distance:6.675695537201196rem; --position:68.20600547935975%; --time:2.6652464459434357s; --delay:-2.650180977075646s;"></div>
     <div class="bubble" style="--size:4.160457872517126rem; --distance:8.77383966926692rem; --position:67.3152415040781%; --time:3.179703607027564s; --delay:-2.3799317031411196s;"></div>
-    <div class="bubble" style="--size:3.7562002386319886rem; --distance:7.460887010638656rem; --position:100.31425628871048%; --time:2.7538756803618023s; --delay:-2.1800900720257563s;"></div>
     <div class="bubble" style="--size:2.592093144712167rem; --distance:7.883645196244012rem; --position:87.18262316057226%; --time:2.3032702289811997s; --delay:-2.8398391261237785s;"></div>
     <div class="bubble" style="--size:4.810982700970813rem; --distance:9.970176291766872rem; --position:14.94348201716026%; --time:3.144835057636388s; --delay:-3.8801878209110687s;"></div>
     <div class="bubble" style="--size:3.510276322314132rem; --distance:7.06306592381353rem; --position:3.617369046081567%; --time:2.4980536548219883s; --delay:-3.0320035664719573s;"></div>
@@ -426,7 +487,6 @@
     <div class="bubble" style="--size:4.765009166542971rem; --distance:9.015977477839147rem; --position:43.14717422182086%; --time:2.2322165190195964s; --delay:-2.0407868405337313s;"></div>
     <div class="bubble" style="--size:4.78825457943488rem; --distance:9.191149941542477rem; --position:27.148057532185085%; --time:3.568884207152328s; --delay:-2.9877572026402137s;"></div>
     <div class="bubble" style="--size:4.67529016273551rem; --distance:8.263593326380821rem; --position:6.759995705788979%; --time:3.2654829420928215s; --delay:-2.736370776678152s;"></div>
-    <div class="bubble" style="--size:4.101070630929446rem; --distance:7.004970834412466rem; --position:102.07237685747856%; --time:3.016862447687909s; --delay:-3.218332261739198s;"></div>
     <div class="bubble" style="--size:2.6492629951629025rem; --distance:8.889691372512189rem; --position:81.91390027962096%; --time:2.200686316024574s; --delay:-2.574013138701114s;"></div>
     <div class="bubble" style="--size:5.208623702779126rem; --distance:7.972027290777301rem; --position:27.528882852979862%; --time:3.6548011063758152s; --delay:-2.866969576673225s;"></div>
     <div class="bubble" style="--size:5.854739329981732rem; --distance:6.657104824222927rem; --position:53.0726217466683%; --time:3.2217221719099456s; --delay:-3.6804921146164244s;"></div>
