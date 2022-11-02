@@ -188,19 +188,7 @@
         </div>
         <div class="section_content">
             <form action="#" th:action="@{/main/payment_ok}" method="post" onsubmit="return sendit()">
-            
-                <div class="benefit_info">
-                    <div class="benefit_info_caption">
-                        혜택정보
-                    </div>
-                    <div class="benefit_info_desc">
-                        <div class="benefit_info_desc_item"><b th:text="${member.name}">홍길동</b> 님은 <b sec:authorize="hasRole('ROLE_ADMIN')">[관리자]</b><b sec:authorize="hasRole('ROLE_MEMBER')">[일반회원]</b> 이십니다</div>
-                        <div class="benefit_info_mileage benefit_info_desc_item">
-                            가용적립금: <b th:text="${#numbers.formatInteger(member.mileage, 0, 'COMMA')}">2,000</b>원
-                            <input type="hidden" class="canuse" value="2000" th:value="${member.mileage}"> <!--서버로부터 넘어온 데이터-->
-                        </div>
-                    </div>
-                </div>
+
 
                 
                 <div class="about_order">
@@ -225,12 +213,13 @@
                             <thead>
                                 <tr>
                                     <td><input type="checkbox" class="check_all"></td>
-                                    <td>이미지</td>
+                                    <td></td>
+                                    
                                     <td>상품정보</td>
                                     <td>판매가</td>
                                     <td>수량</td>
-                                    <td>적립금</td>
-                                    <td>배송구분</td>
+                                    <td>사이즈</td>
+                                    <td>색상</td>
                                     <td>배송비</td>
                                     <td>합계</td>
                                 </tr>
@@ -238,18 +227,18 @@
                             <tbody> 
                                 <tr th:each="item:${orderList}">
                                     <td><input type="checkbox" class="check"></td>
-                                    <td><img src="img/basket/basket1.JPG" th:src="@{${item.imgUrl}}"></td>
+                                    <td></td>
                                     <td>
                                         <div th:text="${item.itemName}">메카닉 패딩 야상점퍼</div>
-                                        <div th:text="'[옵션:'+${item.color}+']'">[옵션: 그레이]</div>
+                                     
                                     </td>
                                     <td><b th:text="'₩'+${#numbers.formatInteger(item.price, 0, 'COMMA')}">₩39,000</b></td>
                                     <td th:text="${item.basketCount}">
                                         7
                                     </td>
-                                    <td><span class="order_mileage">390</span>원</td> <!--js 계산. 한 아이템에 대한 총 예상 적립 마일리지-->
-                                    <td>기본배송</td>
-                                    <td>배송비</td>
+                                    <td>XL</td> <!--js 계산. 한 아이템에 대한 총 예상 적립 마일리지-->
+                                    <td>그레이</td>
+                                    <td>무료배송</td>
                                     <td>
                                         ₩<span class="order_price"></span> <!--js 계산. 한 아이템에 대한 총 가격-->
                                     </td>
@@ -261,10 +250,7 @@
                                 
                             </tbody>
                         </table>
-                        <div class="bottombtn_box">
-                            선택상품을 &nbsp;
-                            <button type="button" class="deletebtn bottombtn"><i class="fas fa-times"></i> &nbsp;삭제하기</button>                
-                        </div>
+                        
                     </div>
                 </div>
                 <div id="orderform">
@@ -371,17 +357,7 @@
                           <col width="120px"/>
                           <col width="auto"/>
                       </colgroup>
-                      <th>적립금</th>
-                      <td>
-                          <input type="text" name="used_mileage" value="0"> 원 (총 사용가능 적립금 : <span th:text="${#numbers.formatInteger(member.mileage, 0, 'COMMA')}">2,000</span>원) <!-- 티임리프로 데이터 넣어주기-->
-                          <br>
-                          <br>
-                          - 적립금은 최소 2,000 이상일 떄 결제가 가능합니다.<br>
-                          - 최대 사용금액은 제한이 없습니다.<br>
-                          - 적립금으로만 결제할 경우, 결제금액이 0으로 보여지는 것은 정상이며 [결제하기] 버튼을 누르면 주문이 완료됩니다.
-                          <br>
-                          <br>
-                      </td>
+
                   </table>
                   <div class="payment_submit">
                       <input type="submit" value="결제하기">
