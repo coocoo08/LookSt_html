@@ -115,3 +115,13 @@ button:disabled {
   top: 50px;
   right: -16px;
 }
+
+summary:focus {
+  outline: 0;
+}
+
+@media (max-width :700px) {
+  div {
+    width: 50%;
+  }
+}
