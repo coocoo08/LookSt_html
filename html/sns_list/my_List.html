@@ -19,6 +19,7 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
   <link rel="stylesheet" href="../../css/footerstyle.css">
+  <link rel="stylesheet" href="../../css/comment-modal.css">
 
 </head>
 <header class="top-bar pc">
@@ -270,10 +271,32 @@
                   </ul>
                 </div>
                 <div class="sl__item__contents">
+                  <!-- 좋아요 및 댓글  -->
                   <div class="like_mylist">
-                    <i class="fa-solid fa-heart fa-2xl" style="color: red;"></i>
-                    <i class="fa-solid fa-comment fa-2xl"></i>
+                    <button onclick="clickBtn()"><i class="far fa-heart fa-xl"></i></button>
+                    <button class="btn"><i class="far fa-comment fa-xl"></i></button>
+
+                    <div class="modal">
+                      <!-- 댓글 Modal의 내용  -->
+                      <div class="modal-content">
+                        <span class="close">&times;</span>                         
+                        <h3>댓글</h3>
+                        <div class="comments">
+                          <span class="user_nick">ezen_123</span>
+                          <span class="comment">멋져요~!</span>
+                          <span class="comment_date">어제</span>
+                        </div>
+                        <div class="comments">
+                          <span class="user_nick">dkahffk</span>
+                          <span class="comment">안냐세유~</span>
+                          <span class="comment_date">7년전</span>
+                        </div>
+                        <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
+                      </div>
+                    </div>    
+
                   </div>
+                  <!-- 공감 -->
                   <div class="social_count">
                     <a href="#" class="like_count">
                       공감
@@ -281,6 +304,7 @@
                       개
                     </a>
                   </div>
+                  <!-- 해시태그 -->
                   <div class="sl__item__contents__content">
                       <span class="text_link">
                         <span class="text">
@@ -390,9 +414,30 @@
                 </ul>
               </div>
               <div class="sl__item__contents">
+                <!-- 좋아요 및 댓글  -->
                 <div class="like_mylist">
-                  <i class="fa-solid fa-heart fa-2xl" style="color: red;"></i>
-                  <i class="fa-solid fa-comment fa-2xl"></i>
+                  <button onclick="clickBtn()"><i class="far fa-heart fa-xl"></i></button>
+                  <button class="btn"><i class="far fa-comment fa-xl"></i></button>
+
+                  <div class="modal">
+                    <!-- 댓글 Modal의 내용  -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>                         
+                      <h3>댓글</h3>
+                      <div class="comments">
+                        <span class="user_nick">ezen_123</span>
+                        <span class="comment">멋져요~!</span>
+                        <span class="comment_date">어제</span>
+                      </div>
+                      <div class="comments">
+                        <span class="user_nick">dkahffk</span>
+                        <span class="comment">안냐세유~</span>
+                        <span class="comment_date">7년전</span>
+                      </div>
+                      <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
+                    </div>
+                  </div>    
+
                 </div>
                 <div class="social_count">
                   <a href="#" class="like_count">
@@ -509,10 +554,31 @@
               </ul>
             </div>
             <div class="sl__item__contents">
-              <div class="like_mylist">
-                <i class="fa-solid fa-heart fa-2xl" style="color: red;"></i>
-                <i class="fa-solid fa-comment fa-2xl"></i>
-              </div>
+             <!-- 좋아요 및 댓글  -->
+             <div class="like_mylist">
+              <button onclick="clickBtn()"><i class="far fa-heart fa-xl"></i></button>
+              <button class="btn"><i class="far fa-comment fa-xl"></i></button>
+
+              <div class="modal">
+                <!-- 댓글 Modal의 내용  -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>                         
+                  <h3>댓글</h3>
+                  <div class="comments">
+                    <span class="user_nick">ezen_123</span>
+                    <span class="comment">멋져요~!</span>
+                    <span class="comment_date">어제</span>
+                  </div>
+                  <div class="comments">
+                    <span class="user_nick">dkahffk</span>
+                    <span class="comment">안냐세유~</span>
+                    <span class="comment_date">7년전</span>
+                  </div>
+                  <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
+                </div>
+              </div>    
+
+            </div>
               <div class="social_count">
                 <a href="#" class="like_count">
                   공감
@@ -629,9 +695,30 @@
                 </ul>
               </div>
               <div class="sl__item__contents">
+                <!-- 좋아요 및 댓글  -->
                 <div class="like_mylist">
-                  <i class="fa-solid fa-heart fa-2xl" style="color: red;"></i>
-                  <i class="fa-solid fa-comment fa-2xl"></i>
+                  <button onclick="clickBtn()"><i class="far fa-heart fa-xl"></i></button>
+                  <button class="btn"><i class="far fa-comment fa-xl"></i></button>
+
+                  <div class="modal">
+                    <!-- 댓글 Modal의 내용  -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>                         
+                      <h3>댓글</h3>
+                      <div class="comments">
+                        <span class="user_nick">ezen_123</span>
+                        <span class="comment">멋져요~!</span>
+                        <span class="comment_date">어제</span>
+                      </div>
+                      <div class="comments">
+                        <span class="user_nick">dkahffk</span>
+                        <span class="comment">안냐세유~</span>
+                        <span class="comment_date">7년전</span>
+                      </div>
+                      <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
+                    </div>
+                  </div>    
+
                 </div>
                 <div class="social_count">
                   <a href="#" class="like_count">
@@ -748,9 +835,30 @@
                 </ul>
               </div>
               <div class="sl__item__contents">
+                <!-- 좋아요 및 댓글  -->
                 <div class="like_mylist">
-                  <i class="fa-solid fa-heart fa-2xl" style="color: red;"></i>
-                  <i class="fa-solid fa-comment fa-2xl"></i>
+                  <button onclick="clickBtn()"><i class="far fa-heart fa-xl"></i></button>
+                  <button class="btn"><i class="far fa-comment fa-xl"></i></button>
+
+                  <div class="modal">
+                    <!-- 댓글 Modal의 내용  -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>                         
+                      <h3>댓글</h3>
+                      <div class="comments">
+                        <span class="user_nick">ezen_123</span>
+                        <span class="comment">멋져요~!</span>
+                        <span class="comment_date">어제</span>
+                      </div>
+                      <div class="comments">
+                        <span class="user_nick">dkahffk</span>
+                        <span class="comment">안냐세유~</span>
+                        <span class="comment_date">7년전</span>
+                      </div>
+                      <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
+                    </div>
+                  </div>    
+
                 </div>
                 <div class="social_count">
                   <a href="#" class="like_count">
@@ -867,9 +975,30 @@
                 </ul>
               </div>
               <div class="sl__item__contents">
+                <!-- 좋아요 및 댓글  -->
                 <div class="like_mylist">
-                  <i class="fa-solid fa-heart fa-2xl" style="color: red;"></i>
-                  <i class="fa-solid fa-comment fa-2xl"></i>
+                  <button onclick="clickBtn()"><i class="far fa-heart fa-xl"></i></button>
+                  <button class="btn"><i class="far fa-comment fa-xl"></i></button>
+
+                  <div class="modal">
+                    <!-- 댓글 Modal의 내용  -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>                         
+                      <h3>댓글</h3>
+                      <div class="comments">
+                        <span class="user_nick">ezen_123</span>
+                        <span class="comment">멋져요~!</span>
+                        <span class="comment_date">어제</span>
+                      </div>
+                      <div class="comments">
+                        <span class="user_nick">dkahffk</span>
+                        <span class="comment">안냐세유~</span>
+                        <span class="comment_date">7년전</span>
+                      </div>
+                      <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
+                    </div>
+                  </div>    
+
                 </div>
                 <div class="social_count">
                   <a href="#" class="like_count">
@@ -1078,6 +1207,9 @@
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
+<script src="../../js/like.js"></script>
+<script src="../../js/modal.js"></script>
+
 <!-- <script  src="../../js/LookBookscript.js"></script> -->
 <!-- <script  src="../../js/bannerscript.js"></script> -->
 </html>

@@ -322,10 +322,10 @@ svg {
 .amount {
   margin-left: 7px;
 }
-.like_mylist i {
+/* .like_mylist i {
   margin: 15px 0 0 10px;
   padding-top: 10px;
-}
+} */
 .social_count {
   padding-top: 12px;
   display: flex;
@@ -416,4 +416,30 @@ svg {
   text-align: center;
   font-size: 18px;
   letter-spacing: -.27px;
+}
+
+.like_mylist 
+button:first-child
+.active {
+  color: red;
+
+}
+.like_mylist {
+  display: flex;
+  height: 40px;
+  margin-top: 10px;
+}
+.like_mylist button {
+background-color: transparent;
+width: 50px;
+font-size: 25px;
+margin-right: 10px;
+
+margin-top: 10px;
+border: 0;
+cursor: pointer;
+}
+.like_mylist 
+button:first-child{
+  margin-left: 4px;
 }
