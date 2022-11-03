@@ -1,0 +1,4 @@
+1) 주문하기
+INSERT INTO prdt_order
+(product_no, member_id, prdt_order_quan, prdt_order_date, prdt_order_type, prdt_order_phone, prdt_order_addr, prdt_order_addr2, prdt_order_person, prdt_order_way)
+VALUES(#{product_no}, #{member_id}, #{prdt_order_quan}, #{prdt_order_date}, #{prdt_order_type}, #{prdt_order_phone}, #{prdt_order_addr}, #{prdt_order_addr2}, #{prdt_order_person}, #{prdt_order_way});
