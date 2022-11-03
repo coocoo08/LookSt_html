@@ -1,0 +1,369 @@
+.esosub {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1c1c1c;
+  letter-spacing: 0.5px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.prd-tinfo {
+  zoom: 1;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+}
+
+.bbs-table-view thead th {
+  height: 25px;
+  color: #9d9d9d;
+  font-size: 12px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bbs-table-view tbody td.line {
+  height: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+bbs-table-view thead th,
+.bbs-table-view tbody td {
+  padding: 6px 0;
+}
+
+.bbs-table-view .data-bd-cont {
+  padding: 20px 0 40px 0;
+}
+
+.bbs-table-view td.com-wrt-box {
+  border: 0;
+}
+
+.com-wrt-box .wrt {
+  margin-top: 7px;
+  text-align: justify;
+}
+
+.wrt {
+  padding-left: 10px;
+}
+
+.wrt textarea {
+  width: 92%;
+  height: 70px;
+  margin-right: 13px;
+}
+
+html,
+body,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+li,
+ol,
+th,
+td,
+p,
+blockquote,
+form,
+fieldset,
+legend,
+menu,
+nav,
+section,
+hgroup,
+article,
+header,
+aside,
+footer,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.bbs-table-view .comment-box td {
+  padding-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+  vertical-align: top;
+}
+
+.page-body {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.view-link {
+  text-align: right;
+  padding: 12px 0;
+}
+
+
+.white_e {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: 'Open Sans', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  padding: 10px 21px;
+  text-decoration: none;
+}
+
+table {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #777;
+  font-family: 'Nanum Gothic', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+}
+
+textarea {
+  width: 600px;
+  height: 47px;
+  padding: 2px;
+  border: 1px solid #F5F5F5;
+}
+
+button,
+input,
+select,
+textarea,
+a {
+  vertical-align: middle;
+}
+
+
+
+
+.input-style2 {
+  width: 120px;
+  margin: 0px 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.com-wrt-box label {
+  padding-left: 7px;
+  color: #9d9d9d;
+  background: url(https://www.amai.co.kr/images/d3/modern_simple/common/bull_join_required.gif) no-repeat 0 50%;
+}
+
+.re_h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1c1c1c;
+  letter-spacing: 0.5px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.bbs-table-list thead th {
+  height: 25px;
+  color: #9d9d9d;
+  /* font-size: 12px; */
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bbs-table-list thead th,
+.bbs-table-list tbody td {
+  padding: 6px 0;
+}
+
+table {
+  font-size: 12px;
+  line-height: 1.25;
+  color: #777;
+  font-family: 'Nanum Gothic', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+}
+
+.bbs-table-list {
+  text-align: -webkit-center;
+  display: grid;
+  border-top: 1px solid #333;
+}
+
+fieldset {
+  border: none;
+  text-align: end;
+}
+
+.esosub_s {
+  font-style: 10px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #777;
+  font-family: 'Nanum Gothic', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.esosub_s_l {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: #1c1c1c;
+  letter-spacing: 0.5px;
+}
+
+section {
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+}
+
+.page {
+  display: flex;
+  font-size: 1rem;
+  color: #aaa;
+  justify-content: center;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: 'Noto Sans KR', serif;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
+}
+
+.black_e_s {
+  background-color: #333333;
+  border: 1px solid #1c1c1c;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Open Sans', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 3px 12px;
+  text-decoration: none;
+}
+
+.view-link .con-link {
+  position: relative;
+  left: 0;
+  text-align: left;
+}
+
+.view-link {
+  padding: 12px 0;
+}
+
+.comment-box {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.page p {
+  margin: 0 12px;
+  padding: 0 8px;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.checkpage {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 4px solid #e6002d;
+}
+
+.bbs-table-list tbody td {
+  padding: 6px 0;
+}
+
+.bbs-table-list tbody td {
+  /* height: 25px; */
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tb-center {
+  text-align: center;
+}
+
+.tb-left #new {
+  width: 30px;
+}
+
+/* 여기부터! */
+.key-wrap {
+  display: inline-block;
+}
+
+.white_e_s {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: 'Open Sans', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 3px 12px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.MS_input_txt {
+  margin-right: 5px;
+  line-height: 20px;
+  border: 1px solid #e7e7e7;
+  height: 23px;
+  vertical-align: middle;
+}
+
+[type=checkbox],
+[type=radio] {
+  vertical-align: middle;
+}
+
+/* 여기까지 끝! */
+
+.bbs-tit {
+  font-size: 9px;
+}
+
+section {
+  text-align: right;
+}
+
+
+
+table {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #777;
+  font-family: 'Nanum Gothic', verdana, Dotum, AppleGothic, Helvetica, sans-serif;
+}
+
+.bbs-table-view thead th, .bbs-table-view tbody td {
+  padding: 6px 0;
+}
+

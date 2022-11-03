@@ -13,7 +13,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
   <link rel="stylesheet" href="../../css/footerstyle.css">
   <!--review css-->
-  <link rel="stylesheet" href="../../css/review.css">
+  <link rel="stylesheet" href="../../css/review_list.css">
   <script src="../../js/review.js"></script>
   <title>Document</title>
 </head>
@@ -197,445 +197,189 @@
 <!-- header -->
 
 <body>
-  <div class="bbs-tit">
-    <h2 class="re_h2">REVIEW</h2>
-    <form action="review.html" name="form1" class="re_form">
-      <fieldset>
-        <legend></legend>
-        <label>
-          <input type="radio" name="r-list" value="ok"  class="MS_input_checkbox"> NAME
-        </label>
-        <label>
-          <input type="radio" name="r-list" value="ok"  
-            class="MS_input_checkbox"> SUBJECT
-        </label>
-        <label>
-          <input type="radio" name="r-list" value="ok"  class="MS_input_checkbox"> CONTENT
-        </label>
-        <span class="key-wrap">
-          <input type="text" name="stext" value="ok" class="MS_input_txt"> <a href="javascript:document.form1.submit();"
-            class="white_e_s" style="padding:6.5px 8px; margin-left:-9px;">OK</a>
-        </span>
-      </fieldset>
-    </form>
-  </div>
-  <div class="bbs-table-list">
-    <table summary="No, content,Name,Data,Hits">
-      <!-- 일반 게시글 -->
-      <thead>
-        <tr>
-          <th scope="col">
-            <div class="esosub_s">NO</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s"></div>
-          </th>
-          <!-- .상품정보가 있을 경우에만 나타남 -->
-          <th scope="col">
-            <div class="esosub_s"></div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">SUBJECT</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">NAME</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">DATE</div>
-          </th>
-          <th scope="col">
-            <div class="esosub_s">HIT</div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- .공지사항 리스트 시작 -->
-        <tr>
-          <td>
-            <div class="tb-center"><img src="https://www.amai.co.kr/images/d3/modern_simple/common/icon_box_arrow.gif">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_notice.gif"> </div>
-          </td>
-          <!-- .상품정보가 있을 경우에만 나타남 -->
-          <td colspan="2">
-            <div class="tb-left">
-              <a href="reviewNotice.html">
-                <font color="#FF600F"><b>리뷰 게시판 특성에 맞지않거나 악의성 비방글, 판매글, 타 사이트 홍보글은 삭제될 수 있습니다.</b></font>
-              </a>
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              운영진 </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2010/10/20</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">342449</div>
-          </td>
-        </tr>
-        <!--. 공지사항 리스트 끝! -->
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23999</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 시작(한페이지당 게시글 수) -->
-        <tr>
-          <td>
-            <div class="tb-center" style="font-size: 10px">23997</div>
-          </td>
-          <td>
-            <div class="tb-left"><img src="https://www.amai.co.kr/board/images/neo_default.gif"></div>
-          </td>
-          <!-- .product image 관련 -->
-          <td>
-            <div class="tb-left">
-            </div>
-          </td>
-          <td>
-            <div class="tb-left">
-              <img id="new" src="../../img/mircoday.jpg">
-              <a href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White </a>
-              <!--. 스팸글 처리 -->
-              <a href="../../html/review/review_list.html"> - 너무 이뻐요 최고</a>
-              <!--. 상품정보가 있을때 조회수가 10이상이면 hit아이콘보여주기 -->
-            </div>
-          </td>
-          <td>
-            <div class="tb-center">
-              글쓴이
-            </div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">2022/08/31</div>
-          </td>
-          <td>
-            <div class="tb-center" style="font-size: 10px">63</div>
-          </td>
-        </tr>
-        <!--. 게시글 리스트 끝 -->
-      </tbody>
-    </table>
-  </div>
-  <section>
-    <a href="../../html/magazine/magazineWrite.html" class="black_e_s">WRITE</a>
-  </section>
-  <div class="page">
-    <p class="">1</p>
-    <p class="">2</p>
-    <p class="">3</p>
-    <p class="">4</p>
-    <p class="">5</p>
+  <div id="content">
+    <div id="bbsData">
+      <div class="page-body">
+        <div class="bbs-tit">
+          <h2 class="esosub">REVIEW</h2>
+        </div>
+        <dl class="prd-tinfo">
+          <dt>
+            <a
+              href="/shop/shopdetail.html?branduid=147194&amp;xcode=027&amp;mcode=007&amp;scode=&amp;GfDT=bG13UQ%3D%3D"><img
+                src="../../img/mircoday.jpg" style="width:200px;"></a>
+          </dt>
+          <dt>
+
+            <ul>
+              <li class="name"><span class="tit"></span><a
+                  href="../../html/shop/product detail.html">[Nike] Air Force 1'07 Low White</a> </li>
+              <li class="price"><span class="tit"></span><strong>139,000원</strong></li>
+            </ul>
+
+          </dt>
+        </dl>
+        <div class="bbs-table-view">
+          <table summary="게시글 보기">
+            <caption></caption>
+            <thead>
+              <tr>
+                <th>
+                  <div class="tb-center" style=" font-size:16px;">너무 이뻐요 최고</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="line">
+                  <div class="cont-sub-des">
+
+                    <div>
+                      <span style="padding-left:3px">&nbsp;<font class="esosub_l" style="font-size:10px;">NAME :</font>
+                        글쓴이</span>
+
+                    </div>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="data-bd-cont">
+                    진짜 예뻐요 최고 예뻐요 정말 예뻐요 찐 예뻐요 대박 에뻐요 굿 예뻐요 완전 예뻐요 짱 예뻐요 많이 예뻐요 매우 예뻐요 제일 예뻐요 짱짱짱짱짱짱짱짱짱 </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="comment_list_0">
+          </div>
+          <form id="comment_form" name="comment"
+            action="board.html?code=chups_board7&amp;page=1&amp;type=v&amp;board_cate=&amp;num1=973490&amp;num2=00000&amp;number=24006&amp;lock=N"
+            method="post" autocomplete="off">
+            <input type="hidden" name="page_type" value="board_view">
+            <input type="hidden" name="formnum" value="0">
+            <input type="hidden" name="code" value="chups_board7">
+            <input type="hidden" name="num1" value="973490">
+            <input type="hidden" name="num2" value="00000">
+            <input type="hidden" name="page" value="1">
+            <input type="hidden" name="lock" value="N">
+            <input type="hidden" name="type" value="v">
+            <input type="hidden" name="uti" value="1667458874">
+            <input type="hidden" name="key" value="AXzevtJqFPqI+gAqSoauOuUy5OtKvfopmIxaUkQg6KiRkm5Cmr/IVg==">
+            <input type="hidden" name="type2">
+            <input type="hidden" name="comnum">
+            <input type="hidden" name="comtype">
+            <input type="text" name="___DUMMY___" readonly="" disabled="" style="display:none;"><input type="hidden"
+              name="secret" value="N">
+            <fieldset>
+              <legend></legend>
+              <table summary="코멘트 쓰기" class="comment-box">
+                <caption></caption>
+                <colgroup>
+                  <col width="120">
+                  <col>
+                  <col width="150">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td colspan="3" class="com-wrt-box">
+                      <div>
+                        <div class="wrt">
+                          <label class="esosub" style="font-size:10px;font-weight:400">NAME</label><span><input
+                              type="text" name="cname" class="MS_input_txt input-style input-style2" value=""
+                              onclick="CheckLogin()" onkeypress="CheckLogin()" placeholder="이름"></span>
+                          <label class="esosub" style="font-size:10px;font-weight:400">PASSWORD</label><span><input
+                              type="password" name="cpass" class="MS_input_txt input-style input-style2"
+                              onclick="CheckLogin()" onkeypress="CheckLogin()" placeholder="패스워드"> </span>
+                        </div>
+                        <div class="wrt"><textarea name="comment" onchange="Checklength(this);"
+                            onkeyup="Checklength(this);" onclick="CheckLogin()" placeholder="내용"></textarea><a
+                            href="javascript:comment_save('');" class="white_e" style="padding:30px 30px;">O K</a></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </fieldset>
+          </form>
+          <div class="view-link">
+            <dl class="bbs-link con-link">
+              <dt></dt>
+              <dd>
+                <a href="#"
+                  class="white_e_s">EDIT</a> <a
+                  href="#"
+                  class="white_e_s">DEL</a>
+              </dd>
+            </dl>
+            <dl class="bbs-link">
+              <dt></dt>
+              <dd>
+
+                <a href="#" class="black_e_s"
+                  style="padding:3px 12px;">WRITE</a> <a
+                  href="../../html/review/review.html"
+                  class="white_e_s" style="padding:3px 12px;">LIST</a>
+              </dd>
+            </dl>
+          </div>
+          <div class="bbs-table-list">
+            <table summary="게시글 목록">
+              <caption></caption>
+              <colgroup>
+                <col>
+                <col width="100">
+                <col width="90">
+                <col width="70">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <div class="esosub_s" style="font-size:10px">SUBJECT</div>
+                  </th>
+                  <th scope="col">
+                    <div class="esosub_s" style="font-size:10px">NAME</div>
+                  </th>
+                  <th scope="col">
+                    <div class="esosub_s" style="font-size:10px">DATE</div>
+                  </th>
+                  <th scope="col">
+                    <div class="esosub_s" style="font-size:10px">HIT</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="tb-left">
+                      <img src="https://www.amai.co.kr/board/images/neo_default.gif">
+                      <img src="https://www.amai.co.kr/board/images/neo_head.gif" style="margin-left: 00px">
+                      [Nike] Air Force 1'07 Low White <a
+                        href="/board/board.html?code=chups_board7&amp;page=1&amp;type=v&amp;board_cate=&amp;num1=973490&amp;num2=00000&amp;s_id=&amp;stext=&amp;ssubject=&amp;shname=&amp;scontent=&amp;sbrand=&amp;sgid=&amp;datekey=&amp;branduid=&amp;number=&amp;lock=N">너무 이뻐요 최고</a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="tb-center">
+                      <img src="https://www.amai.co.kr/shopimages/chups/royalicon_MX08.gif"> 글쓴이
+                    </div>
+                  </td>
+                  <td>
+                    <div class="tb-center" style="font-size: 10px">2022-10-12</div>
+                  </td>
+                  <td>
+                    <div class="tb-center" style="font-size: 10px">43</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div><!-- .page-body -->
+    </div><!-- #bbsData -->
   </div>
 </body>
 <!-- footer -->
 <footer>
-  <section></section>
   <div class="footer">
     <div class="bubbles">
       <div class="bubble"
@@ -1009,6 +753,5 @@
   </svg>
 </footer>
 <!-- footer -->
-
 
 </html>
