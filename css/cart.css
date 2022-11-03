@@ -216,6 +216,32 @@ button:disabled {
   --button-hover-bg-color: #505050;
 }
 
-.option{
+/* 상품사진 */
 
+.carousel-testimonial .item {
+  padding: 30px 10px;
+}
+product-thumb .item img {
+  height: 100px;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  outline: none;
+  height: 25px;
+}
+.owl-nav button svg {
+  width: 25px;
+  height: 25px;
+}
+.owl-nav button.owl-prev {
+  left: 25px;
+}
+.owl-nav button.owl-next {
+  right: 25px;
+}
+.owl-nav button span {
+  font-size: 45px;
 }
