@@ -1,5 +1,12 @@
-1) 좋아요 많은 포스트
-
+1) 좋아요 많은 포스트(수정 중)
+select pi2.post_img_img 
+from post p inner join sns_heart sh 
+on p.post_no  = sh.post_no 
+inner join post_img pi2 
+on sh.post_no  = pi2.post_no  
+and p.post_type = 'Y'
+and sh.sns_heart_bool = 'true'
+group by 1;
 2) 신상품 리스트
   select pi2.prdt_img_name as 상품이미지,
       p.product_name as 상품이름,

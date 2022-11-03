@@ -8,6 +8,7 @@
       ma.mem_auth_auth as 권한
   from member m,profile p, mem_auth ma  
   where m.member_id = p.member_id
+  and p.member_id = ma.member_id
   order by m.member_since desc;
 
 2) sns관리
