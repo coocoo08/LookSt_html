@@ -1,3 +1,24 @@
+/* 1. 마이프로필(프사, 닉넴, 팔로우&팔로잉 수, 본인 게시물)
+	1) 프사
+		- MEMBER mem_id & Profile mem_id(FK)
+		- profile_no, profile_img
+	2) 닉넴
+		- MEMBER mem_id & Profile mem_id(FK)
+		- mem_nick
+	3) 팔로우&팔로잉 수
+		- select follower from follow, member
+		  where follow.member.id = member.member.id
+		- select  count(follower) from follow, member
+		  where follow.member.id = member.member.id
+		- MEMBER mem_id  & FOLLOW mem_id(FK)
+	4) 게시물
+		- MEMBER mem_id & POST mem_id(FK)
+		- POST post_no & POST_IMG post_no(FK)
+		- SNS_COMMENT post_no & POST post_no
+		- POST post_no & SNS_HEART sns_heart_bool
+		- post_no, count(sns_com_con)
+		  , count(sns_heart_bool) */
+          
 -- 프사------------------------
 select b.profile_no , b.profile_img , a.member_nick 
 from "member" a, profile b
