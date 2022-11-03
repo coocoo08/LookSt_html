@@ -1,0 +1,42 @@
+1) Order List 목록 (검색 제외)
+select b.prdt_order_no as 주문번호
+	, a.member_name as 구매자
+	, (c.product_name , c.product_no) as 주문정보
+	, (c.product_price * b.prdt_order_quan) as 결제금액
+	, b.prdt_order_way as 결제수단
+	, b.prdt_order_date as 주문일자
+	, b.prdt_order_type as 주문상태
+from "member" a, prdt_order b, product c
+where a.member_id = b.member_id
+and b.product_no = c.product_no 
+order by b.prdt_order_date desc;
+
+
+2) Order List 상세 모달창
+select a.prdt_order_person as 수령인
+	, (a.prdt_order_addr || a.prdt_order_addr2) as 수령주소
+	, a.prdt_order_phone as 전화번호
+	, a.prdt_order_no as 주문번호
+	, b.product_no as 상품번호
+	, b.product_name as 상품명
+	, b.product_price as 상품가격
+	, a.prdt_order_quan as 구매수량
+	, (b.product_price * a.prdt_order_quan) as 결제금액
+	, a.prdt_order_date as 결제일시
+	, a.prdt_order_way as 결제수단
+	, a.prdt_order_type as 주문상태
+from prdt_order a, product b
+where a.product_no = b.product_no
+and a.prdt_order_no = #{prdt_order_no};
+
+3) Product List (수정중)
+select b.prdt_img_uuid as 상품이미지
+	, a.product_kind as 카테고리
+	, a.product_name as 상품명
+	, a.product_no as 상품번호
+	, a.product_price as 판매가
+	, c.prdt_option_stock as 재고
+from product a, prdt_img b, prdt_option c
+where a.product_no = b.product_no 
+and b.product_no = c.product_no 
+and (a.product_no = #{product_no} AND b.prdt_img_seq = 1);
