@@ -281,9 +281,10 @@ svg {
 }
 .product_title {
   display: flex;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 8px;
   align-items: center;
+  margin: 20px 0 10px 0;
 }
 .product {
   overflow: hidden;
@@ -294,11 +295,11 @@ svg {
   margin-right: 0;
 }
 .product_list {
-  margin: 0 -10px;
+  margin: 0 auto;
 }
 #product_pic {
-  width: 128px;
-  height: 128px;
+  width: 148px;
+  height: 148px;
   border-radius: 10% ;
 }
 .product_item {
@@ -428,13 +429,13 @@ button:first-child
   display: flex;
   height: 40px;
   margin-top: 20px;
+  padding-top: 15px;
 }
 .like_mylist button {
 background-color: transparent;
 width: 50px;
 font-size: 25px;
 margin-right: 10px;
-
 margin-top: 10px;
 border: 0;
 cursor: pointer;
@@ -442,4 +443,30 @@ cursor: pointer;
 .like_mylist 
 button:first-child{
   margin-left: 4px;
+}
+
+#share img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+#share_img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline;
+  /* margin: 10px */
+}
+.share .btn_1 button {
+  width: 40px;
+  height: 40px;
+}
+.product_list_area{
+  width:100%;
+
+}
+.share {
+  width: 80%;
+  text-align: end;
 }
