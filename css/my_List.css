@@ -327,9 +327,9 @@ svg {
   padding-top: 10px;
 } */
 .social_count {
-  padding-top: 12px;
+  /* padding-top: 12px; */
   display: flex;
-  margin: 10px;
+  margin: 25px 0 20px 10px;
 }
 .profile_info img {
   width: 40px;
@@ -427,7 +427,7 @@ button:first-child
 .like_mylist {
   display: flex;
   height: 40px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .like_mylist button {
 background-color: transparent;
