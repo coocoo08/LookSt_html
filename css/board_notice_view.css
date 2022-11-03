@@ -1,6 +1,4 @@
-
-html,
-body {
+html, body {
   height: 100%;
   min-width: 1250px;
 }
@@ -9,12 +7,11 @@ body {
   display: block;
 }
 
-p{
+p {
   font-size: 14px;
 }
 
-table
- {
+table {
   font-size: 12px;
   line-height: 1.25;
   color: #777;
@@ -76,14 +73,13 @@ table {
   margin-top: 10px;
   padding: 5px 10px 5px 30px;
   border: 1px solid #becbd7;
-  background: #e0e6ec url(/images/d3/modern_simple/common/bull_h11_sqr_arow.gif) no-repeat 10px 10px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
 
-.tb-center{
+.tb-center {
   text-align: center;
 
 }
@@ -157,3 +153,19 @@ table {
 .bbs-table-view .btn-dwn {
   margin-top: 15px;
 }
+
+#MS_WritenBySEB {
+
+  margin-left: 20px;
+}
+
+@media (max-width: 800px) and (min-width: 301px) {
+  .page-body {
+    display:block;
+  }
+  
+  .page-body> div > ul > li > a {
+    padding:13px 15px;
+  }
+}
+

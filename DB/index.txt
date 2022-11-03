@@ -1,0 +1,10 @@
+1) 좋아요 많은 포스트
+
+2) 신상품 리스트
+  select pi2.prdt_img_name as 상품이미지,
+      p.product_name as 상품이름,
+      p.product_price as 상품가격
+  from product p, prdt_img pi2 
+  where p.product_no = pi2.product_no 
+  and p.product_type ='N'
+  order by p.product_date desc;

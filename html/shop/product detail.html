@@ -4,451 +4,376 @@
   <meta charset="UTF-8">
   <title>Lookst</title>
   <link rel="stylesheet" href="../../css/headerstyle.css">
-  <!---->
-  <!-- <link rel="stylesheet" href="../../css/bannerstyle.css"> -->
-  <!---->
-  <!-- <link rel="stylesheet" href="../../css/LookBookstyle.css"> -->
-  <!---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!---->
-  <link rel="stylesheet" href="../../css/myPostList.css">
-  <!---->
-  <link rel="stylesheet" href="../../css/comment-modal.css">
-  <!---->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="../../css/main_shopstyle.css"> -->
-  <!---->
+</head>
+<body>
+  <header class="top-bar pc">
+    <div class="con inline-grid">
+      <div>
+        <a href="../../html/index.html" class="top-bar__logo block">
+          <span>
+            <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+            <i class="fa-solid fa-file-magnifying-glass"></i>
+          </span>
+          <span>
+            LookSt
+          </span>
+        </a>
+      </div>
+      <div></div>
+      <div class="inline-grid text-right">
+        <nav class="top-bar__menu-box-1">
+          <ul class="inline-grid">
+            <li>
+              <a href="../../html/sns_list/SNS_main_list.html">
+                <span><i class="fa-solid fa-user-pen"></i></span>
+                <span>SNS</span>
+              </a>
+            </li>
+            <li>
+              <a href="../../html/shop/productlist.html">
+                <span><i class="fas fa-shopping-bag"></i></span>
+                <span>SHOP</span>
+              </a>
+              <!-- <ul>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-shirt"></i></span>
+                    <span>상의</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-person-dress"></i></span>
+                    <span>하의</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-glasses"></i></span>
+                    <span>악세사리</span>
+                  </a>
+                </li>
+              </ul> -->
+            </li>
+            <li>
+              <a href="../../html/magazine/magazine.html">
+                <span><i class="fa-solid fa-folder-open"></i></span>
+                <span>게시판</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="../../html/magazine/magazine.html">
+                    <span><i class="fas fa-chalkboard-teacher"></i></span>
+                    <span>매거진게시판</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../review/review.html">
+                    <span><i class="fas fa-comments"></i></span>
+                    <span>리뷰게시판</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../notice/board_list_FAQ.html">
+                    <span><i class="fas fa-question"></i></span>
+                    <span>FAQ</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../sns(myprofile)/profile.html">
+                <div id="profile_info">
+                  <img src="../../img/프사.jpeg" alt="">
+                </div>
+              </a>
+              <ul>
+                <li>
+                  <a href="../html/board_list.html">
+                    <span>마이페이지</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>로그아웃</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <header class="top-bar mobile">
+    <div class="con inline-grid">
+      <div>
+        <a href="#" class="top-bar__logo block">
+          <span>
+            <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
+            <i class="fa-solid fa-file-magnifying-glass"></i>
+          </span>
+          <span>
+            LookSt
+          </span>
+        </a>
+      </div>
+      <div></div>
+      <div class="inline-grid text-right">
+        <nav class="top-bar__menu-box-1">
+          <ul class="inline-grid">
+            <li>
+              <a href="../../html/index.html">
+                <span><i class="fa-solid fa-house"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="../../html/sns_list/SNS_main_list.html">
+                <span><i class="fa-solid fa-user-pen"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="../../html/shop/productlist.html">
+                <span><i class="fas fa-shopping-bag"></i></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-shirt"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-person-dress"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-glasses"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../html/magazine/magazine.html">
+                <span><i class="fa-solid fa-folder-open"></i></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="../../html/magazine/magazine.html">
+                    <span><i class="fas fa-chalkboard-teacher"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../review/review.html">
+                    <span><i class="fas fa-comments"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../../html/notice/board_list_FAQ.html">
+                    <span><i class="fas fa-question"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+  
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/product detail.css">
+
+    <title>Document</title>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="../../css/headerstyle.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"><div class="pd-wrap">
+		<div class="container">
+	       
+	        <div class="row">
+	        	<div class="col-md-6">
+	        		<div id="slider" class="owl-carousel product-slider">
+						<div class="item">
+						  	<img src="../../img/누빔조끼.jpeg" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+					</div>
+					<div id="thumb" class="owl-carousel product-thumb">
+						<div class="item">
+						  	<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+						<div class="item">
+						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						</div>
+						<div class="item">
+						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						</div>
+					</div>
+	        	</div>
+	        	<div class="col-md-6">
+	        		<div class="product-dtl">
+        				<div class="product-info">
+		        			<div class="product-name">NIKE</div>
+							</div>
+		        			<div class="product-price-discount"><span>139,000 원</span>
+		        		</div>
+	        			<p>메카닉 패딩 야상점퍼</p>
+	        			<div class="row">
+	        				<div class="col-md-6">
+	        					<label for="size">사이즈</label>
+								<select id="size" name="size" class="form-control">
+									<option>S</option>
+									<option>M</option>
+									<option>L</option>
+									<option>XL</option>
+								</select>
+	        				</div>
+	        				
+	        			</div>
+	        			<div class="product-count">
+	        				<label for="size">수량</label>
+	        				<form action="#" class="display-flex">
+							    <div class="qtyminus">-</div>
+							    <input type="text" name="quantity" value="1" class="qty">
+							    <div class="qtyplus">+</div>
+							</form>
+							<a href="#" class="round-black-btn">장바구니 담기</a>
+                            <a href="#" class="round-black-btn">주문 하기</a>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="product-info-tabs">
+		        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				  	<li class="nav-item">
+				    	<a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">상세정보</a>
+				  	</li>
+				  	<!-- <li class="nav-item">
+				    	<a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Regram (5)</a>-->
+				  	</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  	<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+						<img src="../../img/dog.jpg" alt="look" style ="width: 1000px; height: 1500px">
+           
+				  	</div>
+           
+				  <!--	<div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+				  		<div class="review-heading">REVIEWS</div>
+				  		<p class="mb-20">There are no reviews yet.</p>
+				  		<form class="review-form">
+		        			<div class="form-group">
+			        			<label>Your rating</label>
+			        			<div class="reviews-counter">
+									<div class="rate">
+									    <input type="radio" id="star5" name="rate" value="5" />
+									    <label for="star5" title="text">5 stars</label>
+									    <input type="radio" id="star4" name="rate" value="4" />
+									    <label for="star4" title="text">4 stars</label>
+									    <input type="radio" id="star3" name="rate" value="3" />
+									    <label for="star3" title="text">3 stars</label>
+									    <input type="radio" id="star2" name="rate" value="2" />
+									    <label for="star2" title="text">2 stars</label>
+									    <input type="radio" id="star1" name="rate" value="1" />
+									    <label for="star1" title="text">1 star</label>
+									</div>
+								</div>
+							</div>
+		        			<div class="form-group">
+			        			<label>Your message</label>
+			        			<textarea class="form-control" rows="10"></textarea>
+			        		</div>
+			        		<div class="row">
+				        		<div class="col-md-6">
+				        			<div class="form-group">
+					        			<input type="text" name="" class="form-control" placeholder="Name*">
+					        		</div>
+					        	</div>
+				        		<div class="col-md-6">
+				        			<div class="form-group">
+					        			<input type="text" name="" class="form-control" placeholder="Email Id*">
+					        		</div>
+					        	</div>
+					        </div>
+					        <button class="round-black-btn">Submit Review</button>
+			        	</form>
+				  	</div>
+				</div>
+			</div>-->
+			
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Goey footer</title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-  <link rel="stylesheet" href="../../css/footerstyle.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+<link rel="stylesheet" href="../../css/footerstyle.css">
 
 </head>
-<header class="top-bar pc">
-  <div class="con inline-grid">
-    <div>
-      <a href="../../html/index.html" class="top-bar__logo block">
-        <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
-          <i class="fa-solid fa-file-magnifying-glass"></i>
-        </span>
-        <span>
-          LookSt
-        </span>
-      </a>
-    </div>
-    <div></div>
-    <div class="inline-grid text-right">
-      <nav class="top-bar__menu-box-1">
-        <ul class="inline-grid">
-          <li>
-            <a href="../../html/sns_list/SNS_main_list.html">
-              <span><i class="fa-solid fa-user-pen"></i></span>
-              <span>SNS</span>
-            </a>
-          </li>
-          <li>
-            <a href="../../html/shop/productlist.html">
-              <span><i class="fas fa-shopping-bag"></i></span>
-              <span>SHOP</span>
-            </a>
-            <!-- <ul>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-shirt"></i></span>
-                  <span>상의</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-person-dress"></i></span>
-                  <span>하의</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-glasses"></i></span>
-                  <span>악세사리</span>
-                </a>
-              </li>
-            </ul> -->
-          </li>
-          <li>
-            <a href="../../html/magazine/magazine.html">
-              <span><i class="fa-solid fa-folder-open"></i></span>
-              <span>게시판</span>
-            </a>
-            <ul>
-              <li>
-                <a href="../../html/magazine/magazine.html">
-                  <span><i class="fas fa-chalkboard-teacher"></i></span>
-                  <span>매거진게시판</span>
-                </a>
-              </li>
-              <li>
-                <a href="../../html/review/review.html">
-                  <span><i class="fas fa-comments"></i></span>
-                  <span>리뷰게시판</span>
-                </a>
-              </li>
-              <li>
-                <a href="../../html/notice/board_list_FAQ.html">
-                  <span><i class="fas fa-question"></i></span>
-                  <span>FAQ</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="../../html/sns(myprofile)/profile.html">
-              <div id="profile_info">
-                <img src="../../img/프사.jpeg" alt="">
-              </div>
-            </a>
-            <ul>
-              <li>
-                <a href="../../html/sns(myprofile)/profileEdit.html">
-                  <span>마이페이지</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>로그아웃</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-
-<header class="top-bar mobile">
-  <div class="con inline-grid">
-    <div>
-      <a href="#" class="top-bar__logo block">
-        <span>
-          <img src="../../img/look.png" alt="look" style ="width: 40px; height: 30px;">
-          <i class="fa-solid fa-file-magnifying-glass"></i>
-        </span>
-        <span>
-          LookSt
-        </span>
-      </a>
-    </div>
-    <div></div>
-    <div class="inline-grid text-right">
-      <nav class="top-bar__menu-box-1">
-        <ul class="inline-grid">
-          <li>
-            <a href="../../html/sns_list/SNS_main_list.html">
-              <span><i class="fa-solid fa-user-pen"></i></span>
-            </a>
-          </li>
-          <li>
-            <a href="../../html/shop/productlist.html">
-              <span><i class="fas fa-shopping-bag"></i></span>
-            </a>
-            <!-- <ul>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-shirt"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fa-solid fa-person-dress"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span><i class="fas fa-glasses"></i></span>
-                </a>
-              </li>
-            </ul> -->
-          </li>
-          <li>
-            <a href="../../html/magazine/magazine.html">
-              <span><i class="fa-solid fa-folder-open"></i></span>
-            </a>
-            <ul>
-              <li>
-                <a href="../../html/magazine/magazine.html">
-                  <span><i class="fas fa-chalkboard-teacher"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="../../html/review/review.html">
-                  <span><i class="fas fa-comments"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="../../html/notice/board_list_FAQ.html">
-                  <span><i class="fas fa-question"></i></span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="../../html/sns(myprofile)/profile.html">
-              <div id="profile_info">
-                <img src="../../img/프사.jpeg" alt="">
-              </div>
-            </a>
-            <ul>
-              <li>
-                <a href="../../html/sns(myprofile)/profileEdit.html">
-                  <span>마이페이지</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>로그아웃</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-<!-- header -->
-
 <body>
-  <div class="profile-title" style="text-align: center;">마이리스트</div>
-  <!-- 여기에 각자 페이지 채울 것 -->
-  <main class="main">
-    <section class="container">
-        <article class="story-list">
-          <!-- 첫번째 게시물 시작 -->
-            <div class="story-list__item">
-                <div class="sl__item__header">
-                    <div>
-                        <img src="../../img/프사.jpeg" alt="">
-                        <svg viewbox="0 0 110 110">
-                            <circle cx="55" cy="55" r="53" />
-                        </svg>
-                    </div>
-                    <div class="user_info">
-                      <a href="../../html/sns(myprofile)/profile.html" class="user_id">Kuromi</a>
-                      <p href="#" class="upload_time">어제</p>
-                    </div>
-                    <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                    <div class="post_delete">삭제</div>
-                </div>
-                <div class="sl__item__img">
-                    <img src="../../img/후드티네이비.jpeg" alt="">
-                </div>
-                <div class="product_title">
-                  <span class="title_text">상품태그
-                    <strong class="num">2</strong>
-                    개
-                  </span>  
-                </div>
-                <div class="product_list_area">
-                  <ul class="product_list" style="transform: translateX(0px);">
-                    <li class='product_item'>
-                      <a href="../../html/shop/product.html" class="product_link">
-                        <div class="product">
-                          <picture class="product_picture">
-                            <img src="../../img/털신.jpeg" id="product_pic">
-                          </picture>
-                        </div>
-                        <div class="product_desc">
-                          <div class="product_name">Nike Air Force Low Woolly</div>
-                        </div>
-                        <div class="price_box">
-                          <span class="amount"><strong>159,000원</strong></span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class='product_item'>
-                      <a href="#" class="product_link">
-                        <div class="product">
-                          <picture class="product_picture">
-                            <img src="../../img/짚신.jpeg" id="product_pic">
-                          </picture>
-                        </div>
-                        <div class="product_desc">
-                          <div class="product_name">Nike Air Force Low Straw</div>
-                        </div>
-                        <div class="price_box">
-                          <span class="amount"><strong>250,000원</strong></span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="sl__item__contents">
-                  <div class="like_mylist">
-                    <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-                    <button class="btn"><i class="far fa-comment"></i></button>
-                    <!-- 댓글 Modal -->
-                    <div class="modal">
-                      <!-- 댓글 Modal의 내용 -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>                         
-                        <h3>댓글</h3>
-                        <div class="comments">
-                          <span class="user_nick">ezen_123</span>
-                          <span class="comment">멋져요~!</span>
-                          <span class="comment_date">어제</span>
-                        </div>
-                        <div class="comments">
-                          <span class="user_nick">dkahffk</span>
-                          <span class="comment">안냐세유~</span>
-                          <span class="comment_date">7년전</span>
-                        </div>
-                        <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                      </div>
-                    </div>                
-                  </div>
-                </div>
-                <div class="social_count">
-                  <a href="#" class="like_count">
-                    공감
-                    <strong>100</strong>
-                    개
-                  </a>
-                </div>
-                <div class="sl__item__input" style="padding: 10px">
-                  <div class="comment_area">
-                    <a href="#" class="comment_count" >
-                      댓글
-                      <strong>2</strong>
-                      개
-                    </a>
-                  </div>
-                </div>
-                <div class="sl__item__contents__content">
-                    <span class="text_link">
-                      <span class="text">
-                        <a class="hashtag" href="#">#털신</a>
-                        <a class="hashtag" href="#">#짚신</a>
-                        예쁜 신발들^^
-                      </span>
-                    </span>
-                </div>
-            </div>
-            <!-- 게시물 1 끝 -->
-            <!-- 두번째 게시물 시작 -->
-            <div class="story-list__item">
-              <div class="sl__item__header">
-                  <div>
-                      <img src="../../img/프사.jpeg" alt="">
-                      <svg viewbox="0 0 110 110">
-                          <circle cx="55" cy="55" r="53" />
-                      </svg>
-                  </div>
-                  <div class="user_info">
-                    <a href="../../html/sns(myprofile)/profile.html" class="user_id">Kuromi</a>
-                    <p href="#" class="upload_time">어제</p>
-                  </div>
-                  <div class="post_edit"><a href="../../html/sns(myprofile)/myPostEdit.html">수정</a></div>
-                  <div class="post_delete">삭제</div>
-              </div>
-              <div class="sl__item__img">
-                  <img src="../../img/후드티네이비.jpeg" alt="">
-              </div>
-              <div class="product_title">
-                <span class="title_text">상품태그
-                  <strong class="num">2</strong>
-                  개
-                </span>  
-              </div>
-              <div class="product_list_area">
-                <ul class="product_list" style="transform: translateX(0px);">
-                  <li class='product_item'>
-                    <a href="../../html/shop/product.html" class="product_link">
-                      <div class="product">
-                        <picture class="product_picture">
-                          <img src="../../img/털신.jpeg" id="product_pic">
-                        </picture>
-                      </div>
-                      <div class="product_desc">
-                        <div class="product_name">Nike Air Force Low Woolly</div>
-                      </div>
-                      <div class="price_box">
-                        <span class="amount"><strong>159,000원</strong></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class='product_item'>
-                    <a href="#" class="product_link">
-                      <div class="product">
-                        <picture class="product_picture">
-                          <img src="../../img/짚신.jpeg" id="product_pic">
-                        </picture>
-                      </div>
-                      <div class="product_desc">
-                        <div class="product_name">Nike Air Force Low Straw</div>
-                      </div>
-                      <div class="price_box">
-                        <span class="amount"><strong>250,000원</strong></span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="sl__item__contents">
-                <div class="like_mylist">
-                  <button onclick="clickBtn()"><i class="far fa-heart"></i></button>
-                  <button class="btn"><i class="far fa-comment"></i></button>
-                  <!-- 댓글 Modal -->
-                  <div class="modal">
-                    <!-- 댓글 Modal의 내용 -->
-                    <div class="modal-content">
-                      <span class="close">&times;</span>                         
-                      <h3>댓글</h3>
-                      <div class="comments">
-                        <span class="user_nick">ezen_123</span>
-                        <span class="comment">멋져요~!</span>
-                        <span class="comment_date">어제</span>
-                      </div>
-                      <div class="comments">
-                        <span class="user_nick">dkahffk</span>
-                        <span class="comment">안냐세유~</span>
-                        <span class="comment_date">7년전</span>
-                      </div>
-                      <div class="input-comment"><textarea name="intro" id="" rows="3" placeholder="댓글을 남겨주세요."></textarea></div>
-                    </div>
-                  </div>                
-                </div>
-              </div>
-              <div class="social_count">
-                <a href="#" class="like_count">
-                  공감
-                  <strong>100</strong>
-                  개
-                </a>
-              </div>
-              <div class="sl__item__input" style="padding: 10px">
-                <div class="comment_area">
-                  <a href="#" class="comment_count" >
-                    댓글
-                    <strong>2</strong>
-                    개
-                  </a>
-                </div>
-              </div>
-              <div class="sl__item__contents__content">
-                  <span class="text_link">
-                    <span class="text">
-                      <a class="hashtag" href="#">#털신</a>
-                      <a class="hashtag" href="#">#짚신</a>
-                      예쁜 신발들^^
-                    </span>
-                  </span>
-              </div>
-          </div>
-          <!-- 게시물2 끝  -->
-          </div>
-        </article>
-    </section>
-</main>
-</body>
-
 <!-- partial:index.partial.html -->
 <div class="footer">
   <div class="bubbles">
@@ -486,7 +411,6 @@
     <div class="bubble" style="--size:3.7475419802201957rem; --distance:9.64784625838658rem; --position:77.81320811793586%; --time:2.7300118103079365s; --delay:-3.5454097613844358s;"></div>
     <div class="bubble" style="--size:5.915997211130302rem; --distance:9.260449856486169rem; --position:70.98729450146898%; --time:2.226530906286513s; --delay:-2.5357954285483406s;"></div>
     <div class="bubble" style="--size:3.204045335567546rem; --distance:9.713805623738974rem; --position:49.88906215046968%; --time:2.4243380169060367s; --delay:-3.300548061339865s;"></div>
-    <div class="bubble" style="--size:5.154544043912497rem; --distance:6.346771943716771rem; --position:97.19797748187557%; --time:2.559863742731297s; --delay:-2.3553841212749136s;"></div>
     <div class="bubble" style="--size:5.580960391149969rem; --distance:6.318115644267316rem; --position:-2.299885006998026%; --time:2.9731575087818314s; --delay:-2.2002573939788093s;"></div>
     <div class="bubble" style="--size:2.03172314758819rem; --distance:6.282006926931849rem; --position:27.762339069789185%; --time:3.16272754492543s; --delay:-3.6317186432104536s;"></div>
     <div class="bubble" style="--size:3.6357837556344608rem; --distance:8.068070047008181rem; --position:71.41148448786002%; --time:2.6528247352690766s; --delay:-3.231759428924927s;"></div>
@@ -499,7 +423,6 @@
     <div class="bubble" style="--size:2.6290860068969755rem; --distance:6.542025201523603rem; --position:41.447417047323405%; --time:3.560543878953631s; --delay:-3.9454976558140187s;"></div>
     <div class="bubble" style="--size:4.1215437529515375rem; --distance:6.93441403852198rem; --position:3.19567385157052%; --time:3.6860773554610695s; --delay:-2.635534664248181s;"></div>
     <div class="bubble" style="--size:2.364006790826881rem; --distance:9.155706673670753rem; --position:73.43094286761772%; --time:2.945075042111573s; --delay:-3.1094005708553634s;"></div>
-    <div class="bubble" style="--size:5.622111352453258rem; --distance:8.937198076711974rem; --position:97.10991695930298%; --time:3.0684349225862833s; --delay:-2.162917719903087s;"></div>
     <div class="bubble" style="--size:3.7947067893415616rem; --distance:9.308139662714702rem; --position:66.55922930309234%; --time:3.1653721035542626s; --delay:-3.5613071811227686s;"></div>
     <div class="bubble" style="--size:4.42263259364884rem; --distance:8.965425433803203rem; --position:90.70179662366769%; --time:3.3636133204934726s; --delay:-2.11175095894715s;"></div>
     <div class="bubble" style="--size:2.6393292102561094rem; --distance:9.363065692796093rem; --position:1.5256552151499108%; --time:3.648058424588528s; --delay:-3.382732016156239s;"></div>
@@ -592,13 +515,7 @@
   </defs>
 </svg>
 <!-- partial -->
-
-
+  
+</body>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-<script src="../../js/bannerscript.js"></script>
-<script src="../../js/LookBookscript.js"></script>
-<script src="../../js/comment.js"></script>
-<script src="../../js/modal.js"></script>
-<script src="../../js/like.js"></script>
 </html>

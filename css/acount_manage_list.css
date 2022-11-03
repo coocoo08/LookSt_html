@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+.acc_mainbox{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    padding: 8px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.title-text {
+    position: absolute;
+    top: 15px;
+    left: 440px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.list_btn-st{
+    position: absolute;
+    top: 80px;
+}
+.line1 {
+    position: relative;
+    top: 70px;
+    width: 1017px;
+    border-bottom: 1.5px solid #000000;
+}
+.line2 {
+    position: relative;
+    top: 270px;
+    width: 1017px;
+    border-bottom: 1.5px solid #000000;
+}
+
+button {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 250px;
+    height: 180px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #000000;
+    color: #ffffff; 
+}
+button:active,
+button:hover,
+button:focus {
+    background: var(--button-hover-bg-color);
+    outline: 0;
+}
+button:disabled {
+    opacity: 0.5;
+}
+:root {
+    --button-color: #000000;
+    --button-bg-color: #000000;
+    --button-hover-bg-color: #505050;
+}
+.btn-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn-text{
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 12px;
+}
+.btn4{
+    top: 9px;
+}

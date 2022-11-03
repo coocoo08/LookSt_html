@@ -341,8 +341,8 @@ CREATE TABLE PROFILE
     PROFILE_IMG    character varying(200) DEFAULT 'default.jpg' NOT NULL,
     PROFILE_UUID    character varying(100) NOT NULL,
     PROFILE_TYPE    character(1) NOT NULL,
-    PROFILE_DATE    timestamp without time zone NOT NULL,
-    PROFILE_INTRO   character varying(30) 
+    PROFILE_DATE    timestamp without time zone NOT null,
+    PROFILE_INTRO	character varying(30)
 );
 
 COMMENT ON COLUMN PROFILE.MEMBER_ID IS '아이디(E-Mail)';
@@ -357,9 +357,9 @@ COMMENT ON COLUMN PROFILE.PROFILE_TYPE IS '이미지타입';
 
 COMMENT ON COLUMN PROFILE.PROFILE_DATE IS '프로필등록일';
 
-COMMENT ON TABLE PROFILE IS '프로필 이미지';
+COMMENT ON COLUMN PROFILE.PROFILE_INTRO IS '자기소개글';
 
-COMMENT ON TABLE PROFILE IS '프로필 자기소개글';
+COMMENT ON TABLE PROFILE IS '프로필 이미지';
 
 CREATE UNIQUE INDEX PROFILE_PK ON PROFILE
 ( MEMBER_ID,PROFILE_NO );
@@ -379,6 +379,8 @@ COMMENT ON COLUMN PROFILE.PROFILE_UUID IS '프로필중복방지';
 COMMENT ON COLUMN PROFILE.PROFILE_TYPE IS '이미지타입';
 
 COMMENT ON COLUMN PROFILE.PROFILE_DATE IS '프로필등록일';
+
+COMMENT ON COLUMN PROFILE.PROFILE_INTRO IS '자기소개글';
 
 COMMENT ON TABLE PROFILE IS '프로필 이미지';
 
@@ -789,7 +791,7 @@ CREATE TABLE MEM_INFO
     MEM_INFO_GENDER    character(1),
     MEM_INFO_BIRTH    date,
     MEM_INFO_BANK    character varying(20),
-    MEM_INFO_ACCOUNT    integer,
+    MEM_INFO_ACCOUNT    character varying(20),
     MEM_INFO_RECI    character varying(20)
 );
 
@@ -932,7 +934,8 @@ CREATE TABLE PRODUCT
     PRODUCT_KIND    character(1) NOT NULL,
     PRODUCT_PRICE    integer NOT NULL,
     PRODUCT_DATE    timestamp without time zone NOT NULL,
-    PRODUCT_NAME    character varying(500) NOT NULL
+    PRODUCT_NAME    character varying(500) NOT null,
+    PRODUCT_TYPE    character(1) NOT NULL
 );
 
 COMMENT ON COLUMN PRODUCT.SELLER_NO IS '사업자번호';
@@ -946,6 +949,8 @@ COMMENT ON COLUMN PRODUCT.PRODUCT_PRICE IS '상품가격';
 COMMENT ON COLUMN PRODUCT.PRODUCT_DATE IS '상품등록일';
 
 COMMENT ON COLUMN PRODUCT.PRODUCT_NAME IS '상품이름';
+
+COMMENT ON COLUMN PRODUCT.PRODUCT_TYPE IS '상품상태';
 
 COMMENT ON TABLE PRODUCT IS '상품';
 
@@ -968,6 +973,8 @@ COMMENT ON COLUMN PRODUCT.PRODUCT_DATE IS '상품등록일';
 
 COMMENT ON COLUMN PRODUCT.PRODUCT_NAME IS '상품이름';
 
+COMMENT ON COLUMN PRODUCT.PRODUCT_TYPE IS '상품상태';
+
 COMMENT ON TABLE PRODUCT IS '상품';
 
 
@@ -977,7 +984,7 @@ CREATE TABLE PRDT_ORDER
     PRODUCT_NO    integer NOT NULL,
     MEMBER_ID    character varying(30) NOT NULL,
     PRDT_ORDER_QUAN    integer NOT NULL,
-    PRDT_ORDER_DATE    boolean NOT NULL,
+    PRDT_ORDER_DATE    timestamp without time zone,
     PRDT_ORDER_TYPE    character(1) NOT NULL,
     PRDT_ORDER_PHONE    integer NOT NULL,
     PRDT_ORDER_ADDR    character varying(100) NOT NULL,
@@ -1081,4 +1088,113 @@ COMMENT ON COLUMN PRDT_IMG.PRDT_IMG_UUID IS '중복방지';
 
 COMMENT ON TABLE PRDT_IMG IS '상품이미지';
 
+--프로필
+alter table PROFILE add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+ALTER TABLE PROFILE ADD CONSTRAINT FK_MEMBER_ID FOREIGN KEY (MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
 
+--추가정보
+alter table MEM_INFO add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID) ON DELETE CASCADE;
+ALTER TABLE MEM_INFO ADD CONSTRAINT FK_MEMBER_ID FOREIGN KEY (MEMBER_ID) REFERENCES MEMBER(MEMBER_ID) ON DELETE CASCADE;
+ALTER TABLE public.mem_info DROP CONSTRAINT fk_member_id;
+
+--권한
+alter table MEM_AUTH add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--판매자
+alter table SELLER add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--상품
+alter table PRODUCT add FOREIGN KEY(SELLER_NO) REFERENCES SELLER(SELLER_NO);
+
+--주문
+alter table PRDT_ORDER add FOREIGN KEY(PRODUCT_NO) REFERENCES PRODUCT(PRODUCT_NO);
+alter table PRDT_ORDER add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--상품이미지
+alter table PRDT_IMG add FOREIGN KEY(PRODUCT_NO) REFERENCES PRODUCT(PRODUCT_NO);
+
+--상품옵션
+alter table PRDT_OPTION add FOREIGN KEY(PRODUCT_NO) REFERENCES PRODUCT(PRODUCT_NO);
+
+--SNS포스터
+alter table POST add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--SNS좋아요
+alter table SNS_HEART add FOREIGN KEY(POST_NO) REFERENCES POST(POST_NO);
+alter table SNS_HEART add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--팔로우
+alter table FOLLOW add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--SNS댓글
+alter table SNS_COMMENT add FOREIGN KEY(POST_NO) REFERENCES POST(POST_NO);
+alter table SNS_COMMENT add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--SNS포스터이미지
+alter table POST_IMG add FOREIGN KEY(POST_NO) REFERENCES POST(POST_NO);
+
+--태그
+alter table TAG add FOREIGN KEY(POST_NO) REFERENCES POST(POST_NO);
+
+--포스트태그
+alter table POST_TAG add FOREIGN KEY(POST_NO) REFERENCES POST(POST_NO);
+alter table POST_TAG add FOREIGN KEY(PRODUCT_NO) REFERENCES PRODUCT(PRODUCT_NO);
+
+--게시판
+alter table BOARD add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+
+--게시물 이미지
+alter table BOARD_IMG add FOREIGN KEY(BOARD_NO) REFERENCES BOARD(BOARD_NO);
+
+--댓글
+alter table COMMENT add FOREIGN KEY(BOARD_NO) REFERENCES BOARD(BOARD_NO);
+
+--좋아요
+alter table HEART add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+alter table HEART add FOREIGN KEY(BOARD_NO) REFERENCES BOARD(BOARD_NO);
+
+--후기게시판
+alter table REVIEW add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+alter table REVIEW add FOREIGN KEY(PRODUCT_NO) REFERENCES PRODUCT(PRODUCT_NO);
+
+--평점
+alter table SCORE add FOREIGN KEY(MEMBER_ID) REFERENCES MEMBER(MEMBER_ID);
+alter table SCORE add FOREIGN KEY(REVIEW_NO) REFERENCES REVIEW(REVIEW_NO);
+
+--후기댓글
+alter table REV_COM add FOREIGN KEY(REVIEW_NO) REFERENCES REVIEW(REVIEW_NO);
+
+--샘플 데이터 LOOP문
+do
+$$
+    declare 
+        i int;
+    begin
+        i := 1;
+    
+        loop
+            if i > 10 then 
+        	exit;
+            end if;     -- exit when i > 10;과 동일
+        
+            INSERT INTO public.post_img(post_no, post_img_img, post_img_seq, post_img_uuid)VALUES(2, 'imt.jpg', 2, 'board');
+        
+            i := i + 1;
+        end loop;
+    end
+$$;
+
+INSERT INTO public."member"
+(member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
+VALUES('14@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+
+select * from "member";
+
+INSERT INTO public.mem_info
+(member_id, mem_info_gender, mem_info_birth, mem_info_bank, mem_info_account, mem_info_reci)
+VALUES('13@naver.com', 'M', '2022-11-01', '신한', 11043, '김현민');
+
+select * from public.mem_info;
+
+DELETE FROM public."member"
+WHERE member_id='13@naver.com';

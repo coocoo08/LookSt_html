@@ -1,0 +1,43 @@
+
+1) 회원관리
+  select p.profile_img as 이미지,
+      m.member_nick as 아이디,
+      m.member_name as 이름,
+      m.member_since as 가입일,
+      m.member_updt as 수정일,
+      ma.mem_auth_auth as 권한
+  from member m,profile p, mem_auth ma  
+  where m.member_id = p.member_id
+  order by m.member_since desc;
+
+2) sns관리
+  select row_number() over() as 순번,
+      pi2.post_img_img as 포스트이미지,
+      p.profile_img as "프로필 이미지",
+      m.member_nick as 닉네임 
+  from member m, post p2 ,post_img pi2, profile p 
+  where m.member_id = p.member_id
+  and m.member_id = p2.member_id 
+  and p2.post_no = pi2.post_no
+  and pi2.post_img_seq = 1
+  order by 순번 desc;
+
+3) 게시판 관리
+  select row_number() over() as 순번,
+      b.board_title as 글제목,
+      m.member_nick as 작성자,
+      b.board_kind as "게시판 종류",
+      b.board_date as 작성일
+  from board b, member m 
+  where b.member_id = m.member_id
+  order by 순번 desc;
+
+4) 매거진 신청 게시판
+  select row_number() over() as 순번,
+      b.board_title as 글제목,
+      m.member_nick as 작성자,
+      b.board_date as 작성일
+  from board b, member m 
+  where b.member_id = m.member_id
+  and b.board_type = 'A'
+  order by 순번 desc;
