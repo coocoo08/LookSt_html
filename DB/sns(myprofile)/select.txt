@@ -1,0 +1,29 @@
+-- 프사------------------------
+select b.profile_no , b.profile_img , a.member_nick 
+from "member" a, profile b
+where a.member_id = b.member_id 
+and a.member_nick like 'Ku%' 
+;
+
+-- 팔로워&팔로잉 수--------------------------
+select b.member_nick , count(follower) as "팔로워 수"
+from follow a, "member" b
+where a.member_id = b.member_id 
+group by 1
+;
+
+select b.member_nick , follower as "팔로워"
+from follow a, "member" b
+where a.member_id = b.member_id 
+;
+
+/*select b.member_nick , count(following) as "팔로잉 수"
+from follow a, "member" b
+where a.member_id = b.member_id 
+group by 1
+;*/
+
+select b.member_nick , "following" as "팔로잉"
+from follow a, "member" b
+where a.member_id = b.member_id 
+;
