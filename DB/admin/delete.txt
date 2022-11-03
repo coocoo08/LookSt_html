@@ -1,0 +1,11 @@
+1) 회원삭제
+DELETE FROM member
+WHERE member_id=#{member_id};
+
+2) sns관리 포스트 삭제
+DELETE FROM post
+WHERE post_no=#{post_no};
+
+3) 게시판 관리
+DELETE FROM board
+WHERE board_no=#{board_no};

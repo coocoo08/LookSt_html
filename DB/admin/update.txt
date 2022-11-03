@@ -1,0 +1,15 @@
+- 게시글타입 -
+게시중 = 'Y'
+신청중 = 'A'
+게시취소 = 'N'
+
+1) 회원관리 권한 수정
+UPDATE mem_auth
+SET mem_auth_auth=#{mem_auth_auth}
+WHERE member_id=#{member_id};
+
+2) 매거진 신청 수락/거부
+UPDATE board
+SET board_kind='N'
+WHERE board_no=#{board_no};
+
