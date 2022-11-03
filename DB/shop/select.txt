@@ -1,0 +1,10 @@
+1) 상품상세페이지
+ select pi2.prdt_img_name as 상품이미지,
+ 		p.product_kind as 상품종류,
+ 		p.product_price as 상품가격,
+ 		p.product_name as 상품이름,
+ 		po.prdt_option_size as 사이즈
+ from product p , prdt_option po , prdt_img pi2 
+ where p.product_no = po.product_no 
+ and po.product_no = pi2.product_no 
+ and p.product_no = #{product_no};
