@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+body {
+	background: #eeeeee !important;
+}
+.edit_title{
+  position: static;
+  font-size: 40px;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1.5px solid #000000;
+}
+.edit_main_box {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 720px;
+  height: 1450px;
+  padding: 60px;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.edit_member_box input {
+  position: absolute;
+  margin-top: -1px;
+  right: 30px;
+  max-width: 410px;
+  width: 100%;
+  padding-top: 0px;  
+  padding-bottom: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 10.5pt;
+  font-weight: normal;
+}
+.bottom-line {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #bbbbbb;
+}
+.bottom-line2 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1.5px solid #000000;
+}
+
+.subscribe-btn {
+  position: fixed;
+  margin-top: 1px;
+  margin-left: 20.9%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #000000;
+  color: #ffffff; 
+}
+button:active,
+button:hover,
+button:focus {
+  background: var(--button-hover-bg-color);
+  outline: 0;
+}
+button:disabled {
+  opacity: 0.5;
+}
+:root {
+  --button-color: #000000;
+  --button-bg-color: #000000;
+  --button-hover-bg-color: #505050;
+}
+
+a {
+  position: relative;
+  left: 5px;
+  text-decoration-line: none;
+  font-size: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.google-btn {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  margin-top: -20px;
+  margin-bottom: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #e34a3c;
+}
+.kakao-btn {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  margin-top: -20px;
+  margin-bottom: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #f9e000;
+}
+.naver-btn {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  margin-top: -20px;
+  margin-bottom: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #41c62d;
+}
+.check-box1 {
+  position: relative;
+  top: 1px;
+}
+.Check-list {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 10.5pt;
+  font-weight: normal;
+  color: #505050;
+}
+.seller-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 600px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #000000;
+  color: #ffffff; 
+}

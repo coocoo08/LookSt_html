@@ -73,8 +73,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0;
-  padding: 0.5rem 1rem;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -83,6 +81,27 @@ button {
   display: inline-block;
   width: 520px;
   height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #000000;
+  color: #ffffff; 
+}
+.btn2 {
+  position: fixed;
+  right: 40px;
+  margin-top: -10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 60px;
+  height: 35px;
   border: none;
   cursor: pointer;
   transition: 0.3s;
