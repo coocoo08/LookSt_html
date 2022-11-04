@@ -15,7 +15,6 @@ li {
 }
 
 a {
-  font-size: 13px;
   text-decoration: none;
   color: inherit;
 }
@@ -30,7 +29,7 @@ a {
 }
 
 .board_title strong {
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 }
 
 .board_title p {
@@ -300,7 +299,7 @@ section {
 
 .notice1 {
   text-align: end;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
 }
 
