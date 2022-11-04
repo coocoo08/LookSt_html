@@ -1,0 +1,13 @@
+1) 상품 재고 수량 변경 (수정중)
+UPDATE prdt_option
+SET prdt_option_stock=#{prdt_option_stock}
+WHERE prdt_option_no=#{prdt_option_no};
+
+
+2) 상품 상태 변경 (수정중)
+UPDATE product
+SET product_type= #{product_type}
+WHERE product_no=#{product_no};
+
+product_type = 판매중 : 'Y' , 판매취소 : 'N' , 삭제 : 'D'
+
