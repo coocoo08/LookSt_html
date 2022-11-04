@@ -1,0 +1,13 @@
+1) 1:1 문의 조회
+select row_number() over() as 순번,
+	   b.board_title as 글제목,
+	   m.member_nick as 작성자,
+	   b.board_date as 작성일,
+	   b.board_views as 조회수 
+from board b, "member" m 
+where b.member_id = m.member_id
+and b.board_type = 'Y'
+and b.board_kind = 'I'
+order by 순번 desc;
+
+2) 
