@@ -1,0 +1,5 @@
+1) 로그인
+select * from "member" m 
+where m.member_id = %{m.member_id}
+and m.member_pw = %{m.member_pw}
+and member_type = %{member_type};
