@@ -163,3 +163,10 @@ section {
   margin: 50px 0 30px;
   
 }
+
+table {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #777;
+  font-family: 'Nanum Gothic', verdana,Dotum, AppleGothic, Helvetica, sans-serif;
+}

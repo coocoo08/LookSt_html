@@ -8,7 +8,7 @@ body {
 .newOrdcnt {
     position: absolute;
     top: 500px;
-    width: 70%;
+    width: 1000px;
     place-self: center;
     /* height: 200px; */
    
@@ -18,7 +18,7 @@ body {
     border: 3px solid lightgrey;
     height: 50%;
     justify-content: center;
-    width: 80%;
+    width: 1000px;
     margin-top: 10px;
     padding: 10px;
     place-self: center;

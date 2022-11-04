@@ -90,3 +90,13 @@ container {
 .btn:hover {
   background: #333;
 }
+
+.card-margin {
+  margin-bottom: 60%;
+}
+
+@media (max-width:2000px) {
+  .card-margin {
+    margin-bottom: 70%;
+  }
+}

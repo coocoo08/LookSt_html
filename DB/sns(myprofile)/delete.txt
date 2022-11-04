@@ -1,0 +1,15 @@
+1) 내 게시물 삭제
+    delete from post
+    where post_no=#{post_no};
+
+2) 팔로잉 취소
+    delete from follow 
+    where "following" = #{following};
+
+3) 댓글 삭제
+    delete from sns_comment 
+    where sns_comment_con = #{sns_comment_con};
+
+4) 좋아요 취소
+    delete from sns_heart 
+    where sns_heart_bool = #{sns_heart_bool };
