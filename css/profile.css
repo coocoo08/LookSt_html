@@ -45,7 +45,7 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 #sns_container {
     max-width: 93.5rem;
     margin: 0 auto;
-    padding: 0 10rem;
+    /* padding: 0 10rem; */
     font-size: 10px;
 }
 
@@ -241,14 +241,15 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 }
 
 /* Media Query */
-
 @media screen and (max-width: 40rem) {
     .profile {
         display: flex;
         flex-wrap: wrap;
         padding: 4rem 0;
     }
+    
 
+    
     .profile::after {
         display: none;
     }
