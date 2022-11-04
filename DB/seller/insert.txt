@@ -1,0 +1,14 @@
+1) 상품 등록
+INSERT INTO public.product
+(seller_no, product_kind, product_price, product_date, product_name, product_type)
+VALUES(#{seller_no}, #{product_kind}, #{product_price}, #{product_date}, #{product_name}, #{product_type});
+
+product_type = 상의 : 'T', 하의 : 'B', 신발 : 'S', 악세사리 : 'A'
+
+2) 상품 이미지
+insert into prdt_img (product_no, prdt_img_seq, prdt_img_name, prdt_img_uuid)
+values (#{product_no}, #{prdt_img_seq}, #{prdt_img_name}, #{prdt_img_uuid});
+
+3) 상품 옵션
+insert into prdt_option (product_no, prdt_option_size, prdt_option_stock)
+values (#{product_no}, #{prdt_option_size}, #{prdt_option_stock});
