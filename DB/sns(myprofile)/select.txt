@@ -19,7 +19,7 @@
 		- post_no, count(sns_com_con)
 		  , count(sns_heart_bool) */
           
--- 프사------------------------
+-- 프사 & 닉네임------------------------
 select b.profile_no , b.profile_img , a.member_nick 
 from "member" a, profile b
 where a.member_id = b.member_id 
@@ -48,3 +48,12 @@ select b.member_nick , "following" as "팔로잉"
 from follow a, "member" b
 where a.member_id = b.member_id 
 ;
+
+-- 좋아요 리스트 (작업중)
+select b.post_no , b.sns_heart_no , b.sns_heart_bool ,a.member_nick 
+from "member" a , sns_heart b
+where a.member_id = b.member_id 
+and b.post_no = #{b.post_no }
+;
+
+

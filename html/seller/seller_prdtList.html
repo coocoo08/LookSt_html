@@ -75,9 +75,7 @@
                 <span>
                     <select name="cmode">
                         <option value="whole">전체</option>
-                        <option value="outer">OUTER</option>
                         <option value="top">TOP</option>
-                        <option value="shirts">SHIRTS</option>
                         <option value="bottom">BOTTOM</option>
                         <option value="acc">ACC</option>
                         <option value="shoes">SHOES</option>
@@ -100,8 +98,11 @@
                 <div>
                     선택상품
                     <select class="manage_option">
-                        <option value="onsale">판매</option>
+                  <!-- <option value="onsale">판매</option>
                         <option value="soldout">품절</option>
+                        <option value="deletegoods">삭제</option> -->
+                        <option value="onsale">판매중</option>
+                        <option value="salecancel">판매취소</option>
                         <option value="deletegoods">삭제</option>
                     </select>
                     <input type="button" id="managebtn" value="변경">
