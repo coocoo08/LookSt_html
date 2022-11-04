@@ -503,7 +503,7 @@ dt {
 
 }
 
-@media (max-width : 1000px) {
+/* @media (max-width : 1000px) {
   .board_title{
     width: 700px;
   }
@@ -519,4 +519,4 @@ dt {
   .board_title{
     width: 500px;
   }
-}
+} */

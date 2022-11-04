@@ -576,3 +576,138 @@ INSERT INTO public.board_img
 VALUES(11, 3, 'default.jpg', 'uuid');
 
 select * from board_img bi ;
+
+/*태그*/
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(1, '아디다스');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(1, '나이키');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(1, '스톤아일랜드');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(2, '버거킹');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(3, '커피');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(3, '메머드');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(4, '맘모스');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(4, '반태희');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(5, '이경빈');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(6, '인플루언서');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(7, '새콤달콤');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(8, '옷');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(9, '바지');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(10, '신발');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(10, '삼선슬리퍼');
+INSERT INTO public.tag
+(post_no, tag_content)
+VALUES(10, '삼성');
+
+select * from tag t ;
+
+/*sns 댓글*/
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen3@naver.com', 1, '글쓴다 댓글단다', '2020-01-01', 1, 1, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen4@naver.com', 1, '대댓글', '2020-11-01', 1, 2, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen3@naver.com', 1, '대대댓글', '2020-12-01', 1, 3, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen5@naver.com', 1, '글쓴다 댓글단다', '2020-05-01', 2, 0, 2);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen6@naver.com', 2, '두번째 포스트', '2020-03-01', 1, 1, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen7@naver.com', 2, '졸려', '2020-11-11', 1, 2, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen8@naver.com', 4, '얼마임?', '2021-11-02', 1, 0, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen9@naver.com', 5, '비싸다', '2022-11-01', 1, 0, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen10@naver.com', 6, '역시는 역시', '2015-11-01', 1, 0, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen1@naver.com', 9, 'DB는 어려워', '2005-11-01', 1, 0, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen2@naver.com', 10, '당근나라가 더 싸다', '2002-11-01', 1, 0, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen10@naver.com', 3, '세번째 글', '2000-11-01', 1, 0, 1);
+
+select * from sns_comment sc ;
+
+/*post 태그*/
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(1, 1, 'nick');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(2, 1, 'nickname');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(3, 1, 'nicknam');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(2, 3, 'nickkkk');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(3, 1, 'niii');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(4, 1, 'dbsin');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(5, 1, 'java');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(6, 3, 'hi');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(6, 9, 'nick');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(7, 1, 'ccc');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(8, 1, 'post');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(9, 1, 'eclipse');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(10, 1, 'chrome');
+
+select * from post_tag pt ;
