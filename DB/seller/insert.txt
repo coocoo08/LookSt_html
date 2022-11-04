@@ -3,7 +3,7 @@ INSERT INTO public.product
 (seller_no, product_kind, product_price, product_date, product_name, product_type)
 VALUES(#{seller_no}, #{product_kind}, #{product_price}, #{product_date}, #{product_name}, #{product_type});
 
-product_type = 상의 = 'T', 하의 = 'B', 신발 = 'S', 악세사리 = 'A'
+product_type = 상의 : 'T', 하의 : 'B', 신발 : 'S', 악세사리 : 'A'
 
 2) 상품 이미지
 insert into prdt_img (product_no, prdt_img_seq, prdt_img_name, prdt_img_uuid)
