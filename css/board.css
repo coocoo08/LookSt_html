@@ -29,7 +29,6 @@ a {
 }
 
 .board_title strong {
-  margin-left: 10%;
   font-size: 2.0rem;
 }
 
@@ -300,7 +299,6 @@ section {
 
 .notice1 {
   text-align: end;
-  margin-right: 30%;
   font-size: 22px;
   font-weight: 700;
 }
