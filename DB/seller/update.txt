@@ -11,3 +11,11 @@ WHERE product_no=#{product_no};
 
 product_type = 판매중 : 'Y' , 판매취소 : 'N' , 삭제 : 'D'
 
+
+3) 주문 상태 변경 (수정중)
+UPDATE public.prdt_order
+SET prdt_order_type= #{prdt_order_type}
+WHERE prdt_order_no= #{prdt_order_no};
+
+prdt_order_type = 결제대기 : 'W', 결제완료 : 'C', 배송준비중 : 'P', 배송중 : 'S', 배송완료 : 'Y', 
+, 주문취소(취소접수) : 'D', 반품처리중 : 'I', 환불처리중 : 'J', 반품완료 : 'R', 환불완료 : 'F'
