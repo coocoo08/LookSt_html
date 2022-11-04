@@ -245,3 +245,30 @@ product-thumb .item img {
 .owl-nav button span {
   font-size: 45px;
 }
+
+/*페이지 변경*/
+.page {
+  display: flex;
+  font-size: 1rem;
+  color: #aaa;
+  justify-content: center;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: 'Noto Sans KR', serif;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
+}
+
+.page p {
+  margin: 0 12px;
+  padding: 0 8px;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.checkpage {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 4px solid #e6002d;
+}
