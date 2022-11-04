@@ -411,7 +411,7 @@ section {
 }
 
 /* 아코디언 끝 */
-/
+
 /* QNA 댓글 */
 
 .comment {
@@ -494,10 +494,27 @@ dd {
 
 dl {
   display: flex;
-  s
 }
 
 dt {
   line-height: 2.5;
 
 }
+
+/* @media (max-width : 1000px) {
+  .board_title{
+    width: 700px;
+  }
+  .container{
+    width: 350px;
+  }
+  .notice1 {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width : 1000px) {
+  .board_title{
+    width: 500px;
+  }
+} */

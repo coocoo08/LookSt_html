@@ -1,36 +1,85 @@
+/* SNS 메인 페이지 쿼리
+select a.member_id 
+	 , a.member_nick
+	 , b.profile_img
+	 , c.post_content
+	 , c.post_date
+	 , d.post_img_img
+	 , e.sns_heart_bool
+	 , f.tag_content
+	 , g.sns_comment_con
+	 , g.sns_comment_date
+	 , h.post_tag_con
+	 , i.PRODUCT_PRICE
+	 , i.product_name
+	 , j.prdt_img_name
+
+from member as a
+join profile as b 
+on a.member_id = b.member_id
+join post as c 
+on a.member_id = c.member_id 
+join post_img as d
+on c.post_no = d.post_no 
+join sns_heart as e 
+on a.member_id = e.member_id
+join tag as f 
+on c.post_no = f.post_no 
+join sns_comment as g 
+on a.member_id = g.member_id 
+join post_tag as h 
+on c.post_no = h.post_no
+join product as i 
+on h.product_no = i.product_no 
+join prdt_img as j 
+on i.product_no = j.product_no
+;
+where a.member_id = 'ezen1@naver.com'
+order by c.post_date desc
+;
+select * from post p ;
+select * from tag t ;
+select * from post p ;
+select * from profile p ;
+select * from post_img pi2 ;
+*/
+
 /*멤버*/
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen1@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen1@naver.com', '0111', 'nick1', '이름1', 01011112222, '서울 강남구', '역삼동', '12345', '2022-11-01', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen2@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen2@naver.com', '0112', 'nick2', '이름2', 01044442222, '서울 송파구', '잠실동', '23569', '2022-11-02', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen3@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen3@naver.com', '0113', 'nick3', '이름3', 01044443333, '서울 송파구', '송파동', '14598', '2022-11-03', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen4@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen4@naver.com', '0114', 'nick4', '이름4', 01044442222, '서울 강서구', '화곡동', '75321', '2022-10-01', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen5@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen5@naver.com', '0115', 'nick5', '이름5', 01088882222, '서울 금천구', '시흥2동', '13568', '2022-10-25', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen6@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen6@naver.com', '0116', 'nick6', '이름6', 01059992222, '서울 영등포구', '여의도동', '45721', '2022-11-14', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen7@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen7@naver.com', '0117', 'nick7', '이름7', 01044442222, '서울 영등포구', '당산1동', '85210', '2022-10-03', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen8@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen8@naver.com', '0118', 'nick8', '이름8', 01033332222, '서울 동작구', '노량진동', '15984', '2022-11-10', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen9@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen9@naver.com', '0119', 'nick9', '이름9', 01044441111, '서울 동작구', '신대방동', '43222', '2022-09-25', '2022-11-01', true, 'N');
 INSERT INTO public."member"
 (member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
-VALUES('ezen10@naver.com', '0111', 'nick', '이름', 01044442222, '서울 강남구', '역삼동', '43222', '2022-11-01', '2022-11-01', true, 'N');
+VALUES('ezen10@naver.com', '0110', 'nick10', '이름10', 01044442222, '서울 관악구', '신림동', '66210', '2022-10-23', '2022-11-01', true, 'N');
 
 select * from "member" m;
+
+DELETE FROM public."member";
+
 
 /*판매자*/
 INSERT INTO public.seller
@@ -84,6 +133,7 @@ INSERT INTO public.mem_info
 VALUES('ezen10@naver.com', 'M', '2012-03-01', '국민', 1104376, '포차코');
 
 select * from mem_info mi ;
+
 /*프로필 사진*/
 INSERT INTO public.profile
 (member_id, profile_img, profile_uuid, profile_type, profile_date, profile_intro)
@@ -117,6 +167,7 @@ INSERT INTO public.profile
 VALUES('ezen10@naver.com', 'default.jpg'::character varying, 'rtrt', 'N', '2022-11-02', '안녕하세요');
 
 select * from profile p ;
+
 /*포스트*/
 INSERT INTO public.post
 (member_id, post_content, post_date, post_type)
@@ -150,6 +201,7 @@ INSERT INTO public.post
 VALUES('ezen1@naver.com', '', '2014-11-11', 'Y');
 
 select * from post p ;
+
 /*포스트 이미지*/
 INSERT INTO public.post_img
 (post_no, post_img_img, post_img_seq, post_img_uuid)
@@ -292,6 +344,8 @@ VALUES('ezen1@naver.com', '괜찮은데~', '2022-11-03', '허허', false, 'Y', 1
 INSERT INTO public.board
 (member_id, board_title, board_date, board_con, board_secreet, board_type, board_views, board_kind)
 VALUES('ezen9@naver.com', '받아주셈', '2002-11-03', '제목', true, 'A', 0, 'M');
+
+select * from board ;
 
 /*팔로우*/
 INSERT INTO public.follow
@@ -519,195 +573,62 @@ INSERT INTO public.tag
 (post_no, tag_content)
 VALUES(10, '#경빈이 잘생겼다');
 
-/*게시판 이미지*/
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(1, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(1, 2, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(1, 3, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(2, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(3, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(4, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(4, 2, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(4, 3, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(4, 4, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(5, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(6, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(7, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(7, 2, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(8, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(9, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(10, 1, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(10, 2, 'default.jpg', 'uuid');
-INSERT INTO public.board_img
-(board_no, board_img_seq, board_img_img, board_img_uuid)
-VALUES(11, 3, 'default.jpg', 'uuid');
+select * from tag t  ;
 
-select * from board_img bi ;
+/*SNS 댓글*/
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen1@naver.com', 1, '안녕하세요', '2022-11-04', 1, 1, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen2@naver.com', 2, '하이', '2022-10-26', 2, 1, 2);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen3@naver.com', 3, '안녕', '2022-09-04', 3, 2, 3);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen4@naver.com', 4, '안녕1', '2022-10-03', 4, 3, 4);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen5@naver.com', 5, '안녕2', '2022-10-29', 5, 3, 5);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen6@naver.com', 6, '안녕3', '2022-10-15', 6, 4, 1);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen7@naver.com', 7, '안녕4', '2022-10-05', 7, 4, 2);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen8@naver.com', 8, '안녕5', '2022-10-04', 8, 2, 2);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen9@naver.com', 9, '안녕6', '2022-11-01', 9, 3, 4);
+INSERT INTO public.sns_comment
+(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
+VALUES('ezen10@naver.com', 10, '안녕7', '2022-11-02', 10, 1, 3);
 
-/*태그*/
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(1, '아디다스');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(1, '나이키');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(1, '스톤아일랜드');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(2, '버거킹');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(3, '커피');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(3, '메머드');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(4, '맘모스');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(4, '반태희');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(5, '이경빈');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(6, '인플루언서');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(7, '새콤달콤');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(8, '옷');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(9, '바지');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(10, '신발');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(10, '삼선슬리퍼');
-INSERT INTO public.tag
-(post_no, tag_content)
-VALUES(10, '삼성');
+select * from sns_comment sc  ;
 
-select * from tag t ;
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(1, 1, '#zzzz');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(2, 1, '#ㅌㅌㅌㅌ');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(3, 1, '#ㅋㅋㅋㅋ');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(4, 1, '#ㅎㅎㅎㅎ');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(2, 1, '#ㄷㄷㄷㄷ');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(1, 1, '#ㄴㄴㄴㄴ');
+INSERT INTO public.post_tag
+(product_no, post_no, post_tag_con)
+VALUES(4, 1, '#ㅈㅈㅈㅈ');
 
-/*sns 댓글*/
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen3@naver.com', 1, '글쓴다 댓글단다', '2020-01-01', 1, 1, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen4@naver.com', 1, '대댓글', '2020-11-01', 1, 2, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen3@naver.com', 1, '대대댓글', '2020-12-01', 1, 3, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen5@naver.com', 1, '글쓴다 댓글단다', '2020-05-01', 2, 0, 2);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen6@naver.com', 2, '두번째 포스트', '2020-03-01', 1, 1, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen7@naver.com', 2, '졸려', '2020-11-11', 1, 2, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen8@naver.com', 4, '얼마임?', '2021-11-02', 1, 0, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen9@naver.com', 5, '비싸다', '2022-11-01', 1, 0, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen10@naver.com', 6, '역시는 역시', '2015-11-01', 1, 0, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen1@naver.com', 9, 'DB는 어려워', '2005-11-01', 1, 0, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen2@naver.com', 10, '당근나라가 더 싸다', '2002-11-01', 1, 0, 1);
-INSERT INTO public.sns_comment
-(member_id, post_no, sns_comment_con, sns_comment_date, sns_comment_seq, sns_comment_class, sns_comment_group)
-VALUES('ezen10@naver.com', 3, '세번째 글', '2000-11-01', 1, 0, 1);
-
-select * from sns_comment sc ;
-
-/*post 태그*/
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(1, 1, 'nick');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(2, 1, 'nickname');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(3, 1, 'nicknam');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(2, 3, 'nickkkk');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(3, 1, 'niii');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(4, 1, 'dbsin');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(5, 1, 'java');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(6, 3, 'hi');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(6, 9, 'nick');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(7, 1, 'ccc');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(8, 1, 'post');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(9, 1, 'eclipse');
-INSERT INTO public.post_tag
-(product_no, post_no, post_tag_con)
-VALUES(10, 1, 'chrome');
-
-select * from post_tag pt ;
+select * from post_tag pt  ;
