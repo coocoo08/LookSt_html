@@ -1,0 +1,6 @@
+1) 공지사항
+select b.board_title as 글제목,
+from board b
+where b.board_type = 'Y'
+and b.board_kind = 'N'
+order by b.board_date desc;

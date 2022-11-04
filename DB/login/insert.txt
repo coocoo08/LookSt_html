@@ -1,0 +1,11 @@
+1) 회원가입
+INSERT INTO public."member"
+(member_id, member_pw, member_nick, member_name, member_phon, member_addr, member_addr2, member_zip, member_since, member_updt, member_check, member_type)
+VALUES(#{member_id}, #{member_pw}, #{member_nick}, #{member_name}, #{member_phon}, #{member_addr}, #{member_addr2}, #{member_zip}, now(), now(), true, #{member_type});
+
+member_type = 일반회원 : 'U', 네이버 : 'N', 구글 : 'G', 카카오 : 'K'
+
+2) 판매자신청
+INSERT INTO public.seller
+(seller_name, seller_type, seller_addr, seller_addr2, seller_zip, seller_number, member_id)
+VALUES(#{seller_name}, 'Y', #{seller_addr}, #{seller_addr2}, #{seller_zip}, #{seller_number}, #{member_id});

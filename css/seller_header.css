@@ -177,5 +177,6 @@ i {
 @media (max-width: 767px) {
   .header_container .header_menu {
     background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
   }
 }

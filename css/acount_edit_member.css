@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 
 body {
-	background: #eeeeee !important;
+
 }
 .edit_title{
   position: static;
@@ -15,7 +15,7 @@ body {
 }
 .edit_main_box {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   width: 720px;
   height: 1575px;
@@ -86,7 +86,7 @@ button:disabled {
   --button-hover-bg-color: #505050;
 }
 
-a {
+.edit_member_a {
   position: relative;
   left: 5px;
   text-decoration-line: none;

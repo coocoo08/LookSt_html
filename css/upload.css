@@ -124,9 +124,9 @@ input[type='file'] {
   .preview img{
     width: 100px;
   }
-  .setting-container .setting__content {
+  /* .setting-container .setting__content {
     padding-left: 20px;
-  }
+  } */
   .setting-container .setting__content > div:not(:first-child) {
     flex-direction: column;
   }

@@ -1,0 +1,42 @@
+/* SNS 메인 페이지 쿼리*/
+select a.member_id, a.member_nick
+	 , b.profile_no, b.profile_img, b.profile_date 
+	 , c.post_no, c.post_content, c.post_date
+	 , d.post_img_no, d.post_img_img, d.post_img_seq 
+	 , e.sns_heart_bool, e.sns_heart_no 
+	 , f.tag_no 
+	 , f.tag_content
+	 , g.sns_comment_no 
+	 , g.sns_comment_con
+	 , g.sns_comment_date 
+	 , g.sns_comment_seq 
+	 , h.post_no
+	 , h.post_tag_no 
+	 , h.post_tag_con 
+	 , i.product_no
+	 , i.PRODUCT_PRICE
+	 , i.product_name
+	 , j.prdt_img_seq 
+	 , j.prdt_img_no 
+	 , j.prdt_img_name
+from member as a
+join profile as b 
+on a.member_id = b.member_id
+join post as c 
+on a.member_id = c.member_id 
+join post_img as d
+on c.post_no = d.post_no 
+join sns_heart as e 
+on a.member_id = e.member_id
+-- , c.post_no = e.post_no 
+join tag as f 
+on c.post_no = f.post_no 
+join sns_comment as g 
+on a.member_id = g.member_id 
+join post_tag as h 
+on c.post_no = h.post_no
+join product as i 
+on h.product_no = i.product_no 
+join prdt_img as j 
+on i.product_no = j.product_no 
+;
