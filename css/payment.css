@@ -431,7 +431,7 @@ input[type="text"]::placeholder {
     font-size: 12px;
 }
 
-input[type="submit"] {
+input[type="button"] {
     font-size: 13px;
     padding: 10px 80px;
     background-color: #333333;
