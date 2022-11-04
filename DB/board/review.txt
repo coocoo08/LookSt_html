@@ -1,0 +1,47 @@
+-- REVIEW board --
+
+INSERT INTO public.board
+(member_id, board_title, board_date, board_con, board_secreet, board_type, board_views, board_kind)
+VALUES('ezen3@naver.com', '제목3', '2022-11-03', '안녕하세요 반갑습니다', false, 'Y', 1, 'R');
+
+
+select * from public.board, public.board_img;
+
+SELECT member_id, board_no, board_title, board_date, board_con, board_secreet, board_type, board_views, board_kind
+FROM public.board
+order by board_no desc;
+
+
+-- REVIEW  --
+
+
+select (row_number() over()) as 순번, board_img, board_title, public.board.member_id, board_date, board_views, board_views, board_kind  from board 
+join board_img 
+on public.board.board_no = public.board_img.board_no 
+where board_type = 'Y'
+and board_kind = 'R'
+order by 순번 desc;
+
+-- REVIEW list --
+
+select a.board_img_img, e.product_name, e.product_price, b.board_title, c.member_id, b.board_con, c.member_pw, b.board_date, b.board_views   from board_img a 
+join board b  
+	on a.board_no  = b.board_no
+join "member" c
+	on b.member_id  = c.member_id
+join prdt_order d 
+	on c.member_id  = d.member_id 
+join product e 
+''
+	on d.product_no = e.product_no 
+;
+
+-- REVIEW Write --
+
+INSERT INTO public.board
+(member_id, board_title, board_date, board_con, board_secreet, board_type, board_views, board_kind)
+VALUES('ezen1@naver.com', '제목12', '2022-11-03', '안녕하세요 반갑습니다', false, 'Y', 0, 'R');
+
+INSERT INTO public.board_img
+(board_no, board_img_seq, board_img_img, board_img_uuid)
+VALUES(1, 1, 'k.jpg', '1');
